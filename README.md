@@ -6,7 +6,7 @@
 
 Este proyecto es un visor web estático para el **Catálogo de Objetos Geográficos de la Infraestructura de Datos Espaciales de Tierra del Fuego (IDETDF)**.
 
-Su objetivo es proveer una interfaz rápida, moderna y fácil de navegar para consultar clases, subclases, objetos y sus atributos, reemplazando la necesidad de navegar el complejo archivo Excel maestro.
+Su objetivo es proveer una interfaz rápida, moderna y fácil de navegar para consultar clases, subclases, objetos y sus atributos, reemplazando la necesidad de navegar el archivo Excel maestro.
 
 **[Ver Demo en Vivo](https://idetdf.github.io/VisorCatalogoObjetos/)**
 
@@ -14,7 +14,7 @@ Su objetivo es proveer una interfaz rápida, moderna y fácil de navegar para co
 
 ## ✨ Características Principales
 
-* **Navegación Intuitiva:** Interfaz de tres columnas (Clase > Subclase > Objeto) que permite un filtrado "drill-down" simple.
+* **Navegación Intuitiva:** Interfaz de tres columnas (Clase > Subclase > Objeto) que permite un filtrado simple.
 * **Vista de Detalle:** Un modal (ventana emergente) muestra la ficha completa de cada objeto, incluyendo su definición, geometría y la tabla de atributos.
 * **Información Completa:** Muestra todos los atributos de un objeto, incluyendo su definición, tipo de dato, observaciones y la lista completa de valores de dominio (si aplica).
 * **100% Estático:** Construido con HTML, CSS y JavaScript puros. No requiere bases de datos ni *backend*, lo que lo hace extremadamente rápido y fácil de desplegar.
@@ -57,11 +57,11 @@ py preparar_datos.py
 ### 3. Subir los Cambios a GitHub
 Sube los archivos actualizados (tanto el Catalogo_Normalizado.xlsx como los .json modificados) al repositorio.
 
-* 1. Añadir todos los cambios
+* Añadir todos los cambios
 git add .
 
-* 2. Crear un commit descriptivo
+* Crear un commit descriptivo
 git commit -m "Actualización de datos: se añadió el objeto 'Nuevo Objeto'"
 
-* 3. Subir los cambios a la rama principal
+* Subir los cambios a la rama principal
 git push origin main
