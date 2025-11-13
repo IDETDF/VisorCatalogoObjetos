@@ -231,3 +231,76 @@ main {
     margin-right: 10px;
     vertical-align: middle;
 }
+
+#modal-info-cuerpo h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--c-border-light);
+}
+
+#modal-info-cuerpo p {
+    margin: 0.75rem 0;
+    border-bottom: 1px solid var(--c-border-light);
+    padding-bottom: 0.75rem;
+}
+#modal-info-cuerpo p:last-child {
+    border-bottom: none;
+}
+
+#modal-info-cuerpo strong {
+    color: var(--c-text);
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+}
+#modal-info-cuerpo span {
+    font-size: 1rem;
+}
+
+#modal-info-cuerpo ul {
+    margin: 0;
+    padding-left: 2.5rem;
+}
+#modal-info-cuerpo li {
+    margin-bottom: 0.5rem;
+}
+#modal-info-cuerpo a, 
+#modal-info-cuerpo a:visited {
+    color: var(--c-blue);
+    text-decoration: none;
+}
+#modal-info-cuerpo a:hover {
+    text-decoration: underline;
+}
+
+/* === BOTÓN INFO (Opción 2: Circular) === */
+.info-button-container {
+    margin-left: auto;
+    align-self: center;
+}
+
+#btn-info {
+    background-color: var(--c-bg-white); /* Fondo blanco */
+    color: var(--c-dark);
+    width: 40px;  /* Ancho fijo */
+    height: 40px; /* Alto fijo */
+    border-radius: 50%; /* Círculo perfecto */
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el texto/icono */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#btn-info:hover {
+    background-color: var(--c-orange);
+    color: white;
+    transform: scale(1.1) rotate(10deg); /* Crece y gira un poco */
+}

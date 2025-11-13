@@ -7,14 +7,15 @@ carpeta_salida = 'datos' # La carpeta donde irán los JSON
 
 # Las 8 hojas que normalizamos
 hojas_a_exportar = [
-    'Metadata',
-    'Esquema',
+    'Portada',
     'Clases',
     'Subclases',
     'Objetos',
     'Atributos',
     'Link_Objeto_Atributo',
-    'Dominios'
+    'Dominios',
+    'Fuentes',
+    'Productor'
 ]
 
 # --- Ejecución ---

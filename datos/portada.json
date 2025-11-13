@@ -1,0 +1,26 @@
+[
+    {
+        "Clave":"Titulo",
+        "Valor":"CATÁLOGO DE OBJETOS GEOGRÁFICOS DE LA INFRAESTRUCTURA DE DATOS ESPACIALES DE LA PROVINCIA DE TIERRA DEL FUEGO AeIAS "
+    },
+    {
+        "Clave":"Alcance",
+        "Valor":"Facilitar el manejo de la información Geoespacial de forma homologada y descentralizada que contribuya a garantizar la interoperabilidad y calidad de la información generada en el ámbito nacional."
+    },
+    {
+        "Clave":"Campo de Aplicación",
+        "Valor":"Generación de Cartografía Oficial de la República Argentina."
+    },
+    {
+        "Clave":"Versión",
+        "Valor":"2.0"
+    },
+    {
+        "Clave":"Fecha de la versión",
+        "Valor":"Julio de 2024"
+    },
+    {
+        "Clave":"Lenguaje",
+        "Valor":"ESPAÑOL - ES"
+    }
+]

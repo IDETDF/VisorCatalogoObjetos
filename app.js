@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
         objetos: [],
         atributos: [],
         link: [],
-        dominios: []
+        dominios: [],
+        portada: [],
+        fuentes: [], 
+        productor: []
     };
 
     const listaClases = document.getElementById('lista-clases');
@@ -21,15 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalGeometria = document.getElementById('modal-geometria');
     const modalTbody = document.getElementById('modal-tbody-atributos');
 
+    const btnInfo = document.getElementById('btn-info');
+    const modalInfo = document.getElementById('modal-info');
+    const modalInfoCerrar = document.getElementById('modal-info-cerrar');
+    const modalInfoCuerpo = document.getElementById('modal-info-cuerpo');
+
     async function iniciarApp() {
         try {
-            const [clasesRes, subclasesRes, objetosRes, atributosRes, linkRes, dominiosRes] = await Promise.all([
+            const [clasesRes, subclasesRes, objetosRes, atributosRes, linkRes, dominiosRes, portadaRes, fuentesRes, productorRes] = await Promise.all([
                 fetch('datos/clases.json'),
                 fetch('datos/subclases.json'),
                 fetch('datos/objetos.json'),
                 fetch('datos/atributos.json'),
                 fetch('datos/link_objeto_atributo.json'),
-                fetch('datos/dominios.json')
+                fetch('datos/dominios.json'),
+                fetch('datos/portada.json'),
+                fetch('datos/fuentes.json'), 
+                fetch('datos/productor.json')
             ]);
 
             db.clases = await clasesRes.json();
@@ -38,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
             db.atributos = await atributosRes.json();
             db.link = await linkRes.json();
             db.dominios = await dominiosRes.json();
+            db.portada = await portadaRes.json();
+            db.fuentes = await fuentesRes.json();
+            db.productor = await productorRes.json();
             
             renderizarClases();
 
@@ -51,6 +65,9 @@ document.addEventListener('DOMContentLoaded', () => {
         listaObjetos.addEventListener('click', manejarClicObjeto);
         
         modalCerrar.addEventListener('click', () => modal.style.display = "none");
+
+        btnInfo.addEventListener('click', mostrarModalInfo);
+        modalInfoCerrar.addEventListener('click', () => modalInfo.style.display = "none");
 
         window.addEventListener('click', (e) => {
             if (e.target == modal) {
@@ -169,6 +186,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         modal.style.display = "block";
+    }
+
+    function mostrarModalInfo() {
+        modalInfoCuerpo.innerHTML = '';
+        
+        for (const item of db.portada) {
+            if (item.Clave && item.Valor) { 
+                modalInfoCuerpo.innerHTML += `
+                    <p>
+                        <strong>${item.Clave}</strong> 
+                        <span>${item.Valor}</span>
+                    </p>
+                `;
+            }
+        }
+
+        if (db.productor && db.productor.length > 0) {
+            modalInfoCuerpo.innerHTML += `<h3>Productor</h3>`;
+            
+            for (const item of db.productor) {
+                modalInfoCuerpo.innerHTML += `
+                    <p>
+                        <strong>Nombre</strong>
+                        <span>${item.NOMBRE || ''}</span>
+                    </p>
+                    <p>
+                        <strong>Dirección</strong>
+                        <span>${item.DIRECCIÓN || ''}</span>
+                    </p>
+                    <p>
+                        <strong>Ubicación</strong>
+                        <span>${item.CIUDAD || ''}, ${item.PROVINCIA || ''} (${item.PAIS || ''})</span>
+                    </p>
+                    <p>
+                        <strong>Teléfono</strong>
+                        <span>${item.TELÉFONO || ''}</span>
+                    </p>
+                    <p>
+                        <strong>Email</strong>
+                        <span><a href="mailto:${item['E-MAIL'] || ''}">${item['E-MAIL'] || ''}</a></span>
+                    </p>
+                    <p>
+                        <strong>Sitio Web</strong>
+                        <span><a href="${item['SITIO WEB'] || '#'}" target="_blank">${item['SITIO WEB'] || ''}</a></span>
+                    </p>
+                `;
+            }
+        }
+
+       
+        modalInfoCuerpo.innerHTML += `<h3>Fuentes Principales</h3>`;
+        let fuentesHtml = '<ul>';
+        for (const item of db.fuentes) {
+            fuentesHtml += `<li><a href="${item.Web || '#'}" target="_blank">${item.Nombre || 'Fuente sin nombre'}</a></li>`;
+        }
+        fuentesHtml += '</ul>';
+        modalInfoCuerpo.innerHTML += fuentesHtml;
+        
+        modalInfo.style.display = "block";
     }
 
     function quitarSeleccion(lista) {
