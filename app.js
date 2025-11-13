@@ -66,7 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
         listaObjetos.innerHTML = '';
 
         for (const clase of db.clases) {
-            listaClases.innerHTML += `<li data-id="${clase.ID_Clase}">${clase.Nombre_Clase} (${clase.ID_Clase})</li>`;
+            listaClases.innerHTML += `<li data-id="${clase.ID_Clase}">
+                <img src="static/${clase.Nombre_Clase}.svg" class="icono-lista">
+                ${clase.Nombre_Clase} (${clase.ID_Clase})
+            </li>`;
         }
     }
 
