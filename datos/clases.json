@@ -1,0 +1,57 @@
+[
+    {
+        "ID_Clase":"01",
+        "Nombre_Clase":"INDUSTRIA Y SERVICIOS",
+        "Definicion":"Comprende los objetos geográficos relacionados con la extracción y procesamiento de recursos naturales, producción agropecuaria, minería, industrialización, energía, comunicaciones, almacenamiento y logística, tratamiento y gestión de los residuos (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"02",
+        "Nombre_Clase":"GEOGRAFÍA SOCIAL",
+        "Definicion":"Comprende los objetos geográficos que se relacionan en el sentido más amplio con los aspectos sociales de la población. A esta clase pertenecen los dominios de la administración, el comercio, el turismo, el ocio, la educación, la salud y la ciencia (IDERA, 2018 - INFUETUR 2024)."
+    },
+    {
+        "ID_Clase":"03",
+        "Nombre_Clase":"TRANSPORTE",
+        "Definicion":"Comprende los objetos geográficos que se relacionan con el conjunto de instalaciones fijas, entidades de flujo y un sistema de control que permiten que personas y  bienes venzan la fricción del espacio geográfico 'eficientemente' a efectos de participar oportunamente en alguna actividad deseada (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"04",
+        "Nombre_Clase":"HIDROGRAFÍA Y OCEANOGRAFÍA",
+        "Definicion":"Comprende los objetos geográficos naturales y artificiales relacionados a los ambientes marino, fluvial y lacustre. Incluye las características físicas y químicas del agua, la biología marina y la geología marina (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"05",
+        "Nombre_Clase":"GEOGRAFÍA FÍSICA",
+        "Definicion":"Comprende los objetos geográficos que se relacionan con las formas del relieve terrestre, los suelos y su cobertura (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"06",
+        "Nombre_Clase":"BIOTA",
+        "Definicion":"Comprende los objetos geográficos asociados a la distribución de los seres vivos (IGN, 2015). "
+    },
+    {
+        "ID_Clase":"07",
+        "Nombre_Clase":"DEMARCACIÓN",
+        "Definicion":"Comprende los objetos territoriales legales que se relacionan con las fronteras y los límites políticos, administrativos y de hecho (IDERA, 2015). "
+    },
+    {
+        "ID_Clase":"09",
+        "Nombre_Clase":"DEFENSA Y SEGURIDAD",
+        "Definicion":"Comprende los objetos geográficos inherentes a las instalaciones militares o a las estructuras de las operaciones militares (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"10",
+        "Nombre_Clase":"CLIMA Y METEOROLOGÍA",
+        "Definicion":"Clasifica subcategorías que reúnen información climática y meteorológica (adaptación DFDD)."
+    },
+    {
+        "ID_Clase":"11",
+        "Nombre_Clase":"CATASTRO",
+        "Definicion":"Comprende los objetos  territoriales legales que pertenecen a un determinado país o distrito, correspondientes a un inventario público, metódicamente ordenado, que contiene datos concernientes a los mismos y que se determinan a partir de actos de levantamientos territoriales. La unidad de registración del catastro es la parcela (IDERA, 2015)."
+    },
+    {
+        "ID_Clase":"12",
+        "Nombre_Clase":"UNIDADES GEOESTADÍSTICAS",
+        "Definicion":"Comprende los objetos geográficos que definen áreas estadísticas de desagregación del territotio nacional, provincial y de áreas de gobierno local. Se utilizan tanto para el relevamiento como para la publicación de resultados, y son comparables intercensalmente a pesar de la dinámica de distribución de la población (INDEC, 2018). "
+    }
+]

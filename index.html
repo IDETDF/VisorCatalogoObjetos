@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Catálogo de Objetos</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+    <div class="logo-container">
+        <img src="static/logo.png" alt="Logo IDETDF">
+    </div>
+    <div class="titulo-container">
+        <h1>Visor del Catálogo de Objetos</h1>
+        <p>INFRAESTRUCTURA DE DATOS ESPACIALES DE LA PROVINCIA DE TIERRA DEL FUEGO AeIAS</p>
+    </div>
+</header>
+
+    <main>
+        <section id="navegacion">
+            <div id="columna-clases" class="columna-nav">
+                <h2>Clases</h2>
+                <ul id="lista-clases">
+                    </ul>
+            </div>
+            <div id="columna-subclases" class="columna-nav">
+                <h2>Subclases</h2>
+                <ul id="lista-subclases">
+                    </ul>
+            </div>
+            <div id="columna-objetos" class="columna-nav">
+                <h2>Objetos</h2>
+                <ul id="lista-objetos">
+                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-objeto" class="modal-overlay">
+        <div class="modal-contenido">
+            <button id="modal-cerrar" class="modal-cerrar">&times;</button>
+            
+            <h2 id="modal-titulo">Nombre del Objeto</h2>
+            <p id="modal-definicion">Aquí va la definición...</p>
+            <p><strong>Geometría:</strong> <span id="modal-geometria"></span></p>
+
+            <h3>Atributos</h3>
+            <table id="modal-tabla-atributos">
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Definición</th>
+                        <th>Tipo</th>
+                        <th>Dominio (Valores)</th>
+                        <th>Obs.</th>
+                    </tr>
+                </thead>
+                <tbody id="modal-tbody-atributos">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script> 
+</body>
+</html>

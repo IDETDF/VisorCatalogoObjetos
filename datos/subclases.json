@@ -1,0 +1,338 @@
+[
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0101",
+        "Nombre_Subclase":"EXTRACCIÓN",
+        "Definicion":"Objetos geográficos que se relacionan con la extracción de materia prima, incluyendo agua e hidrocarburos (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0102",
+        "Nombre_Subclase":"FABRICACIÓN Y PROCESAMIENTO",
+        "Definicion":"Objetos geográficos que se relacionan con el procesamiento de materia prima y la obtención de bienes, incluyendo el tratamiento del agua (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0103",
+        "Nombre_Subclase":"ACTIVIDAD AGROPECUARIA",
+        "Definicion":"Objetos geográficos que se asocian con la actividad agropecuaria (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0104",
+        "Nombre_Subclase":"ENERGÍA",
+        "Definicion":"Objetos geográficos que se relacionan con la producción, transporte y distribución de energía eléctrica (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0105",
+        "Nombre_Subclase":"COMUNICACIONES",
+        "Definicion":"Objetos geográficos que se refieren a todo tipo de comunicación (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0106",
+        "Nombre_Subclase":"ESTRUCTURA ASOCIADA",
+        "Definicion":"Objetos geográficos que se relacionan con estructuras de apoyo asociadas a la Clase Industria y servicios (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0107",
+        "Nombre_Subclase":"ALMACENAMIENTO Y LOGÍSTICA ",
+        "Definicion":"Objetos geográficos que se relacionan con el almacenamiento, protección, distribución y provisión de cualquier tipo de bien (IGN, 2015). "
+    },
+    {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0108",
+        "Nombre_Subclase":"GESTIÓN DE RESIDUOS",
+        "Definicion":"Objetos geográficos asociados a la recolección, tratamiento, reciclado y disposición de residuos (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0201",
+        "Nombre_Subclase":"ASENTAMIENTO ",
+        "Definicion":"Objetos geográficos que se relacionan con centros poblados, sitios y lugares que revisten un interés particular (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0202",
+        "Nombre_Subclase":"EQUIPAMIENTO",
+        "Definicion":"Objetos geográficos que están en relación con la prestación de servicios a la comunidad (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0203",
+        "Nombre_Subclase":"COMERCIO Y TURISMO",
+        "Definicion":"Objetos geográficos que se refieren a actividades comerciales, a complejos con fines comerciales, turísticos y\/o de negocios. En el caso del turismo, las actividades se realizan por un período determinado de tiempo, en un lugar distinto al del entorno habitual, y donde se desarrolla una actividad no remunerada (IDERA 2015 - INFUETUR 2024)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0204",
+        "Nombre_Subclase":"RECREACIÓN",
+        "Definicion":"Objetos geográficos que se relacionan con las actividades recreativas y de ocio de las personas (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0205",
+        "Nombre_Subclase":"POLÍTICA Y ADMINISTRACIÓN",
+        "Definicion":"Objetos geográficos que se relacionan con la política y \/ o que describen cuestiones administrativas (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0206",
+        "Nombre_Subclase":"EDUCACIÓN",
+        "Definicion":"Objetos geográficos relativos a los establecimientos vinculados al desarrollo de actividades educativas (IDERA, 2015)"
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0207",
+        "Nombre_Subclase":"CULTURA",
+        "Definicion":"Objetos geográficos que se relacionan con las distintas expresiones culturales, credos y manifestaciones religiosas (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0208",
+        "Nombre_Subclase":"SALUD",
+        "Definicion":"Objetos geográficos que se relacionan con instalaciones destinadas a brindar atención sanitaria (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0209",
+        "Nombre_Subclase":"TECNOLOGÍA Y CIENCIA",
+        "Definicion":"Objetos geográficos relativos a los establecimientos vinculados al desarrollo de actividades tecnológicas y científicas (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0210",
+        "Nombre_Subclase":"DERECHOS HUMANOS",
+        "Definicion":"Objetos geográficos relativos a la promoción y protección de los Derechos Humanos  (Secretaria de DDHH Bs As - 2019)"
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0302",
+        "Nombre_Subclase":"VIAL",
+        "Definicion":"Objetos geográficos que se relacionan a las vías de comunicación para vehículos y personas. Se han incluido los fenómenos vías, carretera, carretera, camino, calles y carril bicicleta entre otros.  (Transporte, 2018)."
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0304",
+        "Nombre_Subclase":"FLUVIAL, MARÍTIMO Y LACUSTRE",
+        "Definicion":"Objetos geográficos relacionados con el transporte fluvial, marítimo y lacustre (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0305",
+        "Nombre_Subclase":"AÉREO",
+        "Definicion":"Objetos geográficos que se relacionan con el transporte por aire y la infraestructura relacionada (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0306",
+        "Nombre_Subclase":"CONTROLES",
+        "Definicion":"Objetos geográficos que se relacionan al control del transporte (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0307",
+        "Nombre_Subclase":"CRUCES Y ENLACES",
+        "Definicion":"Objetos geográficos vinculados a obras de ingeniería relacionadas al transporte, cuya función es facilitar la circulación (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0308",
+        "Nombre_Subclase":"INFRAESTRUCTURA",
+        "Definicion":"Obras de Arte y todo Objeto Geografico de apoyo al transporte no incluido en otra subclase (Transporte, 2018)."
+    },
+    {
+        "ID_Clase_FK":"04",
+        "ID_Subclase":"0401",
+        "Nombre_Subclase":"COSTAS Y ZONAS LITORALES",
+        "Definicion":"Objetos geográficos correspondientes a las costas y zonas del litoral marítimo, fluvial y lacustre (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"04",
+        "ID_Subclase":"0403",
+        "Nombre_Subclase":"PROFUNDIDADES",
+        "Definicion":"Objetos geográficos que representan la profundidad en espejos de agua, corrientes de agua, mares y océanos (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"04",
+        "ID_Subclase":"0406",
+        "Nombre_Subclase":"MAREAS Y CORRIENTES",
+        "Definicion":"Objetos geográficos relacionados con la medición de mareas, corrientes de agua y canales (IGN, 2015). Incluye instalaciones de monitoreo (INIDEP 2022)"
+    },
+    {
+        "ID_Clase_FK":"04",
+        "ID_Subclase":"0411",
+        "Nombre_Subclase":"AGUAS CONTINENTALES",
+        "Definicion":"Objetos geográficos que se relacionan con el agua que fluye o se almacena sobre la corteza terrestre. Incluye objetos geográficos naturales y obras para su gestión y manejo (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"04",
+        "ID_Subclase":"0412",
+        "Nombre_Subclase":"CONDICIONES OCEANOGRÁFICAS",
+        "Definicion":"Este Subgrupo consta de Conceptos que describen las condiciones físicas y químicas del agua, por ejemplo temperatura o densidad. (Adaptacion del DFDD)"
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0501",
+        "Nombre_Subclase":"HIPSOGRAFÍA",
+        "Definicion":"Objetos geográficos que describen la forma (posiciones y alturas) de la superficie del terreno (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0502",
+        "Nombre_Subclase":"GEOMORFOLOGÍA",
+        "Definicion":"Objetos geográficos que se refieren a las geoformas del relieve terrestre y sus características a excepción de las de origen glaciario (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0504",
+        "Nombre_Subclase":"EDAFOLOGÍA",
+        "Definicion":"Objetos geográficos que hacen referencia a diferentes tipos de suelos y sus características (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0506",
+        "Nombre_Subclase":"VULCANISMO Y SISMICIDAD",
+        "Definicion":"Objetos geográficos  relacionados a la actividad sísmica y a la actividad volcánica (IDERA, 2015). Se entiende por vulcanismo al fenómeno de erupción de magma donde la lava, piroclastos y gases volcánicos son eruptados a través de un conducto de la superficie de la Tierra. (SEGEMAR, 2019)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0507",
+        "Nombre_Subclase":"GLACIOLOGÍA",
+        "Definicion":"Objetos geográficos que se relacionan con reservas hídricas estratégicas en estado sólido, nieve, hielo y otras geoformas de origen glaciario (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0509",
+        "Nombre_Subclase":"COBERTURA TERRESTRE",
+        "Definicion":"Este Subgrupo consta de Conceptos que describen la cobertura de la superficie terrestre en una perspectiva global. (Adaptación DFDD)"
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0510",
+        "Nombre_Subclase":"GEOLOGÍA",
+        "Definicion":"Objetos geográficos que hacen referencia a diferentes tipos de roca, según sus propiedades y edad; sus relaciones de contacto y estructuras geológicas (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0511",
+        "Nombre_Subclase":"ECORREGIONES",
+        "Definicion":"Objetos geográficos que hacen referencia a territorios geográficamente definidos en los que dominan determinadas condiciones geomorfológicas y climáticas relativamente uniformes o recurrentes, caracterizados por una fisonomía vegetal de comunidades naturales y seminaturales que comparten un grupo considerable de especies dominantes, una dinámica y condiciones ecológicas generales cuyas interacciones son indispensables para su persistencia a largo plazo (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0512",
+        "Nombre_Subclase":"DEGRADACIÓN DE TIERRAS Y DESERTIFICACIÓN",
+        "Definicion":"Objetos geográficos que se refieren a la degradación de las tierras secas, fenómeno originado por las actividades humanas y las variaciones en el clima (CNULD). "
+    },
+    {
+        "ID_Clase_FK":"05",
+        "ID_Subclase":"0513",
+        "Nombre_Subclase":"ÁREAS DE CONSERVACIÓN",
+        "Definicion":"Objetos geográficos vinculados a áreas definidas geográficamente que han sido designadas, reguladas y administradas a fin de alcanzar objetivos específicos de conservación. Un área protegida es un área manejada con normas que garantizan la protección de los recursos naturales,  culturales y los servicios ecosistémicos (Vida Silvestre)."
+    },
+    {
+        "ID_Clase_FK":"06",
+        "ID_Subclase":"0601",
+        "Nombre_Subclase":"ÁREAS DE CULTIVO ",
+        "Definicion":"Objetos geográficos relacionados a áreas terrestres cultivadas y \/ o manejadas (LCCS FAO, INTA)."
+    },
+    {
+        "ID_Clase_FK":"06",
+        "ID_Subclase":"0602",
+        "Nombre_Subclase":"ÁREAS DE VEGETACIÓN NATURAL HERBÁCEA",
+        "Definicion":"Objetos geográficos referidos a áreas naturales y seminaturales con vegetación herbácea. Estas áreas pueden ser de vegetación predominantemente terrestre o predominantemente acuáticas (LCCS FAO, INTA)."
+    },
+    {
+        "ID_Clase_FK":"06",
+        "ID_Subclase":"0603",
+        "Nombre_Subclase":"ÁREAS DE VEGETACIÓN NATURAL ARBÓREA",
+        "Definicion":"Objetos geográficos referidos a áreas naturales y seminaturales con vegetación arbórea. Estas áreas pueden ser de vegetación predominantemente terrestre o predominantemente acuáticas (LCCS FAO, INTA)."
+    },
+    {
+        "ID_Clase_FK":"06",
+        "ID_Subclase":"0609",
+        "Nombre_Subclase":"ÁREAS DE VEGETACIÓN NATURAL ARBUSTIVA",
+        "Definicion":"Objetos geográficos referidos a áreas naturales y seminaturales con vegetación arbustiva. Estas áreas pueden ser de vegetación predominantemente terrestre o predominantemente acuáticas (LCCS FAO, INTA)."
+    },
+    {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0701",
+        "Nombre_Subclase":"FRONTERAS Y LÍMITES",
+        "Definicion":"Objetos geográficos que se relacionan con la demarcación de diferentes tipos de límites entre jurisdicciones (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0703",
+        "Nombre_Subclase":"REDES GEODÉSICAS",
+        "Definicion":"Objetos geográficos que materializan puntos sobre la superficie terrestre que poseen coordenadas geográficas (latitud, longitud) y altura sobre el nivel medio del mar, o valores de gravedad. Los puntos materializados se denominan pilares o mojones. Un grupo de pilares conforma una red geodésica (IGN, 2018)."
+    },
+    {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0704",
+        "Nombre_Subclase":"PUNTOS Y LÍNEAS TERRESTRES",
+        "Definicion":"Objetos geográficos correspondientes a las líneas y puntos referenciales y principales del sistema de coordenadas terrestres (IGN, 2015)."
+    },
+    {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0705",
+        "Nombre_Subclase":"PLANEAMIENTO URBANO",
+        "Definicion":"Objetos territoriales legales definidos por un Código de Planeamiento Urbano que alcanzan y rigen aquellos asuntos relacionados directa o indirectamente con el uso del suelo, de edificios, estructuras e instalaciones, apertura y ensanche de vías públicas, subdivisión y englobamiento de parcelas, volúmenes edificables, tejido urbano, preservación de ámbitos históricos, arquitectónicos, ambientales y paisajísticos y con aquellos aspectos que tengan relación con el ordenamiento urbanístico del territorio de la Ciudad (AGC Catamarca, 2016)."
+    },
+    {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0706",
+        "Nombre_Subclase":"ORDENAMIENTO TERRITORIAL",
+        "Definicion":"Objetos geográficos que materializan el proceso de planificación territorial e implica la división de un área geográfica en zonas específicas, cada una con regulaciones y características particulares. Este objeto organiza el desarrollo y el uso del suelo y se relaciona con la identificación de tierras fiscales, áreas naturales, areas de sacrificio, productivos y económicos mediante una normativa. "
+    },
+    {
+        "ID_Clase_FK":"09",
+        "ID_Subclase":"0901",
+        "Nombre_Subclase":"INFRAESTRUCTURA DE DEFENSA",
+        "Definicion":"Objetos geográficos que se refieren a las instalaciones militares y a las estructuras operativas (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"10",
+        "ID_Subclase":"1001",
+        "Nombre_Subclase":"FENÓMENOS METEOROLÓGICOS",
+        "Definicion":"Objetos geográficos que describen fenómenos meteorológicos relativamente estables como las condiciones del viento (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"10",
+        "ID_Subclase":"1002",
+        "Nombre_Subclase":"CONDICIONES DEL CLIMA",
+        "Definicion":"Objetos geográficos que describen las condiciones climáticas como la temperatura o la precipitación (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"10",
+        "ID_Subclase":"1003",
+        "Nombre_Subclase":"ZONAS Y REGIONES CLIMÁTICAS",
+        "Definicion":"Objetos geográficos que describen zonas y \/ o regiones de clima con las condiciones climáticas especiales (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"11",
+        "ID_Subclase":"1101",
+        "Nombre_Subclase":"PARCELARIO",
+        "Definicion":"Objetos territoriales legales relacionados con datos concernientes a los objetos territoriales legales de un determinado país o distrito, basado en la mensura de sus límites, metódicamente ordenados (IDERA, 2015)."
+    },
+    {
+        "ID_Clase_FK":"11",
+        "ID_Subclase":"1102",
+        "Nombre_Subclase":"MINERO",
+        "Definicion":"Objetos territoriales legales relacionados al registro público de los Derechos Mineros existentes. Éste mantiene el registro y documentos inherentes de la identificación, ubicación, extensión, tipo y propiedad de las áreas afectadas de solicitudes y derechos mineros. Se encuentra organizado para cumplir funciones fiscales, jurídicas y administrativas (AGC Catamarca, 2016)."
+    },
+    {
+        "ID_Clase_FK":"12",
+        "ID_Subclase":"1201",
+        "Nombre_Subclase":"DIVISIONES CENSALES",
+        "Definicion":"Comprende el conjunto de divisiones del territorio diseñadas por el INDEC que permiten aseguran la cobertura total del país al momento de llevar adelante los distintos operativos censales (INDEC, 2018)."
+    },
+    {
+        "ID_Clase_FK":"12",
+        "ID_Subclase":"1202",
+        "Nombre_Subclase":"ÁREAS URBANAS CENSALES",
+        "Definicion":"Comprende aquellas porciones del territorio donde se asienta la población y que presenta características distintivas y particulares que permiten diferenciarlas de aquellas zonas no urbanas (INDEC, 2018)."
+    }
+]

@@ -1,0 +1,1535 @@
+[
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010101",
+        "Nombre_Objeto":"Yacimiento hidrocarburífero",
+        "Geometria":"Polígono",
+        "Definicion":"Cuerpo geológico aproximado, constituido por petróleo y \/ o gas, económicamente explotable."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010102",
+        "Nombre_Objeto":"Yacimiento mineral",
+        "Geometria":"Polígono",
+        "Definicion":"Parte de la corteza terrestre en la cual, debido a procesos geológicos, ha habido acumulación de  materias primas minerales susceptibles de ser explotadas para el aprovechamiento de sus propiedades físicas o químicas."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010103",
+        "Nombre_Objeto":"Área de explotación hidrocarburífera",
+        "Geometria":"Polígono",
+        "Definicion":"Área donde se efectúa una actividad extractiva de origen hidrocarburífera para su aprovechamiento económico."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010104",
+        "Nombre_Objeto":"Pozo hidrocarburífero",
+        "Geometria":"Punto",
+        "Definicion":"Perforación realizada con el objetivo de realizar la extracción de hidrocarburos líquidos o gaseosos."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010105",
+        "Nombre_Objeto":"Pozo de agua",
+        "Geometria":"Punto",
+        "Definicion":"Excavación o perforación hecha en la tierra con el objetivo de extraer agua para diversos usos."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010106",
+        "Nombre_Objeto":"Mina de extracción",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Lugar de explotación de sustancias minerales de primera y segunda categoría."
+    },
+    {
+        "ID_Subclase_FK":"0101",
+        "ID_Objeto":"010107",
+        "Nombre_Objeto":"Cantera",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Explotación generalmente a cielo abierto de sustancias minerales de tercera categoría, a partir de la cual se obtienen rocas industriales, ornamentales y otros materiales. Una cantera puede tener más de una cava."
+    },
+    {
+        "ID_Subclase_FK":"0102",
+        "ID_Objeto":"010201",
+        "Nombre_Objeto":"Fábrica",
+        "Geometria":"Punto",
+        "Definicion":"Lugar que posee Instalaciones donde se realiza un conjunto de actividades técnicas destinadas a producir bienes materiales transformando materias primas. Incluye planta de ensamble, entre otros. No incluye astillero, matadero ni establecimiento agroindustrial."
+    },
+    {
+        "ID_Subclase_FK":"0102",
+        "ID_Objeto":"010202",
+        "Nombre_Objeto":"Planta de tratamiento de efluentes cloacales",
+        "Geometria":"Polígono",
+        "Definicion":"Instalaciones destinadas al tratamiento de aguas servidas."
+    },
+    {
+        "ID_Subclase_FK":"0102",
+        "ID_Objeto":"010204",
+        "Nombre_Objeto":"Planta potabilizadora de agua",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Instalaciones cuya función es la producción de agua para consumo humano."
+    },
+    {
+        "ID_Subclase_FK":"0102",
+        "ID_Objeto":"010205",
+        "Nombre_Objeto":"Área de fabricación y procesamiento",
+        "Geometria":"Punto \/ Polígono",
+        "Definicion":"Área con instalaciones para producción o procesamiento de materias primas, transformándolas en bienes o productos utilizables en otras actividades. Incluye parques industriales, polos petroquímicos, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0102",
+        "ID_Objeto":"010206",
+        "Nombre_Objeto":"Pileta de tratamiento",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Depósito destinado al almacenamiento de aguas residuales para su tratamiento."
+    },
+    {
+        "ID_Subclase_FK":"0103",
+        "ID_Objeto":"010301",
+        "Nombre_Objeto":"Área de actividad agrícola",
+        "Geometria":"Polígono",
+        "Definicion":"Área donde se realizan actividades productivas con el fin de obtener materias primas de origen vegetal a través de los cultivos sembrados."
+    },
+    {
+        "ID_Subclase_FK":"0103",
+        "ID_Objeto":"010302",
+        "Nombre_Objeto":"Área de actividad  pecuaria",
+        "Geometria":"Polígono",
+        "Definicion":"Área donde se realiza un proceso de transformación de la materia prima proporcionada por la naturaleza, en este caso el animal y se obtiene, de la aplicación de capital y trabajo del hombre, un producto para satisfacer sus necesidades."
+    },
+    {
+        "ID_Subclase_FK":"0103",
+        "ID_Objeto":"010304",
+        "Nombre_Objeto":"Área de riesgo agropecuario",
+        "Geometria":"Polígono",
+        "Definicion":"Área caracterizada por la combinación de la probabilidad de que se produzca un evento y sus consecuencias negativas sobre la actividad agropecuaria. Principalmente son los riesgos derivados del impacto del clima."
+    },
+    {
+        "ID_Subclase_FK":"0103",
+        "ID_Objeto":"010306",
+        "Nombre_Objeto":"Frigorífico, matadero",
+        "Geometria":"Punto",
+        "Definicion":"Establecimiento donde se lleva a cabo la faena de animales y \/ o el proceso productivo posterior a la matanza. Cuenta con cámara frigorífica en el predio en el que funciona y en él se pueden efectuar o no tareas de elaboración y \/ o industrialización. "
+    },
+    {
+        "ID_Subclase_FK":"0103",
+        "ID_Objeto":"010307",
+        "Nombre_Objeto":"Establecimiento agroindustrial",
+        "Geometria":"Punto",
+        "Definicion":"Estructura dedicada a una serie de actividades de manufacturación mediante las cuales se elaboran materias primas y productos intermedios derivados del sector agrícola. La agroindustria significa así la transformación de productos procedentes de la agricultura, la actividad forestal y la pesca."
+    },
+    {
+        "ID_Subclase_FK":"0104",
+        "ID_Objeto":"010401",
+        "Nombre_Objeto":"Central eléctrica",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Edificio y equipamiento necesario para la generación de energía eléctrica."
+    },
+    {
+        "ID_Subclase_FK":"0104",
+        "ID_Objeto":"010402",
+        "Nombre_Objeto":"Línea de transmisión eléctrica",
+        "Geometria":"Línea",
+        "Definicion":"Sistema de cableado que transmite o distribuye energía eléctrica."
+    },
+    {
+        "ID_Subclase_FK":"0104",
+        "ID_Objeto":"010403",
+        "Nombre_Objeto":"Planta transformadora",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Planta que se encuentra junto a las centrales generadoras o en la periferia de las diversas zonas de consumo, donde se transforma la tensión de la energía eléctrica."
+    },
+    {
+        "ID_Subclase_FK":"0105",
+        "ID_Objeto":"010501",
+        "Nombre_Objeto":"Torre de comunicación",
+        "Geometria":"Punto",
+        "Definicion":"Estructura metálica de gran altura que se utiliza para sostener antenas con fines de transmisión o recepción de ondas electromagnéticas. "
+    },
+    {
+        "ID_Subclase_FK":"0105",
+        "ID_Objeto":"010502",
+        "Nombre_Objeto":"Antena",
+        "Geometria":"Punto",
+        "Definicion":"Dispositivo diseñado con el objetivo de emitir o recibir ondas electromagnéticas. Está ubicado sobre el suelo. (IDECOM 2022)"
+    },
+    {
+        "ID_Subclase_FK":"0105",
+        "ID_Objeto":"010503",
+        "Nombre_Objeto":"Estación terrena satelital",
+        "Geometria":"Punto",
+        "Definicion":"Las estaciones terrenas satelitales son un conjunto de equipos de comunicaciones y de cómputo que son usadas para transmitir o recibir la señal de los satélites."
+    },
+    {
+        "ID_Subclase_FK":"0106",
+        "ID_Objeto":"010601",
+        "Nombre_Objeto":"Ducto",
+        "Geometria":"Línea",
+        "Definicion":"Serie de tubos conectados para el transporte de sólidos, líquidos o gases por bombeo. No incluye acueducto."
+    },
+    {
+        "ID_Subclase_FK":"0107",
+        "ID_Objeto":"010701",
+        "Nombre_Objeto":"Silo",
+        "Geometria":"",
+        "Definicion":""
+    },
+    {
+        "ID_Subclase_FK":"0107",
+        "ID_Objeto":"010702",
+        "Nombre_Objeto":"Tanque de combustible",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Depósito destinado a almacenar combustibles líquidos o gaseosos para su posterior utilización."
+    },
+    {
+        "ID_Subclase_FK":"0108",
+        "ID_Objeto":"010801",
+        "Nombre_Objeto":"Vertedero, basurero",
+        "Geometria":"Polígono",
+        "Definicion":"Área destinada al depósito de materiales de desecho, sin tratamiento previo."
+    },
+    {
+        "ID_Subclase_FK":"0108",
+        "ID_Objeto":"010802",
+        "Nombre_Objeto":"Relleno sanitario",
+        "Geometria":"Polígono",
+        "Definicion":"Área destinada al depósito definitivo de desechos con tratamiento ingenieril."
+    },
+    {
+        "ID_Subclase_FK":"0108",
+        "ID_Objeto":"010803",
+        "Nombre_Objeto":"Planta de tratamiento de residuos",
+        "Geometria":"Polígono",
+        "Definicion":"Instalaciones donde se realiza algún tipo de clasificación o tratamiento a los residuos. Incluye plantas de residuos patológicos plantas recicladoras, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0108",
+        "ID_Objeto":"010804",
+        "Nombre_Objeto":"Planta de tratamiento de residuos",
+        "Geometria":"Punto",
+        "Definicion":"Contenedores para colocar residuos clasificados de botellas PET y vidrio."
+    },
+    {
+        "ID_Subclase_FK":"0201",
+        "ID_Objeto":"020102",
+        "Nombre_Objeto":"Sitio de interés",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Lugar declarado de importancia o de interés. Incluye sitio arqueológico, sitio histórico, entre otros. No incluye ruina."
+    },
+    {
+        "ID_Subclase_FK":"0201",
+        "ID_Objeto":"020103",
+        "Nombre_Objeto":"Asentamiento humano",
+        "Geometria":"Punto",
+        "Definicion":"Porción del territorio en donde se asienta la población o se evidencia la presencia de una acción estatal. Se caracteriza por presentar viviendas, aunque estén deshabitadas, edificios donde se asientan dependencias oficiales, edificios donde se concentran las actividades administrativas de explotaciones productivas o alguna infraestructura importante. "
+    },
+    {
+        "ID_Subclase_FK":"0201",
+        "ID_Objeto":"020106",
+        "Nombre_Objeto":"Casco de estancia",
+        "Geometria":"Punto",
+        "Definicion":"Infraestructura principal, destinada a la vivienda, de un establecimiento rural cuyo principal uso es la cria extensiva de ganado, incluyendo estructuras y reducidas zonas de cultivos. (IDETDF 2022)"
+    },
+    {
+        "ID_Subclase_FK":"0201",
+        "ID_Objeto":"020104",
+        "Nombre_Objeto":"Planta urbana",
+        "Geometria":"Polígono",
+        "Definicion":"Área urbana aproximada que incluye la zona contigua de amanzanamiento edificado, cuyos límites son reconocibles."
+    },
+    {
+        "ID_Subclase_FK":"0202",
+        "ID_Objeto":"020201",
+        "Nombre_Objeto":"Cementerio",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Espacio público o privado reservado para dar sepultura. Incluye cementerio parque, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0202",
+        "ID_Objeto":"020202",
+        "Nombre_Objeto":"Refugio",
+        "Geometria":"Punto",
+        "Definicion":"Estructura destinada a dar albergue eventualmente en zonas carentes de medios o bajo condiciones adversas."
+    },
+    {
+        "ID_Subclase_FK":"0202",
+        "ID_Objeto":"020203",
+        "Nombre_Objeto":"Monumento",
+        "Geometria":"Punto",
+        "Definicion":"Obra arquitectónica o artística, sea conmemorativa o histórica. Incluye estatua, fuente, busto, inscripción, monolito, calvario, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0202",
+        "ID_Objeto":"020204",
+        "Nombre_Objeto":"Espacio verde",
+        "Geometria":"Polígono",
+        "Definicion":"Terreno reservado en toda planta urbana como espacio destinado a jardines para recreo y expansión de la población. Incluye plaza, plaza seca, rotonda, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020301",
+        "Nombre_Objeto":"Complejo comercial",
+        "Geometria":"Polígono",
+        "Definicion":"Instalación que consiste en locales comerciales y puede tener locales gastronómicos, de entretenimiento y de otros rubros. Puede contar con una amplia zona de estacionamiento. Incluye supermercado, mercado, mercado concentrador, entre otros. \n"
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020302",
+        "Nombre_Objeto":"Centro de convenciones",
+        "Geometria":"Polígono",
+        "Definicion":"Área donde existen instalaciones permanentes para realizar convenciones y exhibiciones."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020303",
+        "Nombre_Objeto":"Alojamiento Turístico",
+        "Geometria":"Polígono",
+        "Definicion":"Establecimiento de uso público que brinda alojamiento en forma habitual o temporaria,  por un período determinado. Ley 4631\/13 CABA."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020304",
+        "Nombre_Objeto":"Prestador Turístico",
+        "Geometria":"Punto",
+        "Definicion":"Personas físicas o jurídicas que en forma habitual y permanente, o transitoria, desarrollan actividades con fines de lucro, dirigidas a los turistas (Ley provincial T.D.F. N°65)."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020305",
+        "Nombre_Objeto":"Agencia de Viajes",
+        "Geometria":"Punto",
+        "Definicion":"Personas físicas o jurídicas que estén inscriptas en el Registro Nacional de Agentes de Viajes a cargo de la Federación Argentina de Asociaciones de Empresas de Viajas y Turismo ( Resolución Infuetur N° 541\/2024)."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020306",
+        "Nombre_Objeto":"Instalación Turística",
+        "Geometria":"Punto",
+        "Definicion":"Infraestructuras de pequeña escala, las cuales facilitan las pácticas netamente turísticas y que son imprescindibles para que una actividad pueda desarrollarse."
+    },
+    {
+        "ID_Subclase_FK":"0203",
+        "ID_Objeto":"020307",
+        "Nombre_Objeto":"Evento Turístico",
+        "Geometria":"Punto",
+        "Definicion":"Son aquellos eventos de relevancia que estén organizados, o cuenten con la colaboración, de las Organizaciones de Gestión del Destino (OGD), que tiendan a generar la llegada de turistas, que aporte al posicionamiento  y visibilidad del destino, y sean limitados en el teimpo (INFUETUR)"
+    },
+    {
+        "ID_Subclase_FK":"0204",
+        "ID_Objeto":"020401",
+        "Nombre_Objeto":"Instalación deportiva y de esparcimiento",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Instalación destinada al desarrollo de actividades sociales, recreativas y deportivas. Hace referencia a club, balneario, polígono de tiro, conjunto de canchas, campo de golf, campo de polo, pista de carreras, estadio, gimnasios urbanos, postas deportiva\/aerobica, entre otros. "
+    },
+    {
+        "ID_Subclase_FK":"0204",
+        "ID_Objeto":"020402",
+        "Nombre_Objeto":"Centro de esquí",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Área que dispone de equipamiento para actividades recreativas de esparcimiento y deportes de invierno y verano en un espacio gragráfico delimitado por colinas o montañas. Puede contener alojamiento y establecimientos gastronómicos (INFUERTUR)."
+    },
+    {
+        "ID_Subclase_FK":"0204",
+        "ID_Objeto":"020403",
+        "Nombre_Objeto":"Centro de esquí",
+        "Geometria":"Linea",
+        "Definicion":"Itinerario que cuentan con señalización y curo recorrido se encuentra dentro de las áreas recreativas y turísticas."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020501",
+        "Nombre_Objeto":"Casa de gobierno",
+        "Geometria":"Punto",
+        "Definicion":"Asiento del Poder Ejecutivo de la Nación o Provincia."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020502",
+        "Nombre_Objeto":"Congreso",
+        "Geometria":"Punto",
+        "Definicion":"Asiento del Poder Legislativo de la Nación, Provincia o Ciudad Autónoma de Buenos Aires. También se lo denomina Legislatura."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020504",
+        "Nombre_Objeto":"Municipio, comuna",
+        "Geometria":"Punto",
+        "Definicion":"Asiento de la autoridad comunal."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020503",
+        "Nombre_Objeto":"Tribunales",
+        "Geometria":"Punto",
+        "Definicion":"Asiento de la autoridad del Poder Judicial de la Nación o Provincia."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020505",
+        "Nombre_Objeto":"Delegación municipal, delegación comunal",
+        "Geometria":"Punto",
+        "Definicion":"Sede de descentralización del gobierno local."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020506",
+        "Nombre_Objeto":"Ministerio, secretaría",
+        "Geometria":"Punto",
+        "Definicion":"Organismo ejecutivo del Estado de más alta jerarquía, inmediatamente por debajo del Presidente de la Nación en el caso del gobierno nacional, y de los gobernadores en el caso de las provincias, y del Jefe de Gobierno de la Ciudad de Buenos Aires, en el caso de la Ciudad Autónoma de Buenos Aires."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020507",
+        "Nombre_Objeto":"Juzgado",
+        "Geometria":"Punto",
+        "Definicion":"Tribunal u órgano jurisdiccional con asiento de un juez.  "
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020508",
+        "Nombre_Objeto":"Registro del estado civil y capacidad de las personas",
+        "Geometria":"Punto",
+        "Definicion":"Organismo donde se asientan las actividades inherentes al registro del estado civil y la capacidad de las personas, de acuerdo a las disposiciones de leyes y decretos nacionales, provinciales y sus reglamentaciones, a fin de obtener su registración e identificación. Registra hechos vinculados al estado civil o la capacidad de las personas, como inscripción de nacimientos, matrimonios, defunciones, toma razón de aquellos hechos y actos jurídicos de carácter complementario, como adopciones, reconocimientos, divorcios, rectificaciones, anulaciones de registros y toda otra situación jurídicamente relevante que incida en las constancias registrales."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020509",
+        "Nombre_Objeto":"Centro cívico",
+        "Geometria":"Punto",
+        "Definicion":"Equipamiento de carácter público para la prestación de servicios y actividades socioculturales, que actúa como lugar polivalente para facilitar el encuentro de personas, con el fin de fomentar la participación activa de la ciudadanía."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020510",
+        "Nombre_Objeto":"Centro integrador comunitario",
+        "Geometria":"Punto",
+        "Definicion":"Espacio público de integración comunitaria, construido para el encuentro y la participación de diferentes actores que trabajan de modo intersectorial y participativo con el objetivo de promover el desarrollo local en pos de la inclusión social y del mejoramiento de la calidad de vida de las comunidades. Es una instancia de articulación entre el Gobierno nacional, provincial, municipal, organizaciones sociales y políticas y la sociedad civil."
+    },
+    {
+        "ID_Subclase_FK":"0205",
+        "ID_Objeto":"020511",
+        "Nombre_Objeto":"Otro edificio gubernamental",
+        "Geometria":"Punto",
+        "Definicion":"Hace referencia a otro tipo de edificio gubernamental no contemplado en los anteriores dominios. En este caso, los atributos de toponimia podrán aclararlo. Incluye comisionado comunal, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0206",
+        "ID_Objeto":"020601",
+        "Nombre_Objeto":"Establecimiento educativo",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Es la unidad institucional donde se registra la oferta educativa, cuya creación o autorización se registra bajo un acto administrativo - ley, decreto, resolución o disposición. Existe en él una autoridad máxima coo responsable pedagógico administrativo, con una planta funcional asignada, para impartir educacióna un grupo de alumnos. El establecimiento constituye la unidad organizacional que contiene en su interior a la\/s unidades educativas, las cuales forman parte del establecimiento y se corresponden con cada uno de los niveles de enseñanza para los cuales se imparte educación. Un establecimiento puede funcionar en una o varias localizaciones geográficas. En caso de ser varias se compone de sede\/s y anexo\/s. Sede: es la localización donde cumple sus funciones la máxima autoridad pedagógica administrativa del establecimiento. La sede puede no tener alumnos. Anexo: es la localización donde funciona una sección o grupo de secciones que depende pedagógica y administrativamente de una localización sede y funciona en otro lugar geográfico (Ministerio de Educación, Ciencia y Tecnología, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"0206",
+        "ID_Objeto":"020602",
+        "Nombre_Objeto":"Institución universitaria",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Institución de enseñanza superior que otorga distintos grados académicos. Incluye Universidades e Institutos Universitarios. "
+    },
+    {
+        "ID_Subclase_FK":"0207",
+        "ID_Objeto":"020701",
+        "Nombre_Objeto":"Edificio religioso",
+        "Geometria":"Punto",
+        "Definicion":"Construcción destinada a la práctica de actividades religiosas."
+    },
+    {
+        "ID_Subclase_FK":"0207",
+        "ID_Objeto":"020702",
+        "Nombre_Objeto":"Edificio de cultura",
+        "Geometria":"Punto",
+        "Definicion":"Construcción destinada a la manifestación de expresiones culturales y artísticas."
+    },
+    {
+        "ID_Subclase_FK":"0208",
+        "ID_Objeto":"020801",
+        "Nombre_Objeto":"Edificio de salud",
+        "Geometria":"Punto",
+        "Definicion":"Construcción destinada a la asistencia de personas. Incluye hospital, sala de primeros auxilios, puesto asistencial, dispensario, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0209",
+        "ID_Objeto":"020901",
+        "Nombre_Objeto":"Centro científico",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Instalaciones destinadas a realizar investigaciones científicas. Incluye observatorio astronómico, polo científico y tecnológico, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0210",
+        "ID_Objeto":"021001",
+        "Nombre_Objeto":"Ex centro clandestino de detencion",
+        "Geometria":"Punto",
+        "Definicion":"Lugares que funcionaron como centros clandestinos de detención, durante el terrorismo de Estado ejercido en el país hasta el 10 de diciembre de 1983. (Leyes Nacional 26691 y Provincial 13584). Se incluye toda dependencia, lugar o predio militar, policial, privado o de propiedad estatal, que durante el período mencionado, hubiera alojado detenidos en forma ilegal o clandestina. (Sec DDHH Bs As - 2019)"
+    },
+    {
+        "ID_Subclase_FK":"0210",
+        "ID_Objeto":"021002",
+        "Nombre_Objeto":"Comunidades indígenas",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Area de influencia aproximada de aquellas comunidades indígenas en actividad, radicadas en el actual territorio de la República Argentina, considerando que acorde al Art. Nº 2 de la Ley Nº 23.302 (y su Decreto regalmentario 155\/89) \"Se entenderá como comunidades indígenas á los conjuntos de familias que se reconozcan como tales por el hecho de descender de poblaciones que habitaban el territorio nacional en la época de la conquista o colonización e indígenas o indios a los miembros de dicha comunidad. NO representa ocupación territorial efectiva (la cual se establece a través del Programa Nacional Relevamiento Territorial de Comunidades Indígena RETECI, Resolución INAI Nº 587\/07, para la ejecución Ley Nacional Nº 26.160)” (CPAI - Subsec. DDHH Bs As - 2021)"
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030201",
+        "Nombre_Objeto":"Red vial",
+        "Geometria":"Línea",
+        "Definicion":"Trayecto diseñado con una superficie especialmente preparada, que se mantiene para ser usado por vehículos generalmente a motor."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030202",
+        "Nombre_Objeto":"Calle",
+        "Geometria":"Línea",
+        "Definicion":"Vía de transporte para circulación en el interior de una planta urbana y que no es parte del acceso a la misma. Delimita las manzanas."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030203",
+        "Nombre_Objeto":"Huella",
+        "Geometria":"Línea",
+        "Definicion":"Camino de acceso y recorrido de establecimientos. Incluye caminos de poca importancia que se desprenden de caminos de tierra, caminos demarcados en loteos, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030204",
+        "Nombre_Objeto":"Senda",
+        "Geometria":"Línea",
+        "Definicion":"Camino angosto de trazo sinuoso,  abierto por el tránsito de personas, vehículos y\/ o animales."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030205",
+        "Nombre_Objeto":"Picada",
+        "Geometria":"Línea",
+        "Definicion":"Desmonte con diseño específico hecho con el objetivo de realizar estudios sísmicos, cortafuegos, gasoductos, oleoductos, u otros fines."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030206",
+        "Nombre_Objeto":"Línea de bus ",
+        "Geometria":"Línea",
+        "Definicion":"Recorrido de una línea de autotransporte público de pasajeros . "
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030207",
+        "Nombre_Objeto":"Parada de bus",
+        "Geometria":"Punto",
+        "Definicion":"Parada correspondiente a una línea de servicios de autotransporte público de pasajeros."
+    },
+    {
+        "ID_Subclase_FK":"0302",
+        "ID_Objeto":"030208",
+        "Nombre_Objeto":"Estación de ómnibus",
+        "Geometria":"Punto",
+        "Definicion":"Predio destinado a la maniobra de ómnibus nacionales e internacionales, carga, ascenso y descenso de pasajeros. Puede o no tener aduana."
+    },
+    {
+        "ID_Subclase_FK":"0304",
+        "ID_Objeto":"030403",
+        "Nombre_Objeto":"Puerto",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Lugar dotado de instalaciones de terminales y de transferencia para la carga y descarga de mercaderías o pasajeros. Incluye atracadero para balsas, clubes deportivos y cualquier otra instalación para transferencia de pasajeros y \/ o mercaderías. No incluye puerto natural."
+    },
+    {
+        "ID_Subclase_FK":"0304",
+        "ID_Objeto":"030404",
+        "Nombre_Objeto":"Muelle",
+        "Geometria":"Línea",
+        "Definicion":"Obra construida sobre el agua, afianzada en el lecho acuático por medio de bases que la sostienen firmemente, para facilitar tareas de atraque de embarcaciones, carga, descarga, embarque."
+    },
+    {
+        "ID_Subclase_FK":"0304",
+        "ID_Objeto":"030405",
+        "Nombre_Objeto":"Vía navegable",
+        "Geometria":"Línea\/Polígono",
+        "Definicion":"Vía  definida y mantenida por autoridad competente que permite la navegación de una embarcación. Incluye traza de canales en el Río de la Plata, accesos a puertos de La Plata, Buenos Aires y Bahía Blanca, entre otros. Incluye hidrovía."
+    },
+    {
+        "ID_Subclase_FK":"0304",
+        "ID_Objeto":"030406",
+        "Nombre_Objeto":"Ayuda a la navegación",
+        "Geometria":"Punto",
+        "Definicion":"Objeto flotante o terrestre instalado en un lugar en particular cuya finalidad es servir como una ayuda a la navegación o para otros fines específicos. Incluye faro, boya, baliza, semáforo de costa, señal de niebla, luces, radiofaro, señal de enfilación, sistemas de posicionamiento fijo, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0304",
+        "ID_Objeto":"030407",
+        "Nombre_Objeto":"Obstáculo para la navegación",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Elemento o condición que podría impedir, obstruir, poner en peligro o constituir de otro modo un peligro para la seguridad a la navegación. Incluye naufragio, roca, fondo sucio, rompiente, escarceo, entre otros. No incluye bajo, banco."
+    },
+    {
+        "ID_Subclase_FK":"0305",
+        "ID_Objeto":"030501",
+        "Nombre_Objeto":"Aeródromo",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Zona definida sobre tierra o agua (incluidos eventuales edificios, instalaciones y equipos), cuyo propósito es ser utilizada total o parcialmente para la llegada, salida y movimiento en superficie de aeronaves y \/ o helicópteros."
+    },
+    {
+        "ID_Subclase_FK":"0305",
+        "ID_Objeto":"030502",
+        "Nombre_Objeto":"Ruta aérea ",
+        "Geometria":"Línea",
+        "Definicion":"Línea que representa el corredor aéreo definido entre el aeródromo de origen y el aeródromo de destino."
+    },
+    {
+        "ID_Subclase_FK":"0305",
+        "ID_Objeto":"030503",
+        "Nombre_Objeto":"Pista ",
+        "Geometria":"Línea",
+        "Definicion":"Calzada rectangular de tierra o asfalto, definida en un campo de aviación o aeropuerto, utilizada para despegue y aterrizaje de aeronaves."
+    },
+    {
+        "ID_Subclase_FK":"0305",
+        "ID_Objeto":"030504",
+        "Nombre_Objeto":"Superficie de despegue",
+        "Geometria":"Polígono",
+        "Definicion":"Espacio aéreo que debe mantenerse libre de obstáculos alrededor de un aeródromo para que puedan llevarse a cabo con seguridad las operaciones de aeronaves previstas, evitando que el aeródromo quede inutilizado por la multiplicidad de obstáculos en sus alrededores."
+    },
+    {
+        "ID_Subclase_FK":"0306",
+        "ID_Objeto":"030601",
+        "Nombre_Objeto":"Puesto de control",
+        "Geometria":"Punto",
+        "Definicion":"Lugar con instalaciones para controlar el paso, declarar y\/o inspeccionar los bienes, vehículos y\/o personas."
+    },
+    {
+        "ID_Subclase_FK":"0307",
+        "ID_Objeto":"030701",
+        "Nombre_Objeto":"Puente",
+        "Geometria":"Punto\/Línea",
+        "Definicion":"Estructura que asegura la continuidad de una vía de transporte (red vial, calle, ferrocarril, entre otros) sobre un obstáculo natural o artificial del terreno (corriente de agua, canal, entre otros)."
+    },
+    {
+        "ID_Subclase_FK":"0307",
+        "ID_Objeto":"030706",
+        "Nombre_Objeto":"Pasarela",
+        "Geometria":"Punto\/Línea",
+        "Definicion":"Estructura que permite el paso de peatones salvando algún obstáculo."
+    },
+    {
+        "ID_Subclase_FK":"0307",
+        "ID_Objeto":"030707",
+        "Nombre_Objeto":"Cobertizo para nieve",
+        "Geometria":"Punto\/Línea",
+        "Definicion":"Estructura de madera, mampostería u hormigón, construida en los faldeos de los cerros, para proteger a las vías de transporte de la acumulación de nieve, derrumbes y avalanchas."
+    },
+    {
+        "ID_Subclase_FK":"0307",
+        "ID_Objeto":"030708",
+        "Nombre_Objeto":"Guardaganado",
+        "Geometria":"Punto",
+        "Definicion":"Reja de hierro o madera colocada transversalmente sobre un lugar de tránsito vial, para impedir el paso del ganado."
+    },
+    {
+        "ID_Subclase_FK":"0308",
+        "ID_Objeto":"030801",
+        "Nombre_Objeto":"Estación de servicio",
+        "Geometria":"Punto",
+        "Definicion":"Instalación ubicada a la vera de una vía de comunicación, destinada a la provisión de combustible y asistencia mecánica a automotores."
+    },
+    {
+        "ID_Subclase_FK":"0308",
+        "ID_Objeto":"030807",
+        "Nombre_Objeto":"Bicisenda",
+        "Geometria":"Línea",
+        "Definicion":"Sector señalizado y especialmente acondicionado en aceras y espacios verdes para la circulación de ciclo rodados. Las bicisendas se pueden instalar siempre que no generen conflictos con la circulación peatonal y sólo cuando en los tramos de arterias correspondientes no exista posibilidad de demarcar una ciclovía o ciclocarril."
+    },
+    {
+        "ID_Subclase_FK":"0401",
+        "ID_Objeto":"040101",
+        "Nombre_Objeto":"Océano",
+        "Geometria":"Polígono",
+        "Definicion":"Vasta extensión de agua salada que ocupa cuencas oceánicas."
+    },
+    {
+        "ID_Subclase_FK":"0401",
+        "ID_Objeto":"040102",
+        "Nombre_Objeto":"Costa",
+        "Geometria":"Línea",
+        "Definicion":"Es la línea del nivel de agua más alto. Si existe una playa, la línea de costa es el límite de la playa hacia el lado de la tierra, por lo que corresponde aproximadamente a la marca de agua más alta de las mareas más altas."
+    },
+    {
+        "ID_Subclase_FK":"0401",
+        "ID_Objeto":"040103",
+        "Nombre_Objeto":"Playa",
+        "Geometria":"Polígono",
+        "Definicion":"Área ribereña de mar, corriente de agua o espejo de agua, que por lo general se caracteriza por ser una superficie casi plana de arena, conchilla o grava."
+    },
+    {
+        "ID_Subclase_FK":"0401",
+        "ID_Objeto":"040104",
+        "Nombre_Objeto":"Accidente costero",
+        "Geometria":"Línea",
+        "Definicion":"Configuración geomorfológica de la zona litoral. "
+    },
+    {
+        "ID_Subclase_FK":"0401",
+        "ID_Objeto":"040105",
+        "Nombre_Objeto":"Isla",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Parte de la superficie terrestre rodeada de agua y de dimensiones menores que un continente. "
+    },
+    {
+        "ID_Subclase_FK":"0403",
+        "ID_Objeto":"040301",
+        "Nombre_Objeto":"Curva batimétrica",
+        "Geometria":"Línea",
+        "Definicion":"Línea trazada en un espejo de agua, corriente de agua, mar u océano, que une puntos de igual profundidad respecto de un nivel de referencia definido. También se la denomina isobata."
+    },
+    {
+        "ID_Subclase_FK":"0406",
+        "ID_Objeto":"040601",
+        "Nombre_Objeto":"Mareógrafo, hidrómetro",
+        "Geometria":"Punto",
+        "Definicion":"Dispositivo instalado con el fin de registrar las variaciones del nivel del agua a través del tiempo."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041101",
+        "Nombre_Objeto":"Acueducto",
+        "Geometria":"Línea",
+        "Definicion":"Conducto artificial que transporta agua en forma de flujo continuo con el objetivo de que esta sea accesible para su consumo u otros usos."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041102",
+        "Nombre_Objeto":"Canal",
+        "Geometria":"Línea\/Polígono",
+        "Definicion":"Excavación artificial sin flujo o con flujo controlado, construido con el objetivo de transportar agua."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041103",
+        "Nombre_Objeto":"Corriente de agua",
+        "Geometria":"Línea\/Polígono",
+        "Definicion":"Flujo natural de agua que sigue los desniveles del terreno, siendo arreico o desembocando en otra corriente de agua, en un espejo de agua o en el mar."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041108",
+        "Nombre_Objeto":"Espejo de agua",
+        "Geometria":"Polígono",
+        "Definicion":"Cuerpo natural o artificial de agua, dulce o salada, cuyo aporte proviene de corrientes de agua, afloramientos subterráneos o precipitaciones. Quedan excluidos los embalses y los embalses rurales."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041109",
+        "Nombre_Objeto":"Fuente natural",
+        "Geometria":"Punto",
+        "Definicion":"Flujo natural de agua formado por drenaje en la superficie o por afloramiento de la freática subterránea."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041110",
+        "Nombre_Objeto":"Catarata, cascada, salto",
+        "Geometria":"Punto\/Línea",
+        "Definicion":"Caída vertical de un curso de agua, producida por brusco desnivel del cauce. "
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041112",
+        "Nombre_Objeto":"Humedal",
+        "Geometria":"Polígono",
+        "Definicion":"Áreas del territorio que se caracterizan por la presencia temporaria o permanente de agua, suelos o sustratos característicos y biota adaptada a estas condiciones, comúnmente plantas hidrófitas. Incluye las extensiones de marismas, pantanos y turberas, o superficies cubiertas de aguas, sean éstas de régimen natural o artificial, permanentes o temporales, estancadas o corrientes, dulces, salobres o saladas, incluidas las extensiones de agua marina cuya profundidad en marea baja no exceda de seis metros."
+    },
+    {
+        "ID_Subclase_FK":"0411",
+        "ID_Objeto":"041114",
+        "Nombre_Objeto":"Cuenca hidrográfica",
+        "Geometria":"Polígono",
+        "Definicion":"Territorio drenado por un único sistema de drenaje natural, es decir, que a través de un curso hídrico, sus aguas pueden dar a un cuerpo de agua, infiltrarse o evaporarse.​ Una cuenca hidrográfica es delimitada por la línea de las cumbres, también llamada divisoria de aguas."
+    },
+    {
+        "ID_Subclase_FK":"0501",
+        "ID_Objeto":"050101",
+        "Nombre_Objeto":"Curva de nivel",
+        "Geometria":"Línea",
+        "Definicion":"Línea que une puntos que tienen el mismo valor de altitud respecto al nivel medio del mar. También se la denomina isohipsa o curva hipsométrica."
+    },
+    {
+        "ID_Subclase_FK":"0501",
+        "ID_Objeto":"050102",
+        "Nombre_Objeto":"Punto acotado",
+        "Geometria":"Punto",
+        "Definicion":"Punto del terreno que ha sido medido altimétricamente y no está materializado en el terreno."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050201",
+        "Nombre_Objeto":"Abra, paso, portillo, portezuelo",
+        "Geometria":"Punto",
+        "Definicion":"Depresión del terreno entre dos alturas o cerros, que constituye un portal en unos casos o simplemente una puerta de paso a valles situados a ambos lados."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050202",
+        "Nombre_Objeto":"Caverna, gruta, cueva",
+        "Geometria":"Punto",
+        "Definicion":"Cavidad subterránea y profunda, de formación natural o artificial, producida en la montaña o en la roca."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050203",
+        "Nombre_Objeto":"Cerro",
+        "Geometria":"Punto",
+        "Definicion":"Elevación que sobresale de los lineamientos serranos o montañosos. Incluye monte, morro, nevado, pico, entre otros. No incluye volcán. El nevado es un cerro de gran altura que posee nieves perpetuas en su cumbre y permanece blanco durante todo el año. Un pico es una elevación montañosa, de cumbre aguda y puntiaguda con flancos escarpados. "
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050205",
+        "Nombre_Objeto":"Médano, duna",
+        "Geometria":"Polígono",
+        "Definicion":"Acumulación de sedimentos sueltos, tamaño arena, que puede trasladarse por acción del viento. Puede estar en ambiente continental o costero."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050206",
+        "Nombre_Objeto":"Meseta",
+        "Geometria":"Polígono",
+        "Definicion":"Forma de relieve elevada, plana y generalmente de gran extensión, limitada por barrancas, circundada por valles. "
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050208",
+        "Nombre_Objeto":"Sierra",
+        "Geometria":"Línea",
+        "Definicion":"Secuencia eslabonada de cerros que en conjunto presentan disposición longilínea y altitudes intermedias entre la cordillera y montañas. Incluye la serranía, entendida como una extensión sinónima de sierra, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050209",
+        "Nombre_Objeto":"Barranca",
+        "Geometria":"Línea",
+        "Definicion":"Desnivel pronunciado del terreno con pendiente variable y de origen diverso. En el caso de costa marina se denomina acantilado. En el caso de origen fluvial se denomina barranca. Si se encuentra en terreno no anexo a una corriente de agua o mar se denomina escarpa o barda. "
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050210",
+        "Nombre_Objeto":"Quebrada, cañadón, garganta",
+        "Geometria":"Línea",
+        "Definicion":"Valle de paredes abruptas más o menos profundo que generalmente puede estar surcado por un curso de agua permanente o temporario. Incluye cajón, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050211",
+        "Nombre_Objeto":"Cordillera",
+        "Geometria":"Línea",
+        "Definicion":"Secuencia eslabonada de cadenas orográficas de considerable altura con una disposición homogénea y pertenecientes al mismo proceso orogénico."
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050212",
+        "Nombre_Objeto":"Cordón",
+        "Geometria":"Línea",
+        "Definicion":"Grupo de elevaciones con disposición orográfica similar e igual orogenia, que forman parte de una cordillera o sistema montañoso. "
+    },
+    {
+        "ID_Subclase_FK":"0502",
+        "ID_Objeto":"050217",
+        "Nombre_Objeto":"Valle",
+        "Geometria":"Línea",
+        "Definicion":" Forma de erosión fluvial cuyas laderas tienen alturas, pendientes y profundidades diversas."
+    },
+    {
+        "ID_Subclase_FK":"0504",
+        "ID_Objeto":"050401",
+        "Nombre_Objeto":"Suelo consolidado",
+        "Geometria":"Polígono",
+        "Definicion":"Superficie cuyas partes o partículas integrantes están unidas con una gran fuerza de cohesión interna. Corresponde a las rocas. "
+    },
+    {
+        "ID_Subclase_FK":"0504",
+        "ID_Objeto":"050402",
+        "Nombre_Objeto":"Suelo no consolidado",
+        "Geometria":"Polígono",
+        "Definicion":"Superficie constituida por material sedimentario de variados tamaños, desde los mayores a los menores, cuya energía de unión es nula o muy baja."
+    },
+    {
+        "ID_Subclase_FK":"0504",
+        "ID_Objeto":"050403",
+        "Nombre_Objeto":"Suelo congelado",
+        "Geometria":"Polígono",
+        "Definicion":"Superficie de material no consolidado que, por estar en zonas muy frías o por estar siempre cubierto de nieve o hielo, se congela la humedad retenida y con esto aumenta la dureza del mismo."
+    },
+    {
+        "ID_Subclase_FK":"0506",
+        "ID_Objeto":"050602",
+        "Nombre_Objeto":"Estación sismológica",
+        "Geometria":"Punto",
+        "Definicion":"Recinto especialmente diseñado para albergar al sismógrafo. Lo ideal es que se encuentre alejado de ruidos naturales y culturales para aumentar su sensibilidad. Incluye acelerómetro."
+    },
+    {
+        "ID_Subclase_FK":"0506",
+        "ID_Objeto":"050603",
+        "Nombre_Objeto":"Epicentro de sismo",
+        "Geometria":"Punto",
+        "Definicion":"Punto de la superficie de la tierra que está directamente sobre el hipocentro de un sismo."
+    },
+    {
+        "ID_Subclase_FK":"0507",
+        "ID_Objeto":"050701",
+        "Nombre_Objeto":"Glaciar",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Masa de hielo permanente y en movimiento, alimentada desde un ventisquero y que en forma de lengua ocupa un valle moviéndose cuesta abajo. También incluye glaciar de circo, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0507",
+        "ID_Objeto":"050702",
+        "Nombre_Objeto":"Ventisquero",
+        "Geometria":"Polígono",
+        "Definicion":"Zona de alta montaña cubierta de nieve permanente, con precipitación nívea continua y que el viento transporta y acumula constituyendo la zona de acumulación de los glaciares."
+    },
+    {
+        "ID_Subclase_FK":"0507",
+        "ID_Objeto":"050704",
+        "Nombre_Objeto":"Morena, morrena",
+        "Geometria":"Línea\/Polígono",
+        "Definicion":"Lugar de acumulación heterogénea de detritos en cuanto a tamaño y composición que, llevada por el glaciar, es acumulada por éste. "
+    },
+    {
+        "ID_Subclase_FK":"0507",
+        "ID_Objeto":"050708",
+        "Nombre_Objeto":"Barrera de hielo",
+        "Geometria":"Línea\/Polígono",
+        "Definicion":"Masa de hielo permanente, flotante y de espesor variable, formada a lo largo de la costa y que se encuentra adherida a ella avanzando sobre el océano."
+    },
+    {
+        "ID_Subclase_FK":"0510",
+        "ID_Objeto":"051001",
+        "Nombre_Objeto":"Falla",
+        "Geometria":"Línea",
+        "Definicion":"Fractura macroscópica de los materiales de la corteza terrestre acompañada por el desplazamiento de los bloques."
+    },
+    {
+        "ID_Subclase_FK":"0510",
+        "ID_Objeto":"051002",
+        "Nombre_Objeto":"Unidad geológica",
+        "Geometria":"Polígono",
+        "Definicion":"Área cuyo volumen de roca es identificable de acuerdo a su origen y edad."
+    },
+    {
+        "ID_Subclase_FK":"0511",
+        "ID_Objeto":"051101",
+        "Nombre_Objeto":"Ecorregión",
+        "Geometria":"Polígono",
+        "Definicion":"Zona en las que dominan determinadas condiciones geomorfológicas y climáticas relativamente uniformes o recurrentes, caracterizada por una fisonomía vegetal de comunidades naturales y seminaturales que comparten un grupo considerable de especies dominantes, una dinámica y condiciones ecológicas generales cuyas interacciones son indispensables para su persistencia a largo plazo. "
+    },
+    {
+        "ID_Subclase_FK":"0512",
+        "ID_Objeto":"051201",
+        "Nombre_Objeto":"Tierras áridas",
+        "Geometria":"Polígono",
+        "Definicion":"Área clasificada según la escasez estacional y \/ o anual de los recursos hídricos. Se define comúnmente como la insuficiencia de agua en el suelo y en la atmósfera."
+    },
+    {
+        "ID_Subclase_FK":"0512",
+        "ID_Objeto":"051202",
+        "Nombre_Objeto":"Tierras degradadas",
+        "Geometria":"Polígono",
+        "Definicion":"Área que sufre un cambio en la salud del suelo, resultando en una disminución de la capacidad del ecosistema para producir bienes o prestar servicios para sus beneficiarios. Las tierras degradadas cubren todos los cambios negativos en la capacidad del ecosistema para prestar bienes y servicios (incluso biológicos y servicios y bienes relacionados con el agua, y también su relación con bienes y servicios sociales y económicos). "
+    },
+    {
+        "ID_Subclase_FK":"0513",
+        "ID_Objeto":"051301",
+        "Nombre_Objeto":"Área protegida",
+        "Geometria":"Polígono",
+        "Definicion":"Área de tierra y \/ o mar destinada a la protección y mantenimiento de la diversidad biológica y de los recursos naturales y culturales asociados."
+    },
+    {
+        "ID_Subclase_FK":"0513",
+        "ID_Objeto":"051303",
+        "Nombre_Objeto":"Sitio Ramsar",
+        "Geometria":"Polígono",
+        "Definicion":"Son humedales que están incluidos en la Lista de Humedales de Importancia Internacional de la Convención sobre los Humedales (conocida como Convención de Ramsar). https:\/\/www.ramsar.org\/sites\/default\/files\/documents\/library\/ramsarsites_criteria_sp.pdf"
+    },
+    {
+        "ID_Subclase_FK":"0513",
+        "ID_Objeto":"051304",
+        "Nombre_Objeto":"Bosque Nativo",
+        "Geometria":"Polígono",
+        "Definicion":"Áreas de protección ambiental a los bosques nativos según lo establecido en la Ley  de 26.331. (OTBN)"
+    },
+    {
+        "ID_Subclase_FK":"0601",
+        "ID_Objeto":"060101",
+        "Nombre_Objeto":"Área de cultivo de especies arbóreas",
+        "Geometria":"Polígono",
+        "Definicion":"Área dedicada al cultivo de árboles bajo riego o en secano, sean latifoliados o coníferas."
+    },
+    {
+        "ID_Subclase_FK":"0601",
+        "ID_Objeto":"060102",
+        "Nombre_Objeto":"Área de cultivo de arbustos",
+        "Geometria":"Polígono",
+        "Definicion":"Área dedicada al cultivo de arbustos bajo riego o en secano."
+    },
+    {
+        "ID_Subclase_FK":"0601",
+        "ID_Objeto":"060103",
+        "Nombre_Objeto":"Área de cultivo de herbáceas",
+        "Geometria":"Polígono",
+        "Definicion":"Área dedicada al cultivo de herbáceas bajo riego o en secano, sean graminoideas, no graminoideas o múltiples."
+    },
+    {
+        "ID_Subclase_FK":"0602",
+        "ID_Objeto":"060201",
+        "Nombre_Objeto":"Vegetación natural herbácea cerrada",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por pastizal cerrado, sea de cobertura simple, con árboles, con arbustos, o con árboles y arbustos."
+    },
+    {
+        "ID_Subclase_FK":"0602",
+        "ID_Objeto":"060202",
+        "Nombre_Objeto":"Vegetación natural herbácea abierta",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por pastizal abierto, sea de cobertura simple, con árboles, con arbustos, o con árboles y arbustos."
+    },
+    {
+        "ID_Subclase_FK":"0602",
+        "ID_Objeto":"060203",
+        "Nombre_Objeto":"Vegetación natural herbácea dispersa",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por pastizal disperso."
+    },
+    {
+        "ID_Subclase_FK":"0603",
+        "ID_Objeto":"060301",
+        "Nombre_Objeto":"Área de vegetación natural arbórea cerrada",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por bosque cerrado, sea de un estrato arbóreo o de más de un estrato arbóreo, sin emergentes o con emergentes."
+    },
+    {
+        "ID_Subclase_FK":"0603",
+        "ID_Objeto":"060302",
+        "Nombre_Objeto":"Área de vegetación natural arbórea abierta",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por bosque abierto, sea con arbustos, con estrato herbáceo, o con arbustos y emergentes."
+    },
+    {
+        "ID_Subclase_FK":"0603",
+        "ID_Objeto":"060303",
+        "Nombre_Objeto":"Área de vegetación natural arbórea dispersa",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por árboles dispersos."
+    },
+    {
+        "ID_Subclase_FK":"0609",
+        "ID_Objeto":"060901",
+        "Nombre_Objeto":"Área de vegetación natural arbustiva cerrada",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por arbustal cerrado, sea sin emergentes, con árboles emergentes, o con arbustos emergentes."
+    },
+    {
+        "ID_Subclase_FK":"0609",
+        "ID_Objeto":"060902",
+        "Nombre_Objeto":"Área de vegetación natural arbustiva abierta",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por arbustal abierto, sea sin estrato herbáceo o con estrato herbáceo."
+    },
+    {
+        "ID_Subclase_FK":"0609",
+        "ID_Objeto":"060903",
+        "Nombre_Objeto":"Área de vegetación natural arbustiva dispersa",
+        "Geometria":"Polígono",
+        "Definicion":"Área de vegetación natural cubierta por arbustos dispersos."
+    },
+    {
+        "ID_Subclase_FK":"0610",
+        "ID_Objeto":"06904",
+        "Nombre_Objeto":"Castoreras",
+        "Geometria":"Punto",
+        "Definicion":"Diques o madrigueras construidas para protegerse de los depredadores y para acceder rápidamente a la comida, deteniendo el flujo de la corriente."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070101",
+        "Nombre_Objeto":"Línea de base normal",
+        "Geometria":"Línea",
+        "Definicion":"Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea de bajamar a lo largo de la costa. Es la isobata de 0 metro, que corresponde al nivel del datum vertical local."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070102",
+        "Nombre_Objeto":"Línea de base recta",
+        "Geometria":"Línea",
+        "Definicion":"Línea a partir de la cual se mide el mar territorial, zona contigua, zona económica exclusiva y plataforma continental. También representa el límite exterior de las aguas interiores. Se define como la línea recta que une puntos sobre la línea de base normal. Las líneas de base archipelágicas rectas definen la periferia de un grupo  de islas."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070103",
+        "Nombre_Objeto":"Línea de costa",
+        "Geometria":"Línea",
+        "Definicion":"Línea que marca el contacto entre una masa de tierra y un cuerpo de agua, establecida por la línea de las más bajas bajamares, ya sea en las aguas litorales o interiores."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070104",
+        "Nombre_Objeto":"Límite del lecho y subsuelo",
+        "Geometria":"Línea",
+        "Definicion":"Línea demarcatoria de aguas jurisdiccionales en los fondos fluviales, definida en el Tratado del Río de la Plata y su Frente Marítimo."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070105",
+        "Nombre_Objeto":"Límite lateral marítimo",
+        "Geometria":"Línea",
+        "Definicion":"Línea de deslinde entre mares jurisdiccionales contiguos, definida en el Tratado del Río de la Plata su Frente Marítimo."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070106",
+        "Nombre_Objeto":"Límite del Mar Territorial Argentino",
+        "Geometria":"Línea",
+        "Definicion":"Delimitación exterior del Mar Territorial Argentino, el cual se extiende hasta una distancia de 12 millas marinas a partir de las líneas de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070107",
+        "Nombre_Objeto":"Mar Territorial Argentino",
+        "Geometria":"Polígono",
+        "Definicion":"Zona marítima que se extiende hasta una distancia de 12 millas marinas a partir de la línea de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070108",
+        "Nombre_Objeto":"Límite de la Zona Contigua Argentina",
+        "Geometria":"Línea",
+        "Definicion":"Delimitación exterior de la Zona Contigua Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070109",
+        "Nombre_Objeto":"Zona Contigua Argentina",
+        "Geometria":"Polígono",
+        "Definicion":"Zona marítima que se extiende desde el límite exterior del mar territorial, hasta una distancia de 24 millas marinas medidas a partir de las líneas de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070110",
+        "Nombre_Objeto":"Límite de la Zona Económica Exclusiva Argentina",
+        "Geometria":"Línea",
+        "Definicion":"Delimitación exterior de la Zona Económica Exclusiva Argentina, la cual se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070111",
+        "Nombre_Objeto":"Zona Económica Exclusiva Argentina",
+        "Geometria":"Polígono",
+        "Definicion":"Zona marítima que se extiende más allá del límite exterior del mar territorial, hasta una distancia de 200 millas marinas a partir de las líneas de base."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070112",
+        "Nombre_Objeto":"Límite de la Plataforma Continental",
+        "Geometria":"Línea",
+        "Definicion":"Delimitación exterior de la Plataforma Continental, la cual comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas medidas a partir de las líneas de base, en los casos en que el borde exterior no llegue a esa distancia."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070113",
+        "Nombre_Objeto":"Plataforma Continental",
+        "Geometria":"Polígono",
+        "Definicion":"Zona marítima que comprende el lecho y el subsuelo de las áreas submarinas que se extienden más allá del mar territorial y a todo lo largo de la prolongación natural del territorio hasta el borde exterior del margen continental, o bien hasta una distancia de 200 millas marinas contadas desde la línea de base, en los casos en que el borde exterior del margen continental no llegue a esa distancia."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070114",
+        "Nombre_Objeto":"Límite de gobierno local",
+        "Geometria":"Línea",
+        "Definicion":"Línea que constituye la representación de la traza demarcadora que delimita un gobierno local de menor jerarquía que un departamento o partido."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070115",
+        "Nombre_Objeto":"Límite interdepartamental o de partido",
+        "Geometria":"Línea",
+        "Definicion":"Línea que constituye la representación de la traza demarcadora que delimita la jurisdicción de un departamento o partido de otro."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070116",
+        "Nombre_Objeto":"Límite interprovincial",
+        "Geometria":"Línea",
+        "Definicion":"Línea que constituye la representación de la traza demarcadora que delimita una provincia de otra."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070117",
+        "Nombre_Objeto":"Límite internacional",
+        "Geometria":"Línea",
+        "Definicion":"Línea que constituye la representación de la traza demarcadora que delimita un país."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070118",
+        "Nombre_Objeto":"Límite de Zona de Frontera",
+        "Geometria":"Línea",
+        "Definicion":"Línea que constituye la representación de la traza demarcadora que delimita la Zona de Frontera."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070119",
+        "Nombre_Objeto":"Zona de Frontera",
+        "Geometria":"Polígono",
+        "Definicion":"Zona adyacente al límite internacional, que constituye una zona de seguridad destinada a complementar las previsiones territoriales de la defensa nacional y \/ o un área prioritaria para su desarrollo."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070120",
+        "Nombre_Objeto":"Municipio",
+        "Geometria":"Polígono",
+        "Definicion":"División político administrativa de tercer orden, que incluye comunas, juntas vecinales y demás formas de gobierno local."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070121",
+        "Nombre_Objeto":"Departamento",
+        "Geometria":"Polígono",
+        "Definicion":"División político administrativa de segundo orden. Incluye partido y comuna."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070122",
+        "Nombre_Objeto":"Provincia",
+        "Geometria":"Polígono",
+        "Definicion":"División político territorial de primer orden. Incluye la Ciudad Autónoma de Buenos Aires (CABA)."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070123",
+        "Nombre_Objeto":"País",
+        "Geometria":"Polígono",
+        "Definicion":"Nación jurídicamente organizada."
+    },
+    {
+        "ID_Subclase_FK":"0701",
+        "ID_Objeto":"070124",
+        "Nombre_Objeto":"Paso fronterizo",
+        "Geometria":"Punto",
+        "Definicion":"Punto geográfico (hecho físico) que permite ingresar o salir de un país."
+    },
+    {
+        "ID_Subclase_FK":"0703",
+        "ID_Objeto":"070301",
+        "Nombre_Objeto":"Red RAMSAC",
+        "Geometria":"Punto",
+        "Definicion":"Red de estaciones GPS\/GNSS permanentes que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007. Esta red es denominada Red Argentina de Monitoreo Satelital Continuo (RAMSAC)."
+    },
+    {
+        "ID_Subclase_FK":"0703",
+        "ID_Objeto":"070302",
+        "Nombre_Objeto":"Red Geocéntrica",
+        "Geometria":"Punto",
+        "Definicion":"Red de pilares o mojones de primer orden que poseen coordenadas en el Marco de Referencia Geodésico Nacional POSGAR 2007."
+    },
+    {
+        "ID_Subclase_FK":"0703",
+        "ID_Objeto":"070303",
+        "Nombre_Objeto":"Red Altimérica",
+        "Geometria":"Punto",
+        "Definicion":"Red de pilares o mojones que poseen una altura referida al nivel medio del mar, a la que se la denomina cota."
+    },
+    {
+        "ID_Subclase_FK":"0703",
+        "ID_Objeto":"070304",
+        "Nombre_Objeto":"Red gravimétrica",
+        "Geometria":"Punto",
+        "Definicion":"Red de pilares o mojones que poseen un valor de aceleración de la gravedad en el datum gravimétrico por el Instituto Geográfico Nacional."
+    },
+    {
+        "ID_Subclase_FK":"0704",
+        "ID_Objeto":"070401",
+        "Nombre_Objeto":"Círculo Polar",
+        "Geometria":"Línea",
+        "Definicion":"Cada uno de los dos paralelos situados a 66º 33' 45\" Norte y 66º 33' 45\" Sur, refiriéndose respectivamente a los círculos polares Ártico y Antártico."
+    },
+    {
+        "ID_Subclase_FK":"0704",
+        "ID_Objeto":"070402",
+        "Nombre_Objeto":"Trópico",
+        "Geometria":"Línea",
+        "Definicion":"Cada uno de los dos círculos imaginarios de la esfera celeste paralelos al Ecuador, ubicados aproximadamente a la latitudes  de 23º 26` 17``,43 Norte y 23º 26` 17``,43 Sur."
+    },
+    {
+        "ID_Subclase_FK":"0704",
+        "ID_Objeto":"070403",
+        "Nombre_Objeto":"Ecuador",
+        "Geometria":"Línea",
+        "Definicion":"Círculo máximo, perpendicular al eje de rotación de la Tierra que la divide en dos hemisferios: Norte y Sur. En él se origina la coordenada geográfica latitud."
+    },
+    {
+        "ID_Subclase_FK":"0704",
+        "ID_Objeto":"070404",
+        "Nombre_Objeto":"Meridiano de Greenwich",
+        "Geometria":"Línea",
+        "Definicion":"Meridiano que pasa por el Real Observatorio de Greenwich, aceptado universalmente como meridiano principal, de longitud cero. A partir de él se mide la coordenada longitud."
+    },
+    {
+        "ID_Subclase_FK":"0704",
+        "ID_Objeto":"070405",
+        "Nombre_Objeto":"Polo",
+        "Geometria":"Punto",
+        "Definicion":"Cada uno de los dos puntos más septentrional y más austral de la superficie terrestre, opuestos entre sí."
+    },
+    {
+        "ID_Subclase_FK":"0705",
+        "ID_Objeto":"070702",
+        "Nombre_Objeto":"Barrio",
+        "Geometria":"Polígono",
+        "Definicion":"División geográfica de tercer orden (DGEyC-GCBA)."
+    },
+    {
+        "ID_Subclase_FK":"0705",
+        "ID_Objeto":"070503",
+        "Nombre_Objeto":"Usos de suelo",
+        "Geometria":"Polígono",
+        "Definicion":"La clasificación del uso de suelo está definida por las distintas categorías de espacios dentro de un municipio, en términos de los niveles de usos urbanos, de transición y rurales. (Mun SS de Jujuy - 2021)"
+    },
+    {
+        "ID_Subclase_FK":"0705",
+        "ID_Objeto":"070504",
+        "Nombre_Objeto":"Ejido urbano",
+        "Geometria":"Polígono",
+        "Definicion":"Área urbana delimitada legalmente."
+    },
+    {
+        "ID_Subclase_FK":"0706",
+        "ID_Objeto":"070601",
+        "Nombre_Objeto":"Ley Provincial 597",
+        "Geometria":"Polígono",
+        "Definicion":"Ley de tierras fiscales asociada a la “zonificación, condiciones y restricciones de uso del área geográfica denominada sector sudoccidental del territorio argentino de la isla grande de Tierra del Fuego”. "
+    },
+    {
+        "ID_Subclase_FK":"0706",
+        "ID_Objeto":"070602",
+        "Nombre_Objeto":"Resolución 401-2011",
+        "Geometria":"Polígono",
+        "Definicion":"Área de ordenamiento y zonificación de turberas "
+    },
+    {
+        "ID_Subclase_FK":"0706",
+        "ID_Objeto":"070603",
+        "Nombre_Objeto":"Reserva aborigen",
+        "Geometria":"Polígono",
+        "Definicion":"Adjudicacion de tierras a las comunidades del pueblo ona de la Provincia de Tierra del Fuego AIAS."
+    },
+    {
+        "ID_Subclase_FK":"0901",
+        "ID_Objeto":"090101",
+        "Nombre_Objeto":"Edificio de seguridad",
+        "Geometria":"Punto",
+        "Definicion":"Construcción destinada al asiento de la autoridad encargada de la seguridad. "
+    },
+    {
+        "ID_Subclase_FK":"0901",
+        "ID_Objeto":"090102",
+        "Nombre_Objeto":"Institución penitenciaria",
+        "Geometria":"Punto\/Polígono",
+        "Definicion":"Instalación destinada al cumplimiento de las penas previstas en las sentencias judiciales, penas pecuniarias (multas) o pena de privación de ciertos derechos."
+    },
+    {
+        "ID_Subclase_FK":"0901",
+        "ID_Objeto":"090103",
+        "Nombre_Objeto":"Cuartel de bomberos",
+        "Geometria":"Punto",
+        "Definicion":"Estructura preparada para almacenar el equipamiento necesario para apagar fuegos, incluyendo mangueras, vehículos, equipos de protección del personal, extintores de fuego, entre otros. Puede tener también dormitorios e instalaciones de trabajo como salas de reunión, entre otros."
+    },
+    {
+        "ID_Subclase_FK":"0901",
+        "ID_Objeto":"090104",
+        "Nombre_Objeto":"Instalación militar",
+        "Geometria":"Punto",
+        "Definicion":"Instalación destinada al asentamiento de paz de las Fuerzas Armadas."
+    },
+    {
+        "ID_Subclase_FK":"1001",
+        "ID_Objeto":"100101",
+        "Nombre_Objeto":"Avalancha de nieve",
+        "Geometria":"Punto",
+        "Definicion":"Lugar de deslizamiento gravitacional de nieve."
+    },
+    {
+        "ID_Subclase_FK":"1002",
+        "ID_Objeto":"100201",
+        "Nombre_Objeto":"Estación meteorológica",
+        "Geometria":"Punto",
+        "Definicion":"Instalación destinada a medir y registrar regularmente diversas variables meteorológicas."
+    },
+    {
+        "ID_Subclase_FK":"1002",
+        "ID_Objeto":"100202",
+        "Nombre_Objeto":"Estación de ozono y altura",
+        "Geometria":"Punto",
+        "Definicion":"Instalación destinada a medir y registrar regularmente diversas variables relacionadas con la capa de ozono y la vigilancia atmosférica."
+    },
+    {
+        "ID_Subclase_FK":"1002",
+        "ID_Objeto":"100203",
+        "Nombre_Objeto":"Isoterma",
+        "Geometria":"Línea",
+        "Definicion":"Línea que une puntos de igual temperatura media anual en un determinado período de tiempo. "
+    },
+    {
+        "ID_Subclase_FK":"1002",
+        "ID_Objeto":"100204",
+        "Nombre_Objeto":"Isohieta",
+        "Geometria":"Línea",
+        "Definicion":"Línea que une puntos de igual precipitación media anual en un determinado período de tiempo. "
+    },
+    {
+        "ID_Subclase_FK":"1003",
+        "ID_Objeto":"100302",
+        "Nombre_Objeto":"Región climática fría ",
+        "Geometria":"Polígono",
+        "Definicion":"Área bioclimática considerada de rigor climático por frío, según la influencia del clima sobre la actividad educativa."
+    },
+    {
+        "ID_Subclase_FK":"1003",
+        "ID_Objeto":"100303",
+        "Nombre_Objeto":"Zona según frecuencia anual media de nevadas",
+        "Geometria":"Polígono",
+        "Definicion":"Área definida en función de las precipitaciones nivales."
+    },
+    {
+        "ID_Subclase_FK":"1003",
+        "ID_Objeto":"100304",
+        "Nombre_Objeto":"Zona según riesgo UV",
+        "Geometria":"Polígono",
+        "Definicion":"Área definida por la peligrosidad de la exposición ante la radiación solar."
+    },
+    {
+        "ID_Subclase_FK":"1003",
+        "ID_Objeto":"100305",
+        "Nombre_Objeto":"Zona según frecuencia anual media de heladas",
+        "Geometria":"Polígono",
+        "Definicion":"Área definida en función del la ocurrencia media de heladas.."
+    },
+    {
+        "ID_Subclase_FK":"1003",
+        "ID_Objeto":"100306",
+        "Nombre_Objeto":"Zona según frecuencia anual media de granizadas",
+        "Geometria":"Polígono",
+        "Definicion":"Área definida en función del la ocurrencia media de granizadas."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110101",
+        "Nombre_Objeto":"Parcela",
+        "Geometria":"Polígono",
+        "Definicion":"Extensión territorial continua, deslindada por un polígono de límites conocidos, perteneciente a un propietario."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110102",
+        "Nombre_Objeto":"Macizo",
+        "Geometria":"Polígono",
+        "Definicion":"Extensión de territorio cuya superficie varía según su tipología y ubicación; y que por lo general está totalmente rodeado de vías de circulación. Se interpreta como macizo al área conformada por la sucesión de los frentes y ochavas de cada parcela, que separa el dominio privado de la vía pública, y que no siempre se materializa constructivamente."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110103",
+        "Nombre_Objeto":"Sección catastral",
+        "Geometria":"Polígono",
+        "Definicion":"Registro administrativo dependiente del Estado en el que se describen los bienes inmuebles."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110104",
+        "Nombre_Objeto":"Circunscripción ",
+        "Geometria":"Polígono",
+        "Definicion":"Polígonos en los que un Partido (Departamento) se subdivide, pudiendo contener en conjunto o separadamente plantas urbanas, suburbanas y rurales (ARBA,2018)."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110105",
+        "Nombre_Objeto":"Subparcela",
+        "Geometria":"Polígono",
+        "Definicion":"La propiedad de la unidad funcional o subparcela comprende la parte indivisa del terreno, de las cosas y partes de uso común del inmueble o indispensables para mantener su seguridad, y puede abarcar una o más unidades complementarias destinadas a servirla (ARBA, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110106",
+        "Nombre_Objeto":"Lado catastral",
+        "Geometria":"Línea",
+        "Definicion":"Valor numérico del lado de un polígono (referido a un objeto catastral) que representa su longitud (ARBA, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110107",
+        "Nombre_Objeto":"Conjunto Inmobiliario",
+        "Geometria":"Polígono",
+        "Definicion":"Son conjuntos inmobiliarios los clubes de campo, barrios cerrados o privados, parques industriales, empresariales o náuticos, o cualquier otro emprendimiento urbanístico independientemente del destino de vivienda permanente o temporaria, laboral, comercial o empresarial que tenga, comprendidos asimismo aquellos que contemplan usos mixtos, con arreglo a lo dispuesto en las normas administrativas locales. (ARBA 2019)"
+    },
+    {
+        "ID_Subclase_FK":"1101",
+        "ID_Objeto":"110108",
+        "Nombre_Objeto":"Parcela superficiaria",
+        "Geometria":"Polígono",
+        "Definicion":"Es la parcela catastral sobre la que se ejerce el derecho de superficie, que es un derecho real temporario, que se constituye sobre un inmueble ajeno, que otorga a su titular la facultad de uso, goce y disposición material y jurídica del derecho de plantar, forestar o construir, o sobre lo plantado, forestado o construido en el terreno, el vuelo o el subsuelo, según las modalidades de su ejercicio y plazo de duración establecidos en el título suficiente para su constitución y dentro de lo previsto en el título VII del Código Civil y las leyes especiales. (ARBA 2019)"
+    },
+    {
+        "ID_Subclase_FK":"1102",
+        "ID_Objeto":"110201",
+        "Nombre_Objeto":"Cateo",
+        "Geometria":"Polígono",
+        "Definicion":"Permiso exclusivo para prospectar un área determinada, por el tiempo y la extensión que señala la Ley."
+    },
+    {
+        "ID_Subclase_FK":"1102",
+        "ID_Objeto":"110202",
+        "Nombre_Objeto":"Pertenencia",
+        "Geometria":"Polígono",
+        "Definicion":"Extensión del terreno dentro de cuyos límites es posible realizar actividades de prospección. El terreno correspondiente a cada pertenencia se determina en superficie por líneas rectas, y en profundidad por planos verticales indicados por esas líneas. "
+    },
+    {
+        "ID_Subclase_FK":"1102",
+        "ID_Objeto":"110203",
+        "Nombre_Objeto":"Manifestación de descubrimiento",
+        "Geometria":"Punto",
+        "Definicion":"Localización de un criadero mineral a ser explorado. Se encuentra asociada a un área de exploración y constituye la causa originaria mas importante de adquisición de las concesiones mineras. "
+    },
+    {
+        "ID_Subclase_FK":"1201",
+        "ID_Objeto":"120101",
+        "Nombre_Objeto":"Fracción censal",
+        "Geometria":"Polígono",
+        "Definicion":"Unidad censal en que se divide cada departamento, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC,  2018)."
+    },
+    {
+        "ID_Subclase_FK":"1201",
+        "ID_Objeto":"120102",
+        "Nombre_Objeto":"Radio censal",
+        "Geometria":"Polígono",
+        "Definicion":"Unidad censal que forma parte de una fracción, definida por un espacio territorial con límites geográficos y una determinada cantidad de unidades de análisis a relevar (INDEC, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"1202",
+        "ID_Objeto":"120201",
+        "Nombre_Objeto":"Localidad Censal",
+        "Geometria":"Punto \/ Lineas\/ Polígonos",
+        "Definicion":"Concentración espacial de objetos físicos artificiales fijos conectados entre sí por medio de una red de calles, en una determinada porción del territorio. Está determinado por la continuidad espacial de los mismos y es independiente de los límites jurisdiccionales (INDEC, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"1202",
+        "ID_Objeto":"120202",
+        "Nombre_Objeto":"Envolvente urbana",
+        "Geometria":"Linea Polìgono",
+        "Definicion":"Área comprendida por una o varias localidades censales cuya continuidad espacial determina que sean consideradas como una unidad o aglomerado urbano (INDEC, 2018)."
+    },
+    {
+        "ID_Subclase_FK":"1202",
+        "ID_Objeto":"120203",
+        "Nombre_Objeto":"Entidad",
+        "Geometria":"Punto \/ Polígono",
+        "Definicion":"Subdivisión interna de una localidad dentro del área correspondiente a un gobierno local. Debe tener límites fijos establecidos por una legislación municipal y deben ser reconocibles, tanto en la cartografía como en el terreno (INDEC, 2018"
+    },
+    {
+        "ID_Subclase_FK":"1202",
+        "ID_Objeto":"120204",
+        "Nombre_Objeto":"Vias de circulación censal",
+        "Geometria":"Linea",
+        "Definicion":"Trazado que permite la circulación en el interior de una área urbana y que no es parte del acceso a la misma. Determina los límites de manzanas (INDEC, 2018)."
+    }
+]
