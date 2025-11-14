@@ -271,6 +271,9 @@ main {
 #modal-info-cuerpo a:visited {
     color: var(--c-blue);
     text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    word-break: break-all;
 }
 #modal-info-cuerpo a:hover {
     text-decoration: underline;
@@ -303,4 +306,190 @@ main {
     background-color: var(--c-orange);
     color: white;
     transform: scale(1.1) rotate(10deg); /* Crece y gira un poco */
+}
+
+#search-container {
+    position: relative; /* Clave para posicionar los resultados */
+    margin-bottom: 1.5rem;
+}
+
+#buscador {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+    font-size: 1rem;
+    border: 1px solid var(--c-border-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+}
+#buscador:focus {
+    outline: none;
+    border-color: var(--c-blue);
+    box-shadow: 0 0 0 3px rgba(29, 191, 254, 0.3);
+}
+
+#search-results {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    width: 100%;
+    background: var(--c-bg-white);
+    border: 1px solid var(--c-border-light);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 999; /* Por encima de todo */
+}
+
+#search-results li {
+    padding: 0.8rem 1.25rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--c-border-light);
+}
+#search-results li:last-child {
+    border-bottom: none;
+}
+
+#search-results li:hover {
+    background-color: var(--c-bg-light);
+}
+
+#search-results li span {
+    font-size: 0.8rem;
+    color: #888;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+     #search-container {
+        margin-top: 1rem;
+    }
+
+    /* 1. HEADER: Apilar elementos verticalmente */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo-container img {
+        height: 50px; /* Logo un poco más chico */
+        margin: 0 auto; /* Centrado */
+    }
+
+    .info-button-container {
+        margin-left: 0; /* Quitar el empuje a la derecha */
+        width: 100%; /* Botón ancho completo para fácil toque */
+    }
+
+    #btn-info {
+        display: inline-block;
+    }
+
+    header h1 {
+        font-size: 1.4rem; /* Título más pequeño */
+    }
+
+    /* 2. NAVEGACIÓN: Apilar columnas */
+    #navegacion {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .columna-nav {
+        width: 100%;
+        height: 300px; /* Altura fija más pequeña para ver que hay más abajo */
+        flex-basis: auto;
+    }
+
+    /* Ajuste visual para entender el flujo */
+    .columna-nav h2::after {
+        content: " (Toca para seleccionar)";
+        font-size: 0.8rem;
+        font-weight: normal;
+        opacity: 0.6;
+    }
+
+    /* 3. MODAL: Ajustes de espacio */
+    .modal-contenido {
+        width: 95%; /* Casi todo el ancho */
+        margin: 10% auto; /* Más margen arriba */
+        max-height: 80vh; /* Evitar que sea más alto que la pantalla */
+        overflow-y: auto; /* Scroll interno si es necesario */
+    }
+
+    .modal-contenido h2 {
+        padding: 1rem 1.5rem; /* Menos padding en cabezal */
+        font-size: 1.2rem;
+        padding-right: 3rem; /* Espacio para la X de cerrar */
+    }
+
+    .modal-cerrar {
+        right: 1rem;
+        top: 0.8rem;
+    }
+
+    /* Ajuste de paddings internos del cuerpo */
+    .modal-contenido p, 
+    .modal-contenido h3, 
+    #modal-info-cuerpo {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* 4. TABLA: Permitir scroll horizontal si es muy ancha */
+    #modal-tabla-atributos {
+        display: block;
+        width: 100%;
+    }
+
+    /* Ocultamos los encabezados originales de la tabla en móvil */
+    #modal-tabla-atributos thead {
+        display: none;
+    }
+
+    /* Cada fila (tr) es ahora una tarjeta */
+    #modal-tabla-atributos tr {
+        display: block;
+        background-color: #fcfcfc;
+        border: 1px solid var(--c-border-light);
+        border-radius: 8px;
+        margin-bottom: 1.25rem; /* Espacio entre tarjetas */
+        padding: 0.5rem 1rem;
+    }
+
+    /* Cada celda (td) es ahora un bloque vertical */
+    #modal-tabla-atributos td {
+        display: block;
+        padding: 0.75rem 0.25rem; /* Padding vertical */
+        text-align: left; /* Aseguramos alineación */
+        border-bottom: 1px dashed var(--c-border-light); /* Separador leve */
+    }
+    
+    /* La última celda de la tarjeta no necesita borde inferior */
+    #modal-tabla-atributos tr td:last-child {
+        border-bottom: none;
+    }
+
+    /* EL TRUCO: Usar ::before para re-insertar los encabezados */
+    #modal-tabla-atributos td::before {
+        content: attr(data-label); /* Leemos el label del data-label que pusimos en el JS */
+        font-weight: 600;
+        display: block;
+        font-size: 0.8rem;
+        color: #555;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+    }
+
+    /* Ajuste para que los dominios (<ul>) se vean bien */
+    #modal-tabla-atributos td ul {
+        margin: 0.5rem 0 0 0;
+        padding-left: 1.2rem;
+    }
 }

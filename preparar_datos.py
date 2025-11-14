@@ -12,7 +12,7 @@ hojas_a_exportar = [
     'Subclases',
     'Objetos',
     'Atributos',
-    'Link_Objeto_Atributo',
+    'Link_Objeto_Atributo', 
     'Dominios',
     'Fuentes',
     'Productor'
