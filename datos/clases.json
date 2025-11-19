@@ -6,8 +6,8 @@
     },
     {
         "ID_Clase":"02",
-        "Nombre_Clase":"GEOGRAFÍA SOCIAL",
-        "Definicion":"Comprende los objetos geográficos que se relacionan en el sentido más amplio con los aspectos sociales de la población. A esta clase pertenecen los dominios de la administración, el comercio, el turismo, el ocio, la educación, la salud y la ciencia (IDERA, 2018 - INFUETUR 2024)."
+        "Nombre_Clase":"INFRAESTRUCTURA SOCIAL",
+        "Definicion":"Comprende los objetos geográficos que se relacionan en el sentido más amplio con los aspectos sociales de la población. A esta clase pertenecen los dominios de la administración, el comercio, el turismo, el ocio, la educación, la cultura, la salud y la ciencia (IDERA, 2018 - INFUETUR 2024)."
     },
     {
         "ID_Clase":"03",
@@ -53,5 +53,10 @@
         "ID_Clase":"12",
         "Nombre_Clase":"UNIDADES GEOESTADÍSTICAS",
         "Definicion":"Comprende los objetos geográficos que definen áreas estadísticas de desagregación del territotio nacional, provincial y de áreas de gobierno local. Se utilizan tanto para el relevamiento como para la publicación de resultados, y son comparables intercensalmente a pesar de la dinámica de distribución de la población (INDEC, 2018). "
+    },
+    {
+        "ID_Clase":"23",
+        "Nombre_Clase":"ABSTRACTO",
+        "Definicion":"Este subgrupo consta de conceptos que se utilizan para modelar información sobre tipos de fenómenos, pero que en sí mismos no representan fenómenos. (Adaptación del DFDD) - IDESoB 2024"
     }
 ]

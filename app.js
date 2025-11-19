@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         dominios: [],
         portada: [],
         fuentes: [],
-        productor: []
+        productor: [],
+        versiones: []
     };
 
     // --- 2. Selectores del DOM ---
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const [
                 clasesRes, subclasesRes, objetosRes, atributosRes, linkRes, dominiosRes, 
-                portadaRes, fuentesRes, productorRes
+                portadaRes, fuentesRes, productorRes, versionesRes
             ] = await Promise.all([
                 fetch('datos/clases.json'),
                 fetch('datos/subclases.json'),
@@ -60,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch('datos/dominios.json'),
                 fetch('datos/portada.json'),
                 fetch('datos/fuentes.json'),
-                fetch('datos/productor.json')
+                fetch('datos/productor.json'),
+                fetch('datos/versiones.json')
             ]);
 
             db.clases = await clasesRes.json();
@@ -72,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             db.portada = await portadaRes.json();
             db.fuentes = await fuentesRes.json();
             db.productor = await productorRes.json();
+            db.versiones = await versionesRes.json();
             
             // === OPTIMIZACIÓN DE BÚSQUEDA (NUEVO) ===
             // Pre-calculamos los nombres normalizados para una búsqueda instantánea
@@ -361,6 +364,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             fuentesHtml += '</ul>';
             modalInfoCuerpo.innerHTML += fuentesHtml;
+        }
+
+        if (db.versiones && db.versiones.length > 0) {
+            modalInfoCuerpo.innerHTML += `<h3>Control de Versiones</h3>`;
+            
+            let tablaVersiones = `
+                <div class="tabla-versiones-container">
+                    <table class="tabla-versiones">
+                        <thead>
+                            <tr>
+                                <th>Versión</th>
+                                <th>Autor</th>
+                                <th>Colaboradores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+            
+            for (const v of db.versiones) {
+                // Lectura robusta de tus columnas
+                const version = v['Versión'] || v['Version'] || v['VERSION'] || '';
+                const autor = v['Autor'] || v['AUTOR'] || '';
+                const colabs = v['Colaboradores'] || v['COLABORADORES'] || '';
+
+                tablaVersiones += `
+                    <tr>
+                        <td class="col-version" data-label="Versión">${version}</td>
+                        
+                        <td class="col-autor" data-label="Autor">
+                            ${autor}
+                        </td>
+                        <td class="col-colab" data-label="Colaboradores">
+                            ${colabs}
+                        </td>
+                    </tr>
+                `;
+            }
+            
+            tablaVersiones += `</tbody></table></div>`;
+            modalInfoCuerpo.innerHTML += tablaVersiones;
         }
         
         modalInfo.style.display = "block";

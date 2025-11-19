@@ -1,11 +1,8 @@
 import pandas as pd
 import os
 
-# --- Configuración ---
-archivo_excel = 'Catalogo_Normalizado.xlsx' # El archivo que creaste
-carpeta_salida = 'datos' # La carpeta donde irán los JSON
-
-# Las 8 hojas que normalizamos
+archivo_excel = 'Catalogo_Normalizado.xlsx'
+carpeta_salida = 'datos'
 hojas_a_exportar = [
     'Portada',
     'Clases',
@@ -15,7 +12,8 @@ hojas_a_exportar = [
     'Link_Objeto_Atributo', 
     'Dominios',
     'Fuentes',
-    'Productor'
+    'Productor',
+    'Versiones'
 ]
 
 # --- Ejecución ---
@@ -31,16 +29,12 @@ try:
         if nombre_hoja in xls.sheet_names:
             print(f"Procesando hoja: '{nombre_hoja}'...")
             
-            # Leemos TODAS las columnas como texto (string)
             df = pd.read_excel(xls, sheet_name=nombre_hoja, dtype=str)
             
-            # Reemplazamos los 'nan' por celdas vacías
             df = df.fillna('') 
 
             archivo_json = os.path.join(carpeta_salida, f"{nombre_hoja.lower()}.json")
             
-            # ---- AQUÍ ESTÁ LA CORRECCIÓN ----
-            # Se eliminó el argumento 'encoding'
             df.to_json(
                 archivo_json,
                 orient='records',

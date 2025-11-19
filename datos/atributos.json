@@ -2,7 +2,7 @@
     {
         "ID_Atributo":"ACC",
         "Nombre_Atributo":"Accesibilidad",
-        "Definicion":"Posibilidad de las personas con movilidad reducida de gozar con las adecuadas condiciones de seguridad y autonomía para utilizar la infraestructura sin restricciones derivadas de ámbito arquitectónico (Ley Nacional N°24.314).",
+        "Definicion":"Posibilidad de las personas con movilidad reducida de gozar de las adecuadas condiciones de seguridad y autonomía para utilizar la infraestructura sin restricciones derivadas del ámbito arquitectónico (Ley Nacional N° 24.314) - (INFUETRUR 2024)",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -13,21 +13,21 @@
         "Definicion":"Clasificación que indica la forma en que se acumula el desplazamiento de una falla en el tiempo geológico.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo":"ADR",
-        "Nombre_Atributo":"Dirección",
-        "Definicion":"Calle en la que se ubica el OG.",
-        "Tipo_Atributo":"Cadena de caracteres",
-        "Tiene_Dominio":"NO",
         "Observaciones":"-"
     },
     {
         "ID_Atributo":"ADN",
         "Nombre_Atributo":"Altura del domicilio",
-        "Definicion":"Altura de la calle en la que se ubica el alojamiento",
+        "Definicion":"Altura de la calle en la que se ubica el objeto geográfico",
         "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ADR",
+        "Nombre_Atributo":"Dirección",
+        "Definicion":"Calle en la que se ubica el objeto geogràfico.",
+        "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
         "Observaciones":"-"
     },
@@ -64,6 +64,14 @@
         "Observaciones":"aaaa"
     },
     {
+        "ID_Atributo":"AM2",
+        "Nombre_Atributo":"Año de medición",
+        "Definicion":"Indicación del año de medición de la campaña de investigación",
+        "Tipo_Atributo":"Fecha",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"aaaa"
+    },
+    {
         "ID_Atributo":"AMG",
         "Nombre_Atributo":"Ámbito geográfico",
         "Definicion":"Clasificación que hace referencia al espacio geográfico donde se encuentra la unidad educativa, caracterizado por la cantidad de habitantes.",
@@ -82,16 +90,24 @@
     {
         "ID_Atributo":"APC",
         "Nombre_Atributo":"Actividad principal",
-        "Definicion":"La actividad (principal) de una unidad de producción es la actividad (productiva) cuyo valor añadido supera el de cualquier otra actividad (productiva) realizada dentro de la misma unidad (SNA 2008, 5.8)",
+        "Definicion":"La actividad (principal) de una unidad de producción es la actividad (productiva) cuyo valor añadido supera el de cualquier otra actividad (productiva) realizada dentro de la misma unidad (SNA 2008, 5.8).",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"Texto libre"
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"ARA",
         "Nombre_Atributo":"Área",
-        "Definicion":"Medida de extensión de una superficie.",
+        "Definicion":"Medida de extensión de una superficie, cuya unidad recomendada es el metro², de no ser así, se especificará en el catálogo y en los metadatos del organismo que lo produce\/publica.",
         "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nMetro cuadrado (m²) - De no ser así, especificar en COG y en los metadatos del organismo que publica"
+    },
+    {
+        "ID_Atributo":"ARM",
+        "Nombre_Atributo":"Area militar",
+        "Definicion":"Consigna el área militar en la que se encuentra el ex CCD",
+        "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
     },
@@ -105,11 +121,11 @@
     },
     {
         "ID_Atributo":"BA1",
-        "Nombre_Atributo":"Código de localidad",
+        "Nombre_Atributo":"Código de asentamiento ",
         "Definicion":"Código oficial de asentamiento humano correspondiente a la Base de Asentamientos Humanos de la República Argentina (BAHRA).",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"11 caracteres"
+        "Observaciones":"Caracteres variables en función del tipo de asentamiento"
     },
     {
         "ID_Atributo":"BAR",
@@ -133,7 +149,7 @@
         "Definicion":"Banda de espectro electromagnético en la que opera la antena",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"BSC",
@@ -168,10 +184,26 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"CAL",
+        "Nombre_Atributo":"Caudal",
+        "Definicion":"Cantidad de agua por unidad de tiempo ",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: M³\/unidad de tiempo (Lo especifica en el COG propio del organismo y en los metadatos)"
+    },
+    {
         "ID_Atributo":"CAM",
         "Nombre_Atributo":"Categoría de gestión del área de conservación ",
         "Definicion":"Clasificación de las áreas en tres categoría de gestión  de conservación,  según lo  según lo establecido en la Ley  de 26.331 de Presupuestos Mínimos para la Protección Ambiental a los Bosques Nativos.",
         "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"CAO",
+        "Nombre_Atributo":"Categoría del campo",
+        "Definicion":"Tipo de campo autorizados según el máximo de autorizaciones de caza que se otorguen por temporada.",
+        "Tipo_Atributo":"cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
     },
@@ -218,15 +250,23 @@
     {
         "ID_Atributo":"CDE",
         "Nombre_Atributo":"Código Departamento",
-        "Definicion":"Código designado por el Instituto Nacional de Estadística y Censos para cada Departamento. En el caso de la Provincia de Buenos Aires corresponde a cada partido. En el caso de CABA corresponde a cada Comuna.",
+        "Definicion":"El código numérico de División Político-Administrativa se conforma, leído de izquierda a derecha, con DOS (2) dígitos que identifican a la Provincia o Ciudad de Buenos Aires (División Político-Territorial), y TRES (3) dígitos que identifican a la División Político-Administrativa (Comunas en la Ciudad de Buenos Aires, Partidos en la Provincia de BUENOS AIRES y Departamentos en las demás Provincias).",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"4 caracteres"
+        "Observaciones":"5 caracteres"
     },
     {
         "ID_Atributo":"CEA",
         "Nombre_Atributo":"Cantidad de estratos arbóreos",
         "Definicion":"Clasificación de la vegetación según la cantidad de estratos arbóreos que posea.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"CDM",
+        "Nombre_Atributo":"Categoría de dispositivo de muestreo",
+        "Definicion":"Clasificación de los dispositivos de muestreo (sensores, paquetes de instrumentos y colectores de muestras) ",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -248,6 +288,14 @@
         "Observaciones":"Texto libre"
     },
     {
+        "ID_Atributo":"CE2",
+        "Nombre_Atributo":"Códido de estación de muestreo",
+        "Definicion":"Código alfanumérico que identifica a cada estación de muestreo.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Texto libre"
+    },
+    {
         "ID_Atributo":"CEM",
         "Nombre_Atributo":"Calidad de estación meteorológica",
         "Definicion":"Clasificación de la calidad de medición en función del tipo de estación meteorológica.",
@@ -264,9 +312,9 @@
         "Observaciones":"10 caracteres"
     },
     {
-        "ID_Atributo":"CEU",
-        "Nombre_Atributo":"Código de envolvente urbana",
-        "Definicion":"Código unívoco de la envolvente urbana",
+        "ID_Atributo":"CAG",
+        "Nombre_Atributo":"Código de aglomerado",
+        "Definicion":"Código unívoco del aglomerado",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
         "Observaciones":"4 caracteres"
@@ -294,6 +342,30 @@
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
         "Observaciones":"7 caracteres"
+    },
+    {
+        "ID_Atributo":"CIC",
+        "Nombre_Atributo":"Código IDECOM",
+        "Definicion":"Código único de identificación de la IDECOM (IDECOM 2022)",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"CIF",
+        "Nombre_Atributo":"Ciclo de frigorífico",
+        "Definicion":"Clasificación del establecimiento frigorífico de acuerdo al trabajo que realiza.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"CIR",
+        "Nombre_Atributo":"Circuito",
+        "Definicion":"Denominación del itinerario estratégico que realizaban las fuerzas de seguridad con las personas detenidas ilegalmente entre dependencias distintas, que cumplían funciones particulares de la estructura represiva.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"CLC",
@@ -328,12 +400,28 @@
         "Observaciones":"Unidad de medida: \nMetro (m)"
     },
     {
+        "ID_Atributo":"COZ",
+        "Nombre_Atributo":"Código de zona",
+        "Definicion":"Código acotado de la zona según su uso.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"CPR",
         "Nombre_Atributo":"Código Provincia",
         "Definicion":"Código designado por el Instituto Nacional de Estadística y Censos para cada Provincia. Incluye CABA.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
         "Observaciones":"2 caracteres"
+    },
+    {
+        "ID_Atributo":"CPV",
+        "Nombre_Atributo":"Capacidad Productiva de las Tierras",
+        "Definicion":"Agrupamiento y delimitación de áreas con tierras homogeneas respecto a su capacidad o aptitud actual para la producción agrícola.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"CRO",
@@ -392,9 +480,25 @@
         "Observaciones":"Texto libre"
     },
     {
+        "ID_Atributo":"DIM",
+        "Nombre_Atributo":"Diámetro",
+        "Definicion":"Indicación del diámetro del ducto",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nMetro (m)"
+    },
+    {
         "ID_Atributo":"DMA",
         "Nombre_Atributo":"Daños materiales",
         "Definicion":"Consecuencias sobre objetos materiales a causa de la ocurrencia de un hecho.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"DOF",
+        "Nombre_Atributo":"Direccion del flujo",
+        "Definicion":"El rumbo del movimiento o la direccion del flujo, establecido por cada punto cardinal y sus intermedios.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -405,7 +509,7 @@
         "Definicion":"Tiempo durante el cual se permite una actividad o que se requiere para que se lleve a cabo una actividad",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"Texto libre"
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"DRE",
@@ -413,7 +517,7 @@
         "Definicion":"Determina la desembocadura o destino del agua",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"DSP",
@@ -421,7 +525,23 @@
         "Definicion":"Descripción resumida del uso de suelo",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"DTE",
+        "Nombre_Atributo":"Fecha fin",
+        "Definicion":"Fecha de finalización de un evento (Adaptación DFDD)",
+        "Tipo_Atributo":"Fecha",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"dd\/mm\/aaaa"
+    },
+    {
+        "ID_Atributo":"DTS",
+        "Nombre_Atributo":"Fecha inicio",
+        "Definicion":"Fecha de inicio de un evento  (Adaptación DFDD)",
+        "Tipo_Atributo":"Fecha",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"dd\/mm\/aaaa"
     },
     {
         "ID_Atributo":"EGL",
@@ -432,12 +552,36 @@
         "Observaciones":"Unidad de medida: \nMetro (m)"
     },
     {
-        "ID_Atributo":"EQD",
-        "Nombre_Atributo":"Profundidad del foco del sismo",
-        "Definicion":"Distancia entre el epicentro y el hipocentro de un sismo.",
-        "Tipo_Atributo":"Numérico",
+        "ID_Atributo":"ECN",
+        "Nombre_Atributo":"Empresa concesionaria",
+        "Definicion":"Empresa concesionaria de la estación transformadora.",
+        "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"Unidad de medida: \nKilómetro (km)"
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"EIF",
+        "Nombre_Atributo":"Empresa informante",
+        "Definicion":"Empresa que informa la geometría del área de explotación.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"EMP",
+        "Nombre_Atributo":"Emplazamiento",
+        "Definicion":"Refiere a su ubicación, fundamentalmente para diferenciar los embalses rurales del resto",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"EOP",
+        "Nombre_Atributo":"Empresa operadora",
+        "Definicion":"Empresa que opera el area de explotación hidrocarburífera",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"EPG",
@@ -448,9 +592,33 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"EPR",
+        "Nombre_Atributo":"Empresa propietaria",
+        "Definicion":"Empresa propietaria de la estación transformadora.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"EQD",
+        "Nombre_Atributo":"Profundidad del foco del sismo",
+        "Definicion":"Distancia entre el epicentro y el hipocentro de un sismo.",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nKilómetro (km)"
+    },
+    {
         "ID_Atributo":"ESI",
         "Nombre_Atributo":"Tipo de estación sismológica",
         "Definicion":"Clasificación de la estación sismológica según el tipo de sensor.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ETB",
+        "Nombre_Atributo":"Tipo de establecimiento",
+        "Definicion":"Consigna informacion sobre la propiedad de la dependencia, instalaciones o predios en los que los ex CCD estaban emplazados",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -464,11 +632,27 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"ETR",
+        "Nombre_Atributo":"Enterramientos clandestinos",
+        "Definicion":"Consigna exploraciones y\/o el hallazgo de enterramientos en el predio",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"FAA",
         "Nombre_Atributo":"Fuerza armada",
         "Definicion":"Clasificación de la Fuerza Armada a la que pertenece la instalación militar.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"FDC",
+        "Nombre_Atributo":"Fuente de captura",
+        "Definicion":"Identificación del nombre y tipo de fuente utilizada para capturar la información. Puede incluir fecha y otros datos adicionales",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
         "Observaciones":"-"
     },
     {
@@ -498,10 +682,10 @@
     {
         "ID_Atributo":"FIN",
         "Nombre_Atributo":"Financiamiento",
-        "Definicion":"Nombre de iniciativa, de carácter municipal\/provincial\/nacional\/internacional que financia la obra de infraestructura",
+        "Definicion":"Nombre de iniciativa, carácter municipal, provincial, nacional o internacional que financia la obra de infraestructura",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"Texto libre"
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"FNA",
@@ -538,10 +722,10 @@
     {
         "ID_Atributo":"GDC",
         "Nombre_Atributo":"Grado de dificultad",
-        "Definicion":"Clasificación de los senderos, considerando múltiples factores, como la longitud, el terreno, el desnivel, la altitud, la dificultad técnica y estado físico requerido.",
+        "Definicion":"Clasificación de los senderos, considerando múltiples factores, como la longitud, el terreno, el desnivel, la altitud, la dificultad técnica y estado físico requerido. ",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"GDD",
@@ -557,12 +741,12 @@
         "Definicion":"Tipo de reorganización o modificación de la estructuración del espacio, manteniendo o cambiando su uso.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"GES",
         "Nombre_Atributo":"Sector de gestión",
-        "Definicion":"Alude a la responsabilidad de los servicios educativos. Estatal: administrados directamente por el Estado. Privado: administrado por instituciones o personas particulares. Los establecimientos privados pueden ser no subvencionados o subvencionados por el Estado. Estos últimos reciben aportes financieros para cubrir las remuneraciones de los docentes en forma total o parcial.",
+        "Definicion":"Alude a la responsabilidad de los servicios de cualquier índole. Los establecimientos privados pueden ser no subvencionados o subvencionados por el Estado ",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -616,6 +800,22 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"IDB",
+        "Nombre_Atributo":"Identificador de la boya",
+        "Definicion":"Número identificador del a boya WMO - World Meteorological Organization (INIDEP 2022)",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"7 caracteres"
+    },
+    {
+        "ID_Atributo":"IDC",
+        "Nombre_Atributo":"Identificador del puesto",
+        "Definicion":"Código identificador del puesto separador de residuos",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"IDI",
         "Nombre_Atributo":"Identificador de institución",
         "Definicion":"Código de identificación de la Institución Universitaria, utilizado por la Secretaría de Políticas Universitarias del Ministerio de Educación de la Nación.",
@@ -634,7 +834,7 @@
     {
         "ID_Atributo":"IED",
         "Nombre_Atributo":"Índice edáfico.",
-        "Definicion":"Clasificación de las tierras rurales de la Argentina, tomando como referencia para su clasificación  la capacidad y  calidad productiva de las mimas.  La escala de   tomando como valores máximos  las condiciones de la zona núcleo del suelo. ",
+        "Definicion":"Clasificación de las tierras rurales de la Argentina, tomando como referencia para su clasificación la capacidad y calidad productiva de las mismas.  La escala se basa en metodologías como la del Sistema de Clasificación del USDA, y la FAO.",
         "Tipo_Atributo":"Numérico",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -693,6 +893,14 @@
         "Definicion":"Clasificación de los suelos según el nivel de productividad de las tierras, desagregados a nivel de unidad cartográfica.  Emplea una fórmula multiplicativa de los factores climáticos, de suelo y terreno que inciden en el crecimiento y rendimiento de los cultivos, pasturas y forestales más comunes de una región, bajo un determinado nivel de manejo.  Se clasifica de 100 a 1. ",
         "Tipo_Atributo":"Numérico",
         "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ISIC",
+        "Nombre_Atributo":"Tipo de industria",
+        "Definicion":"Clasificación de actividad manufacturera según el Estándar Internacional de Clasificación de Industrias (ISIC).",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
         "Observaciones":"-"
     },
     {
@@ -760,6 +968,14 @@
         "Observaciones":"Unidad de medida: \nSegundo (``)"
     },
     {
+        "ID_Atributo":"LTN",
+        "Nombre_Atributo":"Contador de carriles",
+        "Definicion":"Número total de carriles independientes o paralelos, incluyendo ambas direcciones. ",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Texto libre"
+    },
+    {
         "ID_Atributo":"LZN",
         "Nombre_Atributo":"Longitud",
         "Definicion":"Distancia a lo largo de un eje central.",
@@ -792,6 +1008,14 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"MEM",
+        "Nombre_Atributo":"Espacio para la memoria",
+        "Definicion":"Determinación si funciona como espacio para la memoria",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo":"MES",
         "Nombre_Atributo":"Separación vial",
         "Definicion":"Indicativo de la presencia de divisiones viales, como separaciones por medio de barreras verticales.",
@@ -813,6 +1037,14 @@
         "Definicion":"Clasificación para la generación de curvas de nivel de acuerdo a la metodología utilizada.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"MOP",
+        "Nombre_Atributo":"Método de obtencion del punto",
+        "Definicion":"Indica el método utilizado para obtener la muestra",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
         "Observaciones":"-"
     },
     {
@@ -856,10 +1088,42 @@
         "Observaciones":"Texto libre"
     },
     {
+        "ID_Atributo":"NFC",
+        "Nombre_Atributo":"Número de familias",
+        "Definicion":"Consigna el número de familias declarado por la comunidad en los registros oficiales del Estado, como el Registro Provincial de Comunidades Indígenas de la provincia de Buenos Aires (REPROCI) o Registro Nacional de Comunidades Indígenas (RENACI), en el caso en que corresponda",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"NMB",
+        "Nombre_Atributo":"Número de miembros",
+        "Definicion":"Consigna el número de miembros declarado por la comunidad en los registros oficiales del Estado, como el Registro Provincial de Comunidades Indígenas de la provincia de Buenos Aires (REPROCI) o Registro Nacional de Comunidades Indígenas (RENACI), en el caso en que corresponda",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"NMP",
         "Nombre_Atributo":"Número de Plano",
         "Definicion":"Código numérico que identifica el plano de origen de una o más parcelas",
         "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"NOT",
+        "Nombre_Atributo":"Nombre del tramo",
+        "Definicion":"Denominación del tramo del segmento o traza de fibra óptica o ducto",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"NUP",
+        "Nombre_Atributo":"Número de unidades privativas",
+        "Definicion":"Cantidad de unidades privativas dentro de un complejo (condominio, propiedad horizonal, cementerio privado, tiempo compartido)",
+        "Tipo_Atributo":"Numérico",
         "Tiene_Dominio":"NO",
         "Observaciones":"-"
     },
@@ -869,7 +1133,39 @@
         "Definicion":"Cualquier observación o referencia permanente o transitoria referida a una instancia del objeto geográfico",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":""
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"OCF",
+        "Nombre_Atributo":"Tipo de frente marino",
+        "Definicion":"Clasificacion de frentes marinos (Adaptación DEFDD)",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ODN",
+        "Nombre_Atributo":"Otra denominación",
+        "Definicion":"Denominaciones alternativas de las dependencias que en base a investigación aluden al ex CCD de referencia.",
+        "Tipo_Atributo":"Booleano",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"OFI",
+        "Nombre_Atributo":"Indicación el frente marino",
+        "Definicion":"Código que indica la forma de manifestación, fisicamente tangible, del frente en superficie (espuma; rugosidad; cambios de color; acumulación de objetos flotantes). (Adaptacion DFDD)",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ORG",
+        "Nombre_Atributo":"Origen",
+        "Definicion":"Origen del hecho",
+        "Tipo_Atributo":"",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Cadena de caracteres"
     },
     {
         "ID_Atributo":"PAA",
@@ -904,6 +1200,14 @@
         "Observaciones":"Unidad de medida: \nMetro (m)"
     },
     {
+        "ID_Atributo":"PCT",
+        "Nombre_Atributo":"Partos clandestinos",
+        "Definicion":"Consigna la realizacion de partos clandestinos en los ex CCD",
+        "Tipo_Atributo":"Booleano",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"PA1",
         "Nombre_Atributo":"PASMA 1",
         "Definicion":"Código alfanumérico que identifica puntos pertenecientes a la Red PASMA.",
@@ -928,6 +1232,14 @@
         "Observaciones":"Texto libre"
     },
     {
+        "ID_Atributo":"PCS",
+        "Nombre_Atributo":"Participación en consorcio",
+        "Definicion":"Es la conformación del consorcio empresarial en procentajes de participación (en caso de que corresponda) de la UTE que opera el area de explotación.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"PDT",
         "Nombre_Atributo":"Tipo de punto acotado",
         "Definicion":"Clasificación de un punto acotado según la superficie en la que es medido y su utilización en la edición cartográfica.",
@@ -938,18 +1250,26 @@
     {
         "ID_Atributo":"PEA",
         "Nombre_Atributo":"Período de actividad",
-        "Definicion":"Época del año en el que se encuentra en actividad",
-        "Tipo_Atributo":"Cadena de caracteres",
-        "Tiene_Dominio":"SI",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo":"PEP",
-        "Nombre_Atributo":"Periodicidad",
-        "Definicion":"Que acontece o se efectúa cada cierto intervalo de tiempo, puede tener una repetición regular anual, bi-anual.",
+        "Definicion":"Época del año en el que un evento se encuentra en actividad",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":"Texto libre"
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"PER",
+        "Nombre_Atributo":"Periodicidad",
+        "Definicion":"Determinación del intervalo de tiempo en que acontece el evento, pudiendo tener una repetición regular anual, bi anual",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"PGL",
+        "Nombre_Atributo":"Código de gobierno local",
+        "Definicion":"Código designado por el Instituto Nacional de Estadística y Censos",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"4 caracteres"
     },
     {
         "ID_Atributo":"PIP",
@@ -958,6 +1278,14 @@
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"Cadena de caracteres"
+    },
+    {
+        "ID_Atributo":"POI",
+        "Nombre_Atributo":"Potencia instalada",
+        "Definicion":"Potencia de generación instalada de la estación transformadora.",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nMega Watts (MW)"
     },
     {
         "ID_Atributo":"PPC",
@@ -977,7 +1305,7 @@
     },
     {
         "ID_Atributo":"PRE",
-        "Nombre_Atributo":"Precisión",
+        "Nombre_Atributo":"Precisión planimétrica",
         "Definicion":"Precisión de la ubicación de la geometría.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
@@ -1040,6 +1368,14 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"RGC",
+        "Nombre_Atributo":"Trocha",
+        "Definicion":"Separación entre rieles, medida perpendicularmente.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"RIC",
         "Nombre_Atributo":"Rigor climático",
         "Definicion":"Zonificación en función del rigor climático, ya sea por frío o por calor, teniendo en cuenta la influencia del clima sobre la actividad educativa. ",
@@ -1069,7 +1405,7 @@
         "Definicion":"Clasificación del tipo de embalse (Adaptación DFDD)",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"RTN",
@@ -1104,12 +1440,12 @@
         "Observaciones":"Texto libre"
     },
     {
-        "ID_Atributo":"SDA",
-        "Nombre_Atributo":"Soporte de actividad",
-        "Definicion":"Soporte donde se llevan a cabo las actividades turísticas",
+        "ID_Atributo":"SBZ",
+        "Nombre_Atributo":"Subzona militar",
+        "Definicion":"Consigna la subzona militar en la que se encuentra el ex CCD",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"SDI",
@@ -1120,12 +1456,36 @@
         "Observaciones":"Unidad de medida: \nGrado (°)"
     },
     {
+        "ID_Atributo":"SCN",
+        "Nombre_Atributo":"Sección",
+        "Definicion":"Sección de una línea de alta tensión se refiere al área transversal de los conductores.",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nmilímetros (mm²)"
+    },
+    {
+        "ID_Atributo":"SDA",
+        "Nombre_Atributo":"Soporte de actividad",
+        "Definicion":"Soporte donde se llevan a cabo las actividades turísticas.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"SDP",
         "Nombre_Atributo":"Descripción de la fuente",
         "Definicion":"Fuente legal que define la representacion del dato",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"NO",
         "Observaciones":"Texto libre"
+    },
+    {
+        "ID_Atributo":"SEZ",
+        "Nombre_Atributo":"Año de señalización",
+        "Definicion":"Año de señalización como sitio de la memoria (Ley Provincial 13584\/7 y Ley Nacional 26691\/11)",
+        "Tipo_Atributo":"Año",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"aaaa"
     },
     {
         "ID_Atributo":"SI1",
@@ -1136,12 +1496,28 @@
         "Observaciones":"Texto libre"
     },
     {
+        "ID_Atributo":"SIN",
+        "Nombre_Atributo":"Situación de inscripción",
+        "Definicion":"Consigna la situación de cada comunidad en relación a los registros oficiales del Estado",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"SIR",
         "Nombre_Atributo":"Tecnología",
         "Definicion":"Tipo de tecnología a la que sirve la antena (2G, 3G, 4G, Conectividad Rural, Broadcast, TDA, etc)",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"SNL",
+        "Nombre_Atributo":"Señalización",
+        "Definicion":"Marcas que se encuentran a determinada distancia en un sendero o camino, indicando su correcta dirección.",
+        "Tipo_Atributo":"Booleano",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"SMC",
@@ -1152,20 +1528,12 @@
         "Observaciones":"-"
     },
     {
-        "ID_Atributo":"SNL",
-        "Nombre_Atributo":"Señalizacion",
-        "Definicion":"Marcas que se encuentran a determinada distancia en un sendero o camino, indicando su correcta dirección.",
-        "Tipo_Atributo":"Cadena de caracteres",
-        "Tiene_Dominio":"SI",
-        "Observaciones":""
-    },
-    {
         "ID_Atributo":"SPP",
         "Nombre_Atributo":"Especie permitida",
         "Definicion":"Aquellas especies de animales legalmente permitidas por la Autoridad de Aplicación en cada temporada de caza dentro del coto de caza o campo.",
         "Tipo_Atributo":"cadena de caracteres",
         "Tiene_Dominio":"NO",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"SSA",
@@ -1194,7 +1562,7 @@
     {
         "ID_Atributo":"TAP",
         "Nombre_Atributo":"Tipo de área protegida",
-        "Definicion":"Área que por su extraordinarias belleza o riqueza en flora y fauna autóctona o en razón de un interés científico, debe ser protegida y conservada para investigaciones científicas, educación y goce de las presentes y futuras generaciones.",
+        "Definicion":"Categorías de gestión de áreas protegidas. Son un sistema de clasificación desarrollado por la Unión Internacional para la Conservación de la Naturaleza (UICN) para clasificar las áreas protegidas en función de sus objetivos de gestión y las actividades permitidas.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -1205,7 +1573,7 @@
         "Definicion":"Clasificación de los alojamientos turísticos según  tipo y clase de alojamiento: hotelero, para hotelero y extra-hotelero",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TBA",
@@ -1221,7 +1589,7 @@
         "Definicion":"Clasificacion de las boyas según sus caracteristicas",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TC1",
@@ -1245,7 +1613,7 @@
         "Definicion":"Tipo de caza definido según el tamaño y tipo de animal que se permite cazar en el coto o campo.",
         "Tipo_Atributo":"cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TCI",
@@ -1253,7 +1621,7 @@
         "Definicion":"Determinación del tipo de Conjunto Inmobiliario según su uso",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TCP",
@@ -1280,6 +1648,14 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"TDE",
+        "Nombre_Atributo":"Tipo de establecimiento",
+        "Definicion":"Clasificación del tipo de establecimeinto agroindustrial",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"TDI",
         "Nombre_Atributo":"Tipo de institución",
         "Definicion":"Clasificación de la institución universitaria según su función principal.",
@@ -1296,9 +1672,25 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"TDM",
+        "Nombre_Atributo":"Tipo de muestra",
+        "Definicion":"Indica el tipo de muestra según parámetro muestreado ",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"TDP",
         "Nombre_Atributo":"Tipo de pastizal",
         "Definicion":"Clasificación de pastizal según el tipo de cobertura dominante.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"TDR",
+        "Nombre_Atributo":"Tasa de erosión",
+        "Definicion":"Indica la dinámica y evolución del proceso erosivo a partir del desplazamiento de la línea de costa.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -1333,7 +1725,7 @@
         "Definicion":"Clasificación de línea para transporte o distribución de energía eléctrica de acuerdo a su tensión nominal.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":"-"
+        "Observaciones":"Unidad de medida: \nKilovatios (KV)"
     },
     {
         "ID_Atributo":"TES",
@@ -1344,17 +1736,25 @@
         "Observaciones":"-"
     },
     {
-        "ID_Atributo":"TEU",
-        "Nombre_Atributo":"Tipo de envolvente urbana",
-        "Definicion":"Clasificación de tipo de envolvente urbana",
+        "ID_Atributo":"TGD",
+        "Nombre_Atributo":"Tipo de ganado\/cría",
+        "Definicion":"Clasificación del tipo de animal de crianza",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TGG",
         "Nombre_Atributo":"Tipo de suelo congelado",
         "Definicion":"Clasificación que se refiere a los suelos cuya dureza aumenta con el congelamiento.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"TGL",
+        "Nombre_Atributo":"Tipo de gobierno local",
+        "Definicion":"Categorías de gobierno local.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -1376,36 +1776,44 @@
         "Observaciones":"-"
     },
     {
-        "ID_Atributo":"TIE",
-        "Nombre_Atributo":"Tipo de evento turístico",
-        "Definicion":"Clasificación del tipo de evento según su principal propósito, pudiendo ser deportivo, cultural, artístico,etc.",
+        "ID_Atributo":"TIA",
+        "Nombre_Atributo":"Tipo de área de explotación",
+        "Definicion":"Clasificación del tipo de explotación\/exploración",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"TIE",
+        "Nombre_Atributo":"Tipo de evento turístico",
+        "Definicion":"Clasificación del tipo de evento según su principal propósito, pudiendo ser deportivo, cultural, artístico.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TIP",
-        "Nombre_Atributo":"Tipo de humedal",
-        "Definicion":"Aquella persona física o jurídica que cuenta con los derechos de propiedad sobre un bien. ",
+        "Nombre_Atributo":"Tipo de propietario",
+        "Definicion":"Aquella persona física o jurídica que cuenta con los derechos de propiedad sobre un bien",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TIR",
         "Nombre_Atributo":"Tipo de recorrido",
-        "Definicion":"Clasificación del recorrido de un sendero según la ubicación de sus puntos de inicio y finalización",
+        "Definicion":"Clasificación del recorrido de un sendero según la ubicación de sus puntos de inicio y finalización.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TIT",
-        "Nombre_Atributo":"Tipo de instalación turística",
-        "Definicion":"Clasificación realizada en base a las características de la infraestructura turística",
+        "Nombre_Atributo":"Tipo de intalación turística",
+        "Definicion":"Clasificación realizada en base a las características de la infraestructura turística.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TJU",
@@ -1421,7 +1829,7 @@
         "Definicion":"Clasificación del tipo de localidad censal",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TLG",
@@ -1440,6 +1848,22 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"TNE",
+        "Nombre_Atributo":"Tension de entrada",
+        "Definicion":"Indicación de la tensión de entrada de la estación transformadora",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nKilovatios (KV)"
+    },
+    {
+        "ID_Atributo":"TNS",
+        "Nombre_Atributo":"Tension de salida",
+        "Definicion":"Indicación de la tensión de salida de la estación transformadora",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: \nKilovatios (KV)"
+    },
+    {
         "ID_Atributo":"TP1",
         "Nombre_Atributo":"Tipo de polo",
         "Definicion":"Clasificación de cada uno de los dos puntos más septentrional y más austral de la superficie terrestre, opuestos entre sí, en función del hemisferio donde se encuentran.",
@@ -1456,20 +1880,12 @@
         "Observaciones":"Texto libre"
     },
     {
-        "ID_Atributo":"TPR",
-        "Nombre_Atributo":"Tipo de parcelario",
-        "Definicion":"Clasificación de prestador de acuerdo al tipo de actividad que realiza",
-        "Tipo_Atributo":"Cadena de caracteres",
-        "Tiene_Dominio":"SI",
-        "Observaciones":""
-    },
-    {
         "ID_Atributo":"TPE",
         "Nombre_Atributo":"Tipo de plataforma de estación",
         "Definicion":"Clasificacion del tipo de estacion según la plataforma utilizada para la realización de la misma: vehículos, estructuras u organismos.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TPL",
@@ -1480,12 +1896,20 @@
         "Observaciones":"-"
     },
     {
+        "ID_Atributo":"TPR",
+        "Nombre_Atributo":"Tipo de prestador",
+        "Definicion":"Clasificación del prestador de acuerdo al tipo de actividad que realiza",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
         "ID_Atributo":"TRO",
         "Nombre_Atributo":"Tipo de radio",
         "Definicion":"Clasificación del tipo de radio censal",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TSE",
@@ -1493,12 +1917,20 @@
         "Definicion":"Clasificación de la senda según el ámbito en la que se encuentre:  rural, urbana, mixto.",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TSN",
         "Nombre_Atributo":"Tipo de suelo no consolidado",
         "Definicion":"Clasificación que se refiere particularmente a los sedimentos y suelos en sentido amplio.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"TTR",
+        "Nombre_Atributo":"Tipo de trópico",
+        "Definicion":"Clasificación de cada uno de los dos círculos imaginarios de la esfera celeste paralelos al Ecuador (Cáncer y Capricornio).",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"
@@ -1538,10 +1970,18 @@
     {
         "ID_Atributo":"TYA",
         "Nombre_Atributo":"Tipo de asentamiento",
-        "Definicion":"Clasificación del tipo de asentamiento según su ubicación (BAHRA)",
+        "Definicion":"Clasificación del tipo de asentamiento según su ubicación y composición.(BAHRA)",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"TYM",
+        "Nombre_Atributo":"Tipo de macizo",
+        "Definicion":"Clasificación del tipo de macizo según su tamaño y\/o su ubicación",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"TYP",
@@ -1608,12 +2048,20 @@
         "Observaciones":"Unidad de medida: \nGrados centígrados (°C)"
     },
     {
+        "ID_Atributo":"VDM",
+        "Nombre_Atributo":"Valor de la muestra",
+        "Definicion":"Indica el valor de la muestra obtenida ",
+        "Tipo_Atributo":"Numérico",
+        "Tiene_Dominio":"NO",
+        "Observaciones":"Unidad de medida: Se especifica en el COG propio del organismo y en los metadatos"
+    },
+    {
         "ID_Atributo":"VFQ",
         "Nombre_Atributo":"Variable fìsico\/quimica",
         "Definicion":"Indicacion de la variable fisico\/quimica representada",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
-        "Observaciones":""
+        "Observaciones":"-"
     },
     {
         "ID_Atributo":"VLJ",
@@ -1627,6 +2075,30 @@
         "ID_Atributo":"VLP",
         "Nombre_Atributo":"Validación de límite",
         "Definicion":"Tipo de validación de un límite. No incluye los límites entre provincias. ",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"VOA",
+        "Nombre_Atributo":"Actividad volcánica",
+        "Definicion":"Período en que se registró la última actividad volcánica.",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"WSC",
+        "Nombre_Atributo":"Tipo de residuo domiciliario",
+        "Definicion":" (Waste\/Scrap Type Category - DFDD) Clasificación del tipo de residuo domiciliario",
+        "Tipo_Atributo":"Cadena de caracteres",
+        "Tiene_Dominio":"SI",
+        "Observaciones":"-"
+    },
+    {
+        "ID_Atributo":"ZNM",
+        "Nombre_Atributo":"Zona militar",
+        "Definicion":"Consigna la zona militar en la que se encuentra el ex CCD",
         "Tipo_Atributo":"Cadena de caracteres",
         "Tiene_Dominio":"SI",
         "Observaciones":"-"

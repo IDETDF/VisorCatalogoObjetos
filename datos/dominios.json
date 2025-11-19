@@ -1,5 +1,26 @@
 [
     {
+        "ID_Atributo_FK":"ACC",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"ACC",
+        "Codigo":"1",
+        "Etiqueta":"Accesible",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"ACC",
+        "Codigo":"2",
+        "Etiqueta":"No accesible",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"ACD",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -46,27 +67,6 @@
         "Codigo":"3",
         "Etiqueta":"Rural disperso",
         "Definicion":"Escuela ubicada en campo abierto o en un núcleo poblacional de menos de 500 habitantes.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"ARA",
-        "Codigo":"-1",
-        "Etiqueta":"Información no disponible",
-        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"ARA",
-        "Codigo":"1",
-        "Etiqueta":"Área en metros cuadrados",
-        "Definicion":"Medida de extensión de una superficie expresada en m²",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"ARA",
-        "Codigo":"3",
-        "Etiqueta":"Área en kilómetros cuadrados",
-        "Definicion":"Medida de extensión de una superficie expresada en km²",
         "Observaciones":""
     },
     {
@@ -352,8 +352,8 @@
     {
         "ID_Atributo_FK":"CA1",
         "Codigo":"1",
-        "Etiqueta":"Cabecera de Departamento o Partido",
-        "Definicion":"Asentamiento humano principal desde el punto de vista político administrativo en un partido o comuna.",
+        "Etiqueta":"Capital de Nación",
+        "Definicion":"Asentamiento humano principal desde el punto de vista político administrativo en una Nación.",
         "Observaciones":""
     },
     {
@@ -366,14 +366,21 @@
     {
         "ID_Atributo_FK":"CA1",
         "Codigo":"3",
-        "Etiqueta":"Capital de Nación",
-        "Definicion":"Asentamiento humano principal desde el punto de vista político administrativo en una Nación.",
+        "Etiqueta":"Cabecera de Departamento o Partido",
+        "Definicion":"Asentamiento humano principal desde el punto de vista político administrativo en un partido o comuna.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"CA1",
         "Codigo":"4",
-        "Etiqueta":"Sin jerarquía administrativa",
+        "Etiqueta":"Cabecera de gobierno local",
+        "Definicion":"Asentamiento cabecera de un área político-administrativa de tercer nivel creada mediante una norma en el marco del régimen orgánico municipal que determina cada jurisdicción, de acuerdo con lo establecido en la Constitución Nacional (Art. 5° y Art. 123°). En algunos casos, los gobiernos locales pueden extenderse en más de un departamento o no alcanzar una cobertura exhaustiva del territorio provincial. (INDEC)",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"CA1",
+        "Codigo":"5",
+        "Etiqueta":"Sin jerarquía adminitrativa",
         "Definicion":"Asentamiento humano sin jerarquía administrativa.",
         "Observaciones":""
     },
@@ -513,7 +520,7 @@
     {
         "ID_Atributo_FK":"CAT",
         "Codigo":"5",
-        "Etiqueta":"Hotel 5 estrella",
+        "Etiqueta":"Hotel 5 estrellas",
         "Definicion":"Establecimiento que brinda servicio de alojamiento y otros complementarios, conforme a los requisitos que cada autoridad de aplicación indique para esta categoría (en cuanto a dimensiones de las unidades y espacios comunes, servicios esenciales, equipamiento y mobiliario), en habitaciones con baño privado y que ocupa la totalidad o parte independiente de un inmueble, constituyendo sus servicios y dependencias un todo homogéneo.",
         "Observaciones":"Ley CABA 4631\/13, B.O N°4214"
     },
@@ -1582,6 +1589,13 @@
         "Observaciones":""
     },
     {
+        "ID_Atributo_FK":"COZ",
+        "Codigo":"7",
+        "Etiqueta":"E ",
+        "Definicion":"Zona de usos especiales",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"DMA",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -1600,6 +1614,69 @@
         "Codigo":"2",
         "Etiqueta":"Daño sobre infraestructura urbana",
         "Definicion":"Daño sobre industria, vivienda, servicios públicos y demás objetos que conforman la infraestructura urbana.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"1",
+        "Etiqueta":"Norte",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido norte  ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"2",
+        "Etiqueta":"Noreste",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido noreste",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"3",
+        "Etiqueta":"Este",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido este",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"4",
+        "Etiqueta":"Sureste",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido sureste",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"5",
+        "Etiqueta":"Sur",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido sur",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"6",
+        "Etiqueta":"Suroeste",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido suroeste",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"7",
+        "Etiqueta":"Oeste",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido oeste",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"DOF",
+        "Codigo":"8",
+        "Etiqueta":"Noroeste",
+        "Definicion":"Cuando la dirección del movimiento del agua es en sentido noroeste",
         "Observaciones":""
     },
     {
@@ -1933,15 +2010,15 @@
     },
     {
         "ID_Atributo_FK":"ETR",
-        "Codigo":"1",
-        "Etiqueta":"True",
+        "Codigo":"0",
+        "Etiqueta":"Falso",
         "Definicion":"",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"ETR",
-        "Codigo":"2",
-        "Etiqueta":"False",
+        "Codigo":"1",
+        "Etiqueta":"Verdadero",
         "Definicion":"",
         "Observaciones":""
     },
@@ -1984,7 +2061,7 @@
         "ID_Atributo_FK":"FRI",
         "Codigo":"1",
         "Etiqueta":"Clase A",
-        "Definicion":"Establecimiento de alto nivel higiénico-sanitario. Cumple con estándares internacionales que lo habilita a exportar a la Unión Europea y a los mercados más \nexigentes.",
+        "Definicion":"Establecimiento de alto nivel higiénico-sanitario. Cumple con estándares internacionales que lo habilita a exportar a la Unión Europea y a los mercados más exigentes.",
         "Observaciones":""
     },
     {
@@ -1998,7 +2075,7 @@
         "ID_Atributo_FK":"FRI",
         "Codigo":"3",
         "Etiqueta":"Matadero rural",
-        "Definicion":"Establecimiento que realiza la faena bajo la inspección sanitaria del Municipio al cual pertenece, no pudiendo salir la carne del mismo. \n ",
+        "Definicion":"Establecimiento que realiza la faena bajo la inspección sanitaria del Municipio al cual pertenece, no pudiendo salir la carne del mismo.",
         "Observaciones":""
     },
     {
@@ -2062,6 +2139,13 @@
         "Codigo":"9",
         "Etiqueta":"En construcción",
         "Definicion":"La instalación se encuentra en proceso de construcción, pero aún no es completamente funcional. Incluye la etapa de reparación.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"FUN",
+        "Codigo":"17",
+        "Etiqueta":"Proyectado\/Planificado",
+        "Definicion":"Se ha completado la planificación detallada pero no se ha iniciado la construcción.",
         "Observaciones":""
     },
     {
@@ -2156,6 +2240,41 @@
         "Observaciones":""
     },
     {
+        "ID_Atributo_FK":"GDI",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"GDI",
+        "Codigo":"1",
+        "Etiqueta":"Obra nueva",
+        "Definicion":"Construcción de un proyecto que no está materializado hasta la última fecha de actualización",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"GDI",
+        "Codigo":"2",
+        "Etiqueta":"Ampliación",
+        "Definicion":"Modificación de una infraestructura turística aumentando la superficie y\/o el volumen edificado, aumentando la capacidad productiva existente.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"GDI",
+        "Codigo":"3",
+        "Etiqueta":"Refacción",
+        "Definicion":"Modificación que busca mejorar las características técnicas y funcionales de infraestructura existente sin aumentar la superficie ni el volumen edificado",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"GDI",
+        "Codigo":"4",
+        "Etiqueta":"Rehabilitación",
+        "Definicion":"Modificación en infraestructura existente que se ha deteriorado seriamente y que no puede ser restaurada con actividades de mantenimiento y\/o refacción. Incluye la reconstrucción",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"GES",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -2174,6 +2293,13 @@
         "Codigo":"2",
         "Etiqueta":"Privado",
         "Definicion":"Establecimiento administrados por instituciones o personas",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"GES",
+        "Codigo":"3",
+        "Etiqueta":"Concesionado",
+        "Definicion":"",
         "Observaciones":""
     },
     {
@@ -2328,6 +2454,69 @@
         "Codigo":"6",
         "Etiqueta":"Húmedo",
         "Definicion":"La relación entre la precipitación anual y la evapotranspiración de referencia anual es superior a 1,00.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"1",
+        "Etiqueta":"Clase I",
+        "Definicion":"Suelos muy aptos para cualquier tipo de agricultura, con mínima o ninguna limitación. Buena capacidad de retención de agua y alto contenido de materia orgánica. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"2",
+        "Etiqueta":"Clase II",
+        "Definicion":"Tierras con limitaciones moderadas (erosión, drenaje, salinidad), que permiten cultivos con prácticas de manejo específicas. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"3",
+        "Etiqueta":"Clase III",
+        "Definicion":"Limitaciones moderadas a severas, que restringen la elección de cultivos y exigen prácticas de conservación más intensas. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"4",
+        "Etiqueta":"Clase IV",
+        "Definicion":"Limitaciones severas, aptas solo para pastoreo, forestación o algunos cultivos específicos con alto manejo. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"5",
+        "Etiqueta":"Clase V",
+        "Definicion":"Suelos con limitaciones muy severas; el uso es apto solo para pastoreo, forestación y no son aptos para agricultura. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"6",
+        "Etiqueta":"Clase VI",
+        "Definicion":"Limitaciones muy severas, aptas principalmente para pastoreo y forestación. La pedregosidad o la susceptibilidad a inundaciones son comunes. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"7",
+        "Etiqueta":"Clase VII",
+        "Definicion":"Limitaciones extremas, uso restringido a pastoreo y conservación, no para agricultura. Pueden tener pendientes pronunciadas o ser pedregosos. ",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"IED",
+        "Codigo":"8",
+        "Etiqueta":"Clase VIII",
+        "Definicion":"Suelos no aptos para fines agrícolas o ganaderos, como desiertos. Su uso se limita a la conservación o actividades recreativas. ",
         "Observaciones":""
     },
     {
@@ -3048,7 +3237,7 @@
         "ID_Atributo_FK":"NEN",
         "Codigo":"1",
         "Etiqueta":"Inicial",
-        "Definicion":"Nivel que tiene por objeto brindar una formación integral que abarca los aspectos sociales, afectivo emocionales, cognitivos, motrices y expresivos de manera que se promueva y profundice la calidad de los aprendizajes en etapas posteriores. Constituye una unidad pedagógica destinada a niños desde los 45 días a 5 años siendo obligatorios los últimos dos años (sala de 4 y sala de 5).",
+        "Definicion":"Nivel que tiene por objeto brindar una formación integral que abarca los aspectos sociales, afectivo-emocionales, cognitivos, motrices y expresivos de manera que se promueva y profundice la calidad de los aprendizajes en etapas posteriores. Constituye una unidad pedagógica destinada a niños desde los 45 días a 5 años siendo obligatorios los últimos dos años (sala de 4 y sala de 5).",
         "Observaciones":""
     },
     {
@@ -3123,8 +3312,15 @@
     },
     {
         "ID_Atributo_FK":"ODN",
+        "Codigo":"0",
+        "Etiqueta":"False",
+        "Definicion":"Cuando no posee uno o mas nombres alternativos generalmente usados por las fuerzas",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"ODN",
         "Codigo":"1",
-        "Etiqueta":"Denominación\/es alternativa\/as",
+        "Etiqueta":"True",
         "Definicion":"Cuando si posee uno o mas nombres alternativos generalmente usados por las fuerzas",
         "Observaciones":""
     },
@@ -3263,15 +3459,15 @@
     },
     {
         "ID_Atributo_FK":"PCT",
-        "Codigo":"1",
-        "Etiqueta":"True",
+        "Codigo":"0",
+        "Etiqueta":"False",
         "Definicion":"",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"PCT",
-        "Codigo":"2",
-        "Etiqueta":"False",
+        "Codigo":"1",
+        "Etiqueta":"True",
         "Definicion":"",
         "Observaciones":""
     },
@@ -3308,34 +3504,6 @@
         "Codigo":"4",
         "Etiqueta":"Punto acotado de mayor valor negativo",
         "Definicion":"Es aquel que es utilizado en la edición cartográfica, para indicar el punto de menor altura en cada hoja.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PEA",
-        "Codigo":"-1",
-        "Etiqueta":"Información no disponible",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PEA",
-        "Codigo":"1",
-        "Etiqueta":"Temporada invernal",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PEA",
-        "Codigo":"2",
-        "Etiqueta":"Temporada estival",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PEA",
-        "Codigo":"3",
-        "Etiqueta":"Anual",
-        "Definicion":"",
         "Observaciones":""
     },
     {
@@ -3550,13 +3718,6 @@
     },
     {
         "ID_Atributo_FK":"PPC",
-        "Codigo":"5",
-        "Etiqueta":"Eólica",
-        "Definicion":"Electricidad generada a partir del viento por aerogeneradores.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PPC",
         "Codigo":"3",
         "Etiqueta":"Fotovoltaica (solar)",
         "Definicion":"Producción de energía en paneles fotovoltaicos, donde se transforma la radiación solar en electricidad. ",
@@ -3571,29 +3732,29 @@
     },
     {
         "ID_Atributo_FK":"PPC",
+        "Codigo":"5",
+        "Etiqueta":"Eólica",
+        "Definicion":"Electricidad generada a partir del viento por aerogeneradores.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"PPC",
         "Codigo":"7",
         "Etiqueta":"Termoeléctrica",
         "Definicion":"Energía generada por el aprovechamiento de la combustión de carbón, gas y biogás.",
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"PRE",
-        "Codigo":"-1",
-        "Etiqueta":"Información no disponible",
-        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"PRE",
-        "Codigo":"1",
-        "Etiqueta":"Presisa",
+        "ID_Atributo_FK":"PPC",
+        "Codigo":"8",
+        "Etiqueta":"Biomasa",
         "Definicion":"",
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"PRE",
-        "Codigo":"2",
-        "Etiqueta":"Aproximada",
+        "ID_Atributo_FK":"PPC",
+        "Codigo":"9",
+        "Etiqueta":"Biogas",
         "Definicion":"",
         "Observaciones":""
     },
@@ -3763,6 +3924,27 @@
         "Codigo":"356",
         "Etiqueta":"Mineral uranio",
         "Definicion":"Elemento químico metálico, radiactivo y pesado.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"PRE",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"PRE",
+        "Codigo":"1",
+        "Etiqueta":"Presisa",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"PRE",
+        "Codigo":"2",
+        "Etiqueta":"Aproximada",
+        "Definicion":"",
         "Observaciones":""
     },
     {
@@ -4007,21 +4189,21 @@
         "ID_Atributo_FK":"SDA",
         "Codigo":"1",
         "Etiqueta":"Aire",
-        "Definicion":"",
+        "Definicion":"Actividad predominantemente aérea",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"SDA",
         "Codigo":"2",
         "Etiqueta":"Tierra",
-        "Definicion":"",
+        "Definicion":"Actividad sobre tierra",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"SDA",
         "Codigo":"3",
         "Etiqueta":"Agua",
-        "Definicion":"",
+        "Definicion":"Actividad sobre agua",
         "Observaciones":""
     },
     {
@@ -4137,6 +4319,27 @@
         "Observaciones":""
     },
     {
+        "ID_Atributo_FK":"SNL",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"SNL",
+        "Codigo":"0",
+        "Etiqueta":"False",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"SNL",
+        "Codigo":"1",
+        "Etiqueta":"True",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"SMC",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -4162,27 +4365,6 @@
         "Codigo":"89",
         "Etiqueta":"Restinga",
         "Definicion":"Planicie de roca en forma de lengua y adosada a la costa, donde el mar ejerce su acción de erosión sobre roca preexistente. Aflora en marea baja.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"SNL",
-        "Codigo":"-1",
-        "Etiqueta":"Información no disponible",
-        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"SNL",
-        "Codigo":"1",
-        "Etiqueta":"Si",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"SNL",
-        "Codigo":"2",
-        "Etiqueta":"No",
-        "Definicion":"",
         "Observaciones":""
     },
     {
@@ -4335,23 +4517,51 @@
     {
         "ID_Atributo_FK":"TAP",
         "Codigo":"1",
-        "Etiqueta":"Parque",
-        "Definicion":"Área representativa de una región biogeográfica, de gran atractivo por su belleza o interés científico, mantenida sin otras alteraciones que las necesarias para asegurar su control, la atención al visitante y la defensa nacional.",
-        "Observaciones":""
+        "Etiqueta":"Categoria Ia: Reserva natural estricta",
+        "Definicion":"Es un área que está protegida de todo uso humano excepto el ligero, con el fin de preservar las características geológicas y geomorfológicas de la región y su biodiversidad. Estas áreas están restringidas a toda perturbación humana fuera de los estudios científicos, el monitoreo ambiental y la educación, por ello proveen ambientes prístinos ideales para medir la influencia humana externa. En algunos casos las reservas naturales estrictas tienen un significado espiritual para las comunidades circundantes, y las áreas también están protegidas por esta razón. La gente que practica su fe en la región tiene derecho a seguir haciéndolo, siempre que esté en consonancia con los objetivos de conservación y gestión del área",
+        "Observaciones":"Corresponde a:\nReserva Natural Estricta, Reserva Natural Integral, Reserva Natural Silvestre, Reserva Natural Intangible, Reserva Natural Educativa, Reserva Nacional, Área Natural Protegida Estricta"
     },
     {
         "ID_Atributo_FK":"TAP",
         "Codigo":"2",
-        "Etiqueta":"Reserva",
-        "Definicion":"Área de interés para la conservación de los sistemas ecológicos, la protección de un Parque contiguo o de zonas de conservación independientes, cuando la situación existente no requiera o admita el régimen de un Parque. Se permiten asentamientos humanos en la medida que no amenacen la conservación. ",
+        "Etiqueta":"Categoría Ib: Área silvestre",
+        "Definicion":"Similar a una reserva natural estricta, pero generalmente más grande y protegida de forma ligeramente menos estricta",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TAP",
         "Codigo":"3",
-        "Etiqueta":"Monumento natural",
-        "Definicion":"Área, cosa, especie viva de animal o planta, que tiene un interés estético, histórico o científico. Se lo protege de manera absoluta, es inviolable, y la única actividad permitida son las inspecciones oficiales, las investigaciones y las medidas necesarias para su cuidado y atención de los visitantes. ",
-        "Observaciones":""
+        "Etiqueta":"Categoría II: Parque nacional",
+        "Definicion":"Un parque nacional o provincial es similar a un área silvestre en su tamaño y en su objetivo principal de proteger los ecosistemas que funcionan. Los parques se gestionan de forma que pueden contribuir a las economías locales mediante la promoción del turismo educativo y recreativo a una escala que no reducirá la eficacia de los esfuerzos de conservación. Las áreas circundantes de un parque pueden ser de \"uso consuntivo o no consuntivo\", pero deben actuar como una barrera para la defensa de las especies y comunidades nativas del área protegida para que puedan sostenerse a largo plazo.",
+        "Observaciones":"Parque Nacional, Parque Provincial, Parque Interjurisdiccional"
+    },
+    {
+        "ID_Atributo_FK":"TAP",
+        "Codigo":"4",
+        "Etiqueta":"Categoria III: Monumento o característica natural",
+        "Definicion":"Un monumento o característica natural es un área comparativamente más pequeña que se asigna específicamente para proteger un monumento natural y sus hábitats circundantes. Estos monumentos pueden ser naturales en su sentido más amplio o incluir elementos que han sido influenciados o introducidos por el hombre. Estos últimos deberían contener asociaciones de biodiversidad o podrían clasificarse de otra manera como un sitio histórico o espiritual, aunque esta distinción puede ser bastante difícil de determinar.",
+        "Observaciones":"Monumento Natural"
+    },
+    {
+        "ID_Atributo_FK":"TAP",
+        "Codigo":"5",
+        "Etiqueta":"Categoria IV: Área de Manejo de Hábitat \/ Especies",
+        "Definicion":"Un hábitat o área de gestión de especies es similar a un monumento natural, pero se centra en áreas de conservación más específicas, como una especie o hábitat identificable que requiere protección continua en lugar de la de una característica natural. Estas áreas protegidas estarán suficientemente controladas para asegurar el mantenimiento, la conservación y la restauración de especies y hábitats particulares y se fomenta ampliamente la educación pública de dichas áreas como parte de los objetivos de gestión. Las áreas de gestión de hábitats o de especies pueden existir como una fracción de un ecosistema o área protegida más amplia y pueden requerir diversos niveles de protección activa como la prevención de la caza furtiva, la creación de hábitats artificiales y la detención de la sucesión natural.",
+        "Observaciones":"Reserva Natural de Objetivo Definido, Área de Reserva Ecológica, Reserva Permanente de Especies de Fauna Silvestre, Santuario de Flora y Fauna"
+    },
+    {
+        "ID_Atributo_FK":"TAP",
+        "Codigo":"6",
+        "Etiqueta":"Categoría V: Paisaje protegido\/ Marino\/Área",
+        "Definicion":"Un paisaje terrestre o marino protegido cubre un conjunto entero de tierra o de océano con un plan de conservación natural explícito, pero normalmente también da cabida a una serie de actividades con ánimo de lucro",
+        "Observaciones":"Paisaje Protegido, Área de Uso Limitado Bajo Protección Especial, Vía Panorámica"
+    },
+    {
+        "ID_Atributo_FK":"TAP",
+        "Codigo":"7",
+        "Etiqueta":"Categoría VI: Área protegida con uso sostenible de los recursos naturales",
+        "Definicion":"La participación humana es un factor importante en la gestión de esta categoría y puede permitirse una producción industrial a gran escala. La UICN recomienda que una proporción de la masa terrestre permanezca en su condición natural —una decisión que debe tomarse a nivel nacional, normalmente con una especificidad para cada área protegida. Se debe desarrollar la gobernanza para adaptar la diversa y creciente gama de intereses que surgen de la producción de recursos naturales sostenibles. Es adecuada para vastas áreas que ya tienen un bajo nivel de ocupación humana o en las que las comunidades locales y sus prácticas tradicionales han tenido poco impacto permanente en la salud ambiental de la región y difiere de la categoría V en que no es el resultado de una interacción humana a largo plazo que haya tenido un efecto transformador en los ecosistemas circundantes",
+        "Observaciones":"Reserva Provincial, Reserva Natural, Reserva Privada, Reserva Municipal, Reserva Urbana, Reserva Cultural, Reserva Ecológica, Refugio de Vida Silvestre, Reserva de Biósfera, Reserva de Uso Múltiple, Reserva Hídrica, Reserva Natural de la Defensa, Reserva de Caza, Reserva de Pesca, Reserva Íctica, Reserva Forestal, Sitio Ramsar (humedal de importancia internacional), Reserva Científica, Reserva Recreativa, Reserva Manejada, Reserva con Uso Sostenible de los Recursos Naturales, Reserva Hemisférica de Aves Playeras, Reserva Costera, Área de Uso Científico Bajo Protección Especial, Reserva con Fines de Utilidad Pública, Área Marina Protegida (AMP), Área Natural Protegida (ANP)"
     },
     {
         "ID_Atributo_FK":"TAT",
@@ -4371,8 +4581,8 @@
         "ID_Atributo_FK":"TAT",
         "Codigo":"2",
         "Etiqueta":"Alojamiento turístico para-hotelero",
-        "Definicion":"Alojamientos categorizados como Cama y Desayuno \/ Hostal \/ Bed & Breakfast; Albergue Turístico \/ Hostel; Hospedaje Turístico \/ Residencial Turístico",
-        "Observaciones":"Ley CABA 4631\/13, B.O N°4214"
+        "Definicion":"Alojamientos categorizados como Cama y Desayuno \/ Hostal \/ Bed & Breakfast; Albergue Turístico \/ Hostel; Hospedaje Turístico \/ Residencial Turístico; Hosterías; Cabañas\/Bungalows, CAT y DAT",
+        "Observaciones":"Ley CABA 4631\/13, B.O N°4214 - INFUETUR"
     },
     {
         "ID_Atributo_FK":"TAT",
@@ -4648,6 +4858,34 @@
         "Observaciones":""
     },
     {
+        "ID_Atributo_FK":"TDE",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDE",
+        "Codigo":"1",
+        "Etiqueta":"Silo",
+        "Definicion":"Estructura de almacenamiento diseñada para guardar materiales a granel, como granos o forraje",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDE",
+        "Codigo":"2",
+        "Etiqueta":"Molienda",
+        "Definicion":"Establecimiento para realizar la molienda, un proceso de reducción del tamaño de partículas de un material sólido.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDE",
+        "Codigo":"3",
+        "Etiqueta":"Aserradero",
+        "Definicion":"Establecimiento primera transformación de la madera de troncos a tablas; proveen de productos semiacabados que generalmente son destinados a una industria de segunda transformación.",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"TDI",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -4739,6 +4977,48 @@
         "Observaciones":""
     },
     {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"1",
+        "Etiqueta":"Muy alto",
+        "Definicion":"La amenaza es muy alta cuando la línea de costa retrocedió más de 30 metros.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"2",
+        "Etiqueta":"Alto",
+        "Definicion":"La amenaza es alta cuando la línea de costa retrocedió hasta 30 metros.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"3",
+        "Etiqueta":"Moderado",
+        "Definicion":"La amenaza es moderada si la línea de costa se mantiene estable, sin avances ni retrocesos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"4",
+        "Etiqueta":"Bajo",
+        "Definicion":"La amenaza es baja si la línea de costa avanzó hasta 30 metros.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDR",
+        "Codigo":"5",
+        "Etiqueta":"Muy bajo",
+        "Definicion":"La amenaza es muy baja si la línea de costa avanzó más de 30 metros. ",
+        "Observaciones":""
+    },
+    {
         "ID_Atributo_FK":"TDU",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
@@ -4748,36 +5028,36 @@
     {
         "ID_Atributo_FK":"TDU",
         "Codigo":"1",
-        "Etiqueta":"Mineraloducto",
-        "Definicion":"Ducto destinado al transporte de los concentrados del mineral de extracción.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TDU",
-        "Codigo":"2",
         "Etiqueta":"Oleoducto",
         "Definicion":"Ducto destinado al transporte de líquidos provenientes de la explotación petrolera.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TDU",
-        "Codigo":"3",
+        "Codigo":"2",
         "Etiqueta":"Gasoducto",
         "Definicion":"Ducto destinado al transporte de gas natural a presión.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TDU",
-        "Codigo":"4",
+        "Codigo":"3",
         "Etiqueta":"Poliducto",
         "Definicion":"Ducto destinado al transporte de sustancias varias, del mismo origen petrolífero.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TDU",
+        "Codigo":"4",
+        "Etiqueta":"Propanoducto",
+        "Definicion":"Ducto destinado al transporte de propano",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TDU",
         "Codigo":"5",
-        "Etiqueta":"Naftoducto",
-        "Definicion":"Ducto destinado al transporte exclusivo de naftas.",
+        "Etiqueta":"Jet propulsion",
+        "Definicion":"Ducto destinado al transporte de combustible destinado a aeronaves",
         "Observaciones":""
     },
     {
@@ -4845,37 +5125,51 @@
     },
     {
         "ID_Atributo_FK":"TEN",
+        "Codigo":"1",
+        "Etiqueta":"Media tensión",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior a 1 KV e inferior o igual a 33KV.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TEN",
         "Codigo":"2",
-        "Etiqueta":"Baja tensión",
-        "Definicion":"Líneas para distribución de energía eléctrica, cuya tensión nominal es hasta 1 KV.",
+        "Etiqueta":"Alta tensión",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior a 33 KV e inferior o igual a 66KV.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TEN",
         "Codigo":"3",
-        "Etiqueta":"Media tensión",
-        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior a 1 KV e inferior o igual a 66KV.",
+        "Etiqueta":"Alta tensión",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior 66KV y menor o igual a 132KV.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TEN",
+        "Codigo":"4",
+        "Etiqueta":"Alta tensión",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior 132KV y menor o igual a 220KV.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TEN",
+        "Codigo":"5",
+        "Etiqueta":"Extra alta tensión",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior 220KV y menor o igual a 330KV.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TEN",
         "Codigo":"6",
-        "Etiqueta":"Alta tensión",
-        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior 66KV y menor o igual a 220 KV.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TEN",
-        "Codigo":"9",
         "Etiqueta":"Extra alta tensión",
-        "Definicion":"Líneas para transporte de energía eléctrica, cuya tensión nominal es superior a 200KV e inferior o igual a 800 KV.",
+        "Definicion":"Líneas para transporte o distribución de energía eléctrica, cuya tensión nominal es superior 330KV y menor o igual a 345KV.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TEN",
-        "Codigo":"17",
-        "Etiqueta":"Ultra alta tensión",
-        "Definicion":"Líneas para transporte de energía eléctrica, cuya tensión nominal es superior a 800KV.",
+        "Codigo":"7",
+        "Etiqueta":"Extra alta tensión",
+        "Definicion":"Líneas para transporte de energía eléctrica, cuya tensión nominal es superior a 345KV e inferior o igual a 500KV.",
         "Observaciones":""
     },
     {
@@ -4921,66 +5215,10 @@
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"TEU",
+        "ID_Atributo_FK":"TJU",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
         "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TEU",
-        "Codigo":"1",
-        "Etiqueta":"Simple",
-        "Definicion":"Son aquellas que se extienden íntegramente sobre una jurisdicción de 2º orden y también sobre una sola área de gobierno local.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TEU",
-        "Codigo":"2",
-        "Etiqueta":"Interprovinciales",
-        "Definicion":"Son aquellas que se extienden sobre dos o más jurisdicciones de 2° orden.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TEU",
-        "Codigo":"3",
-        "Etiqueta":"Interdepartamentales",
-        "Definicion":"Son aquellas que se extienden integramente sobre un jurisdicción de 2° orden y dos o más Departamentos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TEU",
-        "Codigo":"4",
-        "Etiqueta":"Intermunicipales",
-        "Definicion":"Son aquellas que se extienden integramente sobre un jurisdicción de 2° orden y dos o más Municipios.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TIE",
-        "Codigo":"-1",
-        "Etiqueta":"Información no disponible",
-        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TIE",
-        "Codigo":"1",
-        "Etiqueta":"Social y Cultural",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TIE",
-        "Codigo":"2",
-        "Etiqueta":"Deportivo",
-        "Definicion":"",
-        "Observaciones":""
-    },
-    {
-        "ID_Atributo_FK":"TIE",
-        "Codigo":"3",
-        "Etiqueta":"Artístico",
-        "Definicion":"",
         "Observaciones":""
     },
     {
@@ -5008,6 +5246,223 @@
         "ID_Atributo_FK":"TJU",
         "Codigo":"4",
         "Etiqueta":"Administrativo",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"1",
+        "Etiqueta":"Bovino",
+        "Definicion":"Incluye establecimiento de cría, recría, invernada, feed-lot, cabaña y tambo para ganado bovino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"2",
+        "Etiqueta":"Bubalino",
+        "Definicion":"Incluye establecimiento de cría, recría, invernada, feed-lot, cabaña y tambo para ganado bubalino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"3",
+        "Etiqueta":"Ovino",
+        "Definicion":"Incluye establecimiento de cría, cabaña y tambo para ganado ovino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"4",
+        "Etiqueta":"Porcino",
+        "Definicion":"Incluye establecimiento de cría y cabaña para ganado porcino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"5",
+        "Etiqueta":"Equino",
+        "Definicion":"Incluye establecimiento de cría y cabaña para ganado equino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"6",
+        "Etiqueta":"Caprino",
+        "Definicion":"Incluye establecimiento de cría, cabaña y tambo para ganado caprino.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"7",
+        "Etiqueta":"Avicola",
+        "Definicion":"Incluye establecimiento de pollo parrileros, produccion de huevos y reproductores avicolas.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"8",
+        "Etiqueta":"Apícola",
+        "Definicion":"Incluye colmenas y apiaríos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGD",
+        "Codigo":"9",
+        "Etiqueta":"Acuícola",
+        "Definicion":"Incluye granjas piscicolas.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"1",
+        "Etiqueta":"MU - municipio de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"2",
+        "Etiqueta":"M1 - municipio de 1° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"3",
+        "Etiqueta":"M2 - municipio de 2° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"4",
+        "Etiqueta":"M3 - municipio de 3° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"5",
+        "Etiqueta":"CO - comuna de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"6",
+        "Etiqueta":"CO1 - comuna de 1° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"7",
+        "Etiqueta":"CO2 - comuna de 2° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"8",
+        "Etiqueta":"CM - comisión municipal de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"9",
+        "Etiqueta":"CMA - comisión municipal categoría A",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"10",
+        "Etiqueta":"CMB - comisión municipal categoría B",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"11",
+        "Etiqueta":"CF - comisión de fomento de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"12",
+        "Etiqueta":"JG1 - junta de gobierno de 1° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"13",
+        "Etiqueta":"JG2 - junta de gobierno de 2° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"14",
+        "Etiqueta":"JG3 - junta de gobierno de 3° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"15",
+        "Etiqueta":"JG4 - junta de gobierno de 4° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"16",
+        "Etiqueta":"JV - junta vecinal de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"17",
+        "Etiqueta":"CR - comuna rural de única categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"18",
+        "Etiqueta":"CR1 - comuna rural de 1° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"19",
+        "Etiqueta":"CR2 - comuna rural de 2° categoría",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TGL",
+        "Codigo":"20",
+        "Etiqueta":"CR3 - comuna rural de 3° categoría",
         "Definicion":"",
         "Observaciones":""
     },
@@ -5110,24 +5565,80 @@
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"TI1",
+        "ID_Atributo_FK":"TIA",
         "Codigo":"-1",
         "Etiqueta":"Información no disponible",
         "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"TI1",
+        "ID_Atributo_FK":"TIA",
         "Codigo":"1",
-        "Etiqueta":"Permanente",
-        "Definicion":"Base antártica donde se realizan actividades durante todo el año.",
+        "Etiqueta":"Exploración",
+        "Definicion":"Área permisada para la exploración",
         "Observaciones":""
     },
     {
-        "ID_Atributo_FK":"TI1",
+        "ID_Atributo_FK":"TIA",
         "Codigo":"2",
-        "Etiqueta":"Temporaria",
-        "Definicion":"Base antártica donde se realizan actividades sólo durante el verano antártico.",
+        "Etiqueta":"Explotación",
+        "Definicion":"Área concesionada para la explotación",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIE",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIE",
+        "Codigo":"1",
+        "Etiqueta":"Social y cultural",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIE",
+        "Codigo":"2",
+        "Etiqueta":"Deportivo",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIE",
+        "Codigo":"3",
+        "Etiqueta":"Artístico",
+        "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIP",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIP",
+        "Codigo":"1",
+        "Etiqueta":"Estatal",
+        "Definicion":"Propiedad del estado nacional, provincial o municipal",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIP",
+        "Codigo":"2",
+        "Etiqueta":"Privado",
+        "Definicion":"Propiedad de un privado.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIR",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
         "Observaciones":""
     },
     {
@@ -5142,6 +5653,27 @@
         "Codigo":"2",
         "Etiqueta":"Ida y vuelta",
         "Definicion":"",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIT",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIT",
+        "Codigo":"1",
+        "Etiqueta":"Unidades de atención al visitante",
+        "Definicion":"Obras que generan un espacio de encuentro con los visitantes. Ej.: centro de interpretación, centro de información y atencion al visitante, centro de control y acceso.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TIT",
+        "Codigo":"2",
+        "Etiqueta":"Unidades de ordenamiento de visitación",
+        "Definicion":"Son construcciones o intervenciones que permiten el desarrollo de productos o actividades turísticas: miradores, refugios turísticos, pasarelas",
         "Observaciones":""
     },
     {
@@ -5454,16 +5986,23 @@
     },
     {
         "ID_Atributo_FK":"TPR",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TPR",
         "Codigo":"1",
         "Etiqueta":"Aventura",
-        "Definicion":"Operadores que comercializan una modalidad de turismo cuyo propósito específico es participar en actividades en un medio natural o antrópico, que suponen la existencia de un riesgo controlado o de una perparación fisica específica.",
+        "Definicion":"Operadores que comercializan una modalidad de turismo cuyo propósito específico es participar en actividades en un medio ambiente natural o antrópico, que suponen la existencia de un riesgo controlado o de una preparación física específica.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TPR",
         "Codigo":"2",
         "Etiqueta":"Convencional",
-        "Definicion":"Prestador que brinda servicios y\/o actividades tradicionales, que no implican riesgos y\/o no requiere prepareción física.",
+        "Definicion":"Prestador que brinda servicios y\/o actividades turísticas tradicionales, que no implican riesgos y\/o no requiere preparación física de los participantes.",
         "Observaciones":""
     },
     {
@@ -5492,6 +6031,34 @@
         "Codigo":"3",
         "Etiqueta":"Mixto",
         "Definicion":"Cuando el radio está conformado por viviendas diseminadas en campo abierto, con población rural dispersa, y con población agrupada en pequeños poblados o en bordes de amanzanados de localidades.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TSE",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TSE",
+        "Codigo":"1",
+        "Etiqueta":"Urbano",
+        "Definicion":"Cuando la senda se ubica en ejido urbano",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TSE",
+        "Codigo":"2",
+        "Etiqueta":"Rural",
+        "Definicion":"Cuando la senda se ubica en ejido rural",
+        "Observaciones":""
+    },
+    {
+        "ID_Atributo_FK":"TSE",
+        "Codigo":"3",
+        "Etiqueta":"Mixto",
+        "Definicion":"Cuando la senda se ubica en ejido mixto",
         "Observaciones":""
     },
     {
@@ -5715,28 +6282,35 @@
         "ID_Atributo_FK":"TYA",
         "Codigo":"1",
         "Etiqueta":"Localidad",
-        "Definicion":"Porción de territorio con continuidad de áreas edificadas y no edficadas conectadas enre sí por una red de calles donde se concentra la población",
-        "Observaciones":""
+        "Definicion":"Refiere a una porción del territorio caracterizada por la continuidad de áreas edificadas y no edificadas conectadas entre sí por una red de calles donde se concentra población. (BAHRA)",
+        "Observaciones":"Código de 8 caracteres"
     },
     {
         "ID_Atributo_FK":"TYA",
         "Codigo":"2",
         "Etiqueta":"Entidad",
-        "Definicion":"Subdivisiones de una localidad",
-        "Observaciones":""
+        "Definicion":"Las entidades son  subdivisiones de una localidad (simple o compuesta) según la legislación del gobierno local. En algunos casos las entidades corresponden a localidades que en su origen fueron localidades separadas y que por efecto de la expansión urbana y la aplicación del criterio de continuidad física, actualmente se encuentra “comprendida” en una localidad simple o componente de localidad compuesta o aglomerado. En la ciudad de Buenos Aires se denominan “barrios”, en la provincia de Mendoza “distritos” o “secciones”, y en el resto de las provincias reciben el nombre de “localidades” o “barrios”. El uso de la unidad “entidad” es optativo, y se aplica en algunas provincias. (BAHRA)",
+        "Observaciones":"Código de 10 caracteres"
     },
     {
         "ID_Atributo_FK":"TYA",
         "Codigo":"3",
         "Etiqueta":"Paraje",
-        "Definicion":"Lugar situado en un área rural, puede presentar o no objetos geográficos",
-        "Observaciones":""
+        "Definicion":"Se entiende por paraje a un lugar situado en un área rural, que se identifica con un topónimo y que puede presentar o no objetos geográficos (ver objetos geográficos de áreas rurales). El nombre con que se lo identifica puede provenir de un registro oficial o bien puede ser dado por lugareños. La mayoría de los parajes tienen límites indefinidos o parcialmente definidos. (BAHRA)",
+        "Observaciones":"Código de 9 caracteres"
     },
     {
         "ID_Atributo_FK":"TYA",
         "Codigo":"4",
         "Etiqueta":"Base antártica",
-        "Definicion":"Conjunto formado por edificios destinados a investigaciones científicas, servicios y viviendas que no se ajustan a la definción  de localidad",
+        "Definicion":"La base antártica por definición es un conjunto formado por edificios destinados a investigaciones científicas, servicios y viviendas que no se ajustan a la definición de localidad empleada en los censos nacionales por no constituir un amanzanamiento definido en el terreno. (BAHRA)",
+        "Observaciones":"Código de 9 caracteres"
+    },
+    {
+        "ID_Atributo_FK":"TYM",
+        "Codigo":"-1",
+        "Etiqueta":"Información no disponible",
+        "Definicion":"Cuando no se dispone o no se tiene certeza de los datos.",
         "Observaciones":""
     },
     {
@@ -6022,21 +6596,21 @@
     {
         "ID_Atributo_FK":"TZZ",
         "Codigo":"1",
-        "Etiqueta":"Zona de frontera para el desarrollo y zona de seguridad de fronteras",
+        "Etiqueta":"Zona de Frontera para el Desarrollo y Zona de Seguridad de Fronteras",
         "Definicion":"Zona de seguridad destinada a complementar las previsiones territoriales de la defensa nacional. Comprende una faja a lo largo de la frontera terrestre y marítima a partir del límite internacional.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TZZ",
         "Codigo":"2",
-        "Etiqueta":"Zona de seguridad de fronteras",
+        "Etiqueta":"Zona de Seguridad de Fronteras",
         "Definicion":"Zona que se encuentra en las provincias de Santa Cruz, Chubut y Río Negro. Se extiende desde Cabo Vírgenes, Ruta Provincial Nº 1 hasta Río Gallegos, desde esta ciudad por Ruta Nacional Nº 3 hacia el Norte hasta El Salado. Desde este punto por Rutas Provinciales Nº 47 y Nº 66 hasta Antonio de Biedma, desde allí por vías del Ferrocarril hasta Las Heras. Desde este punto por Ruta Provincial Nº 16 hasta Holdich y vías del Ferrocarril General Roca hasta Pampa del Castillo en la provincia de Chubut. Desde esta localidad por Ruta Provincial Nº 37 hasta su intersección con la Ruta Nacional Nº 3 y, por esta última hasta San Antonio Oeste en la Provincia de Río Negro, en cuyo puerto finaliza esta delimitación.",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"TZZ",
         "Codigo":"3",
-        "Etiqueta":"Área de frontera",
+        "Etiqueta":"Área de Frontera",
         "Definicion":"Área que, por su situación y características especiales, requiere la promoción prioritaria de su desarrollo.",
         "Observaciones":""
     },

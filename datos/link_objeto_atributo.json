@@ -69,6 +69,22 @@
     },
     {
         "ID_Objeto_FK":"010103",
+        "ID_Atributo_FK":"TIA"
+    },
+    {
+        "ID_Objeto_FK":"010103",
+        "ID_Atributo_FK":"EOP"
+    },
+    {
+        "ID_Objeto_FK":"010103",
+        "ID_Atributo_FK":"EIF"
+    },
+    {
+        "ID_Objeto_FK":"010103",
+        "ID_Atributo_FK":"PCS"
+    },
+    {
+        "ID_Objeto_FK":"010103",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -204,6 +220,26 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"010203",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"010203",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"010203",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"010203",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010203",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"010204",
         "ID_Atributo_FK":"FNA"
     },
@@ -252,6 +288,30 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"LOC"
+    },
+    {
+        "ID_Objeto_FK":"010207",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"010301",
         "ID_Atributo_FK":"FNA"
     },
@@ -281,10 +341,34 @@
     },
     {
         "ID_Objeto_FK":"010302",
+        "ID_Atributo_FK":"TGD"
+    },
+    {
+        "ID_Objeto_FK":"010302",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010303",
         "ID_Atributo_FK":"SAG"
     },
     {
         "ID_Objeto_FK":"010304",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010305",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"010305",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"010305",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"010305",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -304,6 +388,18 @@
         "ID_Atributo_FK":"CIF"
     },
     {
+        "ID_Objeto_FK":"010306",
+        "ID_Atributo_FK":"FRI"
+    },
+    {
+        "ID_Objeto_FK":"010306",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010306",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"010307",
         "ID_Atributo_FK":"FNA"
     },
@@ -318,6 +414,10 @@
     {
         "ID_Objeto_FK":"010307",
         "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010307",
+        "ID_Atributo_FK":"TDE"
     },
     {
         "ID_Objeto_FK":"010307",
@@ -369,6 +469,22 @@
     },
     {
         "ID_Objeto_FK":"010402",
+        "ID_Atributo_FK":"SCN"
+    },
+    {
+        "ID_Objeto_FK":"010402",
+        "ID_Atributo_FK":"DTS"
+    },
+    {
+        "ID_Objeto_FK":"010402",
+        "ID_Atributo_FK":"EPR"
+    },
+    {
+        "ID_Objeto_FK":"010402",
+        "ID_Atributo_FK":"ECN"
+    },
+    {
+        "ID_Objeto_FK":"010402",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -386,6 +502,30 @@
     {
         "ID_Objeto_FK":"010403",
         "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"DTS"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"EPR"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"ECN"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"POI"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"TNE"
+    },
+    {
+        "ID_Objeto_FK":"010403",
+        "ID_Atributo_FK":"TNS"
     },
     {
         "ID_Objeto_FK":"010403",
@@ -445,18 +585,46 @@
     },
     {
         "ID_Objeto_FK":"010503",
-        "ID_Atributo_FK":"FNA"
+        "ID_Atributo_FK":"CIC"
     },
     {
         "ID_Objeto_FK":"010503",
-        "ID_Atributo_FK":"GNA"
+        "ID_Atributo_FK":"NOT"
     },
     {
         "ID_Objeto_FK":"010503",
-        "ID_Atributo_FK":"NAM"
+        "ID_Atributo_FK":"FDD"
     },
     {
         "ID_Objeto_FK":"010503",
+        "ID_Atributo_FK":"OBS"
+    },
+    {
+        "ID_Objeto_FK":"010503",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010504",
+        "ID_Atributo_FK":"CIC"
+    },
+    {
+        "ID_Objeto_FK":"010504",
+        "ID_Atributo_FK":"BA1"
+    },
+    {
+        "ID_Objeto_FK":"010504",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010504",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"010504",
+        "ID_Atributo_FK":"OBS"
+    },
+    {
+        "ID_Objeto_FK":"010504",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -481,6 +649,50 @@
     },
     {
         "ID_Objeto_FK":"010601",
+        "ID_Atributo_FK":"CAA"
+    },
+    {
+        "ID_Objeto_FK":"010601",
+        "ID_Atributo_FK":"NOT"
+    },
+    {
+        "ID_Objeto_FK":"010601",
+        "ID_Atributo_FK":"DIM"
+    },
+    {
+        "ID_Objeto_FK":"010601",
+        "ID_Atributo_FK":"LZN"
+    },
+    {
+        "ID_Objeto_FK":"010601",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010602",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010602",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010603",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"010603",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"010603",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"010603",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010603",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -557,19 +769,71 @@
     },
     {
         "ID_Objeto_FK":"010804",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"010804",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"010804",
-        "ID_Atributo_FK":"NAM"
+        "ID_Atributo_FK":"IDC"
     },
     {
         "ID_Objeto_FK":"010804",
         "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"010804",
+        "ID_Atributo_FK":"WSC"
+    },
+    {
+        "ID_Objeto_FK":"010804",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010901",
+        "ID_Atributo_FK":"CAZ"
+    },
+    {
+        "ID_Objeto_FK":"010901",
+        "ID_Atributo_FK":"SPP"
+    },
+    {
+        "ID_Objeto_FK":"010901",
+        "ID_Atributo_FK":"TCD"
+    },
+    {
+        "ID_Objeto_FK":"010901",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"010902",
+        "ID_Atributo_FK":"CAO"
+    },
+    {
+        "ID_Objeto_FK":"010902",
+        "ID_Atributo_FK":"SPP"
+    },
+    {
+        "ID_Objeto_FK":"010902",
+        "ID_Atributo_FK":"TCD"
+    },
+    {
+        "ID_Objeto_FK":"010902",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"020101",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020101",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020101",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020101",
+        "ID_Atributo_FK":"TC1"
+    },
+    {
+        "ID_Objeto_FK":"020101",
+        "ID_Atributo_FK":"SAG"
     },
     {
         "ID_Objeto_FK":"020102",
@@ -598,18 +862,6 @@
     {
         "ID_Objeto_FK":"020103",
         "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"020103",
-        "ID_Atributo_FK":"CA1"
-    },
-    {
-        "ID_Objeto_FK":"020103",
-        "ID_Atributo_FK":"CA3"
-    },
-    {
-        "ID_Objeto_FK":"020103",
-        "ID_Atributo_FK":"BA1"
     },
     {
         "ID_Objeto_FK":"020103",
@@ -617,6 +869,18 @@
     },
     {
         "ID_Objeto_FK":"020103",
+        "ID_Atributo_FK":"CA1"
+    },
+    {
+        "ID_Objeto_FK":"020103",
+        "ID_Atributo_FK":"BA1"
+    },
+    {
+        "ID_Objeto_FK":"020103",
+        "ID_Atributo_FK":"FDC"
+    },
+    {
+        "ID_Objeto_FK":"020103",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -633,6 +897,22 @@
     },
     {
         "ID_Objeto_FK":"020104",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"020105",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020105",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020105",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020105",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -781,6 +1061,14 @@
     },
     {
         "ID_Objeto_FK":"020303",
+        "ID_Atributo_FK":"TAT"
+    },
+    {
+        "ID_Objeto_FK":"020303",
+        "ID_Atributo_FK":"CAT"
+    },
+    {
+        "ID_Objeto_FK":"020303",
         "ID_Atributo_FK":"ADR"
     },
     {
@@ -789,15 +1077,15 @@
     },
     {
         "ID_Objeto_FK":"020303",
+        "ID_Atributo_FK":"BAR"
+    },
+    {
+        "ID_Objeto_FK":"020303",
         "ID_Atributo_FK":"NCM"
     },
     {
         "ID_Objeto_FK":"020303",
         "ID_Atributo_FK":"RZN"
-    },
-    {
-        "ID_Objeto_FK":"020303",
-        "ID_Atributo_FK":"TAT"
     },
     {
         "ID_Objeto_FK":"020303",
@@ -837,11 +1125,7 @@
     },
     {
         "ID_Objeto_FK":"020304",
-        "ID_Atributo_FK":"TIP"
-    },
-    {
-        "ID_Objeto_FK":"020304",
-        "ID_Atributo_FK":"ACC"
+        "ID_Atributo_FK":"SDA"
     },
     {
         "ID_Objeto_FK":"020304",
@@ -881,15 +1165,11 @@
     },
     {
         "ID_Objeto_FK":"020306",
-        "ID_Atributo_FK":"ARA"
-    },
-    {
-        "ID_Objeto_FK":"020306",
         "ID_Atributo_FK":"LZN"
     },
     {
         "ID_Objeto_FK":"020306",
-        "ID_Atributo_FK":"TIT"
+        "ID_Atributo_FK":"ARA"
     },
     {
         "ID_Objeto_FK":"020306",
@@ -897,7 +1177,23 @@
     },
     {
         "ID_Objeto_FK":"020306",
+        "ID_Atributo_FK":"TIT"
+    },
+    {
+        "ID_Objeto_FK":"020306",
         "ID_Atributo_FK":"GDI"
+    },
+    {
+        "ID_Objeto_FK":"020306",
+        "ID_Atributo_FK":"ACC"
+    },
+    {
+        "ID_Objeto_FK":"020306",
+        "ID_Atributo_FK":"TIP"
+    },
+    {
+        "ID_Objeto_FK":"020306",
+        "ID_Atributo_FK":"GES"
     },
     {
         "ID_Objeto_FK":"020306",
@@ -929,6 +1225,42 @@
     },
     {
         "ID_Objeto_FK":"020307",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"020308",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020308",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020308",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020308",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"020401",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020401",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020401",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020401",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"020401",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -985,7 +1317,15 @@
     },
     {
         "ID_Objeto_FK":"020403",
+        "ID_Atributo_FK":"ACC"
+    },
+    {
+        "ID_Objeto_FK":"020403",
         "ID_Atributo_FK":"RZN"
+    },
+    {
+        "ID_Objeto_FK":"020403",
+        "ID_Atributo_FK":"OBS"
     },
     {
         "ID_Objeto_FK":"020403",
@@ -1009,6 +1349,10 @@
     },
     {
         "ID_Objeto_FK":"020404",
+        "ID_Atributo_FK":"LZN"
+    },
+    {
+        "ID_Objeto_FK":"020404",
         "ID_Atributo_FK":"GDC"
     },
     {
@@ -1018,10 +1362,6 @@
     {
         "ID_Objeto_FK":"020404",
         "ID_Atributo_FK":"TIR"
-    },
-    {
-        "ID_Objeto_FK":"020404",
-        "ID_Atributo_FK":"LZN"
     },
     {
         "ID_Objeto_FK":"020404",
@@ -1036,6 +1376,26 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"020405",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020405",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020405",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020405",
+        "ID_Atributo_FK":"GES"
+    },
+    {
+        "ID_Objeto_FK":"020405",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"020501",
         "ID_Atributo_FK":"FNA"
     },
@@ -1081,6 +1441,22 @@
     },
     {
         "ID_Objeto_FK":"020503",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"020504",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"020504",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"020504",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"020504",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1352,6 +1728,202 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"ODN"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"DTS"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"DTE"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"ZNM"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"SBZ"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"ARM"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"ETB"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"PCT"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"ETR"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"SEZ"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"MEM"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"CIR"
+    },
+    {
+        "ID_Objeto_FK":"021001",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"PIP"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"NMB"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"NFC"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"SIN"
+    },
+    {
+        "ID_Objeto_FK":"021002",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"021101",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"021101",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"021101",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"021101",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"RGC"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"LTN"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"RAL"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"CAA"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"LOC"
+    },
+    {
+        "ID_Objeto_FK":"030101",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030102",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030102",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030102",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030102",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030102",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030103",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030103",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030103",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030103",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030103",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"030201",
         "ID_Atributo_FK":"FNA"
     },
@@ -1512,6 +2084,134 @@
         "ID_Atributo_FK":"FNA"
     },
     {
+        "ID_Objeto_FK":"030208",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030208",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030208",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030208",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"LZN"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"CAA"
+    },
+    {
+        "ID_Objeto_FK":"030301",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"LZN"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"CAA"
+    },
+    {
+        "ID_Objeto_FK":"030302",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"LOC"
+    },
+    {
+        "ID_Objeto_FK":"030303",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030401",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030401",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030401",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030401",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030402",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030402",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030402",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030402",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"030403",
         "ID_Atributo_FK":"FNA"
     },
@@ -1605,22 +2305,6 @@
     },
     {
         "ID_Objeto_FK":"030407",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"030408",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"030408",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"030408",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"030408",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1776,6 +2460,54 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"030702",
+        "ID_Atributo_FK":"FEO"
+    },
+    {
+        "ID_Objeto_FK":"030702",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"FEO"
+    },
+    {
+        "ID_Objeto_FK":"030703",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030704",
+        "ID_Atributo_FK":"FEO"
+    },
+    {
+        "ID_Objeto_FK":"030704",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030705",
+        "ID_Atributo_FK":"FEO"
+    },
+    {
+        "ID_Objeto_FK":"030705",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"030706",
         "ID_Atributo_FK":"FEO"
     },
@@ -1801,6 +2533,18 @@
     },
     {
         "ID_Objeto_FK":"030708",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030709",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030709",
+        "ID_Atributo_FK":"FEO"
+    },
+    {
+        "ID_Objeto_FK":"030709",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1824,11 +2568,135 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"030802",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030802",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030802",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030802",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030802",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030803",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030803",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"030803",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"030803",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030803",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030804",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030804",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030804",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030804",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030805",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030805",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030806",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030806",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"030807",
         "ID_Atributo_FK":"FNA"
     },
     {
         "ID_Objeto_FK":"030807",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030808",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030808",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030809",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030809",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030809",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"030809",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"030810",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"030810",
+        "ID_Atributo_FK":"TEM"
+    },
+    {
+        "ID_Objeto_FK":"030810",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040101",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"040101",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"040101",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"040101",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1900,6 +2768,22 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"040302",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"040302",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"040302",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"040302",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"040601",
         "ID_Atributo_FK":"FNA"
     },
@@ -1913,6 +2797,130 @@
     },
     {
         "ID_Objeto_FK":"040601",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040602",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040603",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040604",
+        "ID_Atributo_FK":"IDB"
+    },
+    {
+        "ID_Objeto_FK":"040604",
+        "ID_Atributo_FK":"TBO"
+    },
+    {
+        "ID_Objeto_FK":"040604",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"TEM"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"TPE"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"IDR"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"CE1"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LAG"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LAM"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LAS"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LGR"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LOM"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"LOS"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"CDV"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"CDM"
+    },
+    {
+        "ID_Objeto_FK":"040605",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"040606",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"AM2"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"CBI"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"IDR"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"PRG"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"DTS"
+    },
+    {
+        "ID_Objeto_FK":"040607",
+        "ID_Atributo_FK":"DTE"
+    },
+    {
+        "ID_Objeto_FK":"040607",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1933,10 +2941,6 @@
     },
     {
         "ID_Objeto_FK":"041101",
-        "ID_Atributo_FK":"LOC"
-    },
-    {
-        "ID_Objeto_FK":"041101",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -1953,38 +2957,126 @@
     },
     {
         "ID_Objeto_FK":"041102",
+        "ID_Atributo_FK":"HYP"
+    },
+    {
+        "ID_Objeto_FK":"041102",
+        "ID_Atributo_FK":"SI1"
+    },
+    {
+        "ID_Objeto_FK":"041102",
+        "ID_Atributo_FK":"CU1"
+    },
+    {
+        "ID_Objeto_FK":"041102",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041103",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041103",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041103",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041103",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041104",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041104",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041104",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041104",
         "ID_Atributo_FK":"FUN"
     },
     {
-        "ID_Objeto_FK":"041102",
+        "ID_Objeto_FK":"041104",
         "ID_Atributo_FK":"SAG"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041105",
         "ID_Atributo_FK":"FNA"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041105",
         "ID_Atributo_FK":"GNA"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041105",
         "ID_Atributo_FK":"NAM"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041105",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"EMP"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"RTP"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"VOL"
+    },
+    {
+        "ID_Objeto_FK":"041106",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041107",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041107",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041107",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041107",
         "ID_Atributo_FK":"HYP"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041107",
         "ID_Atributo_FK":"SI1"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041107",
         "ID_Atributo_FK":"CU1"
     },
     {
-        "ID_Objeto_FK":"041103",
+        "ID_Objeto_FK":"041107",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2001,54 +3093,54 @@
     },
     {
         "ID_Objeto_FK":"041108",
-        "ID_Atributo_FK":"HYP"
-    },
-    {
-        "ID_Objeto_FK":"041108",
-        "ID_Atributo_FK":"SI1"
-    },
-    {
-        "ID_Objeto_FK":"041108",
-        "ID_Atributo_FK":"CU1"
-    },
-    {
-        "ID_Objeto_FK":"041108",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"041109",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"041109",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"041109",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"041109",
         "ID_Atributo_FK":"SWT"
     },
     {
+        "ID_Objeto_FK":"041108",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041109",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041109",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041109",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
         "ID_Objeto_FK":"041109",
         "ID_Atributo_FK":"SAG"
     },
     {
         "ID_Objeto_FK":"041110",
+        "ID_Atributo_FK":"FUN"
+    },
+    {
+        "ID_Objeto_FK":"041110",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041111",
         "ID_Atributo_FK":"FNA"
     },
     {
-        "ID_Objeto_FK":"041110",
+        "ID_Objeto_FK":"041111",
         "ID_Atributo_FK":"GNA"
     },
     {
-        "ID_Objeto_FK":"041110",
+        "ID_Objeto_FK":"041111",
         "ID_Atributo_FK":"NAM"
     },
     {
-        "ID_Objeto_FK":"041110",
+        "ID_Objeto_FK":"041111",
+        "ID_Atributo_FK":"THH"
+    },
+    {
+        "ID_Objeto_FK":"041111",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2065,10 +3157,34 @@
     },
     {
         "ID_Objeto_FK":"041112",
-        "ID_Atributo_FK":"THH"
+        "ID_Atributo_FK":"SAG"
     },
     {
-        "ID_Objeto_FK":"041112",
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"JUR"
+    },
+    {
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"DRE"
+    },
+    {
+        "ID_Objeto_FK":"041113",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"041113",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2097,6 +3213,82 @@
     },
     {
         "ID_Objeto_FK":"041114",
+        "ID_Atributo_FK":"CU1"
+    },
+    {
+        "ID_Objeto_FK":"041114",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041115",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"041115",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"041115",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"041115",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041116",
+        "ID_Atributo_FK":"CU1"
+    },
+    {
+        "ID_Objeto_FK":"041116",
+        "ID_Atributo_FK":"DOF"
+    },
+    {
+        "ID_Objeto_FK":"041116",
+        "ID_Atributo_FK":"CAL"
+    },
+    {
+        "ID_Objeto_FK":"041116",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041117",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041201",
+        "ID_Atributo_FK":"OCF"
+    },
+    {
+        "ID_Objeto_FK":"041201",
+        "ID_Atributo_FK":"OFI"
+    },
+    {
+        "ID_Objeto_FK":"041201",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041202",
+        "ID_Atributo_FK":"VFQ"
+    },
+    {
+        "ID_Objeto_FK":"041202",
+        "ID_Atributo_FK":"VPR"
+    },
+    {
+        "ID_Objeto_FK":"041202",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"041203",
+        "ID_Atributo_FK":"VFQ"
+    },
+    {
+        "ID_Objeto_FK":"041203",
+        "ID_Atributo_FK":"VPR"
+    },
+    {
+        "ID_Objeto_FK":"041203",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2181,6 +3373,82 @@
     },
     {
         "ID_Objeto_FK":"050203",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050204",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050204",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050204",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050204",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050204",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050205",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050205",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050205",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050205",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050206",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050206",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050206",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050206",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050206",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050207",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050207",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050207",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050207",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050207",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2280,6 +3548,82 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"050213",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050213",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050213",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050213",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050213",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050214",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050214",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050214",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050214",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050214",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050215",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050215",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050215",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050215",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050215",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050216",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050216",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050216",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050216",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"050217",
         "ID_Atributo_FK":"FNA"
     },
@@ -2293,6 +3637,34 @@
     },
     {
         "ID_Objeto_FK":"050217",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050218",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050218",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050218",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050218",
+        "ID_Atributo_FK":"TLG"
+    },
+    {
+        "ID_Objeto_FK":"050218",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050219",
+        "ID_Atributo_FK":"TLQ"
+    },
+    {
+        "ID_Objeto_FK":"050219",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2333,6 +3705,30 @@
     },
     {
         "ID_Objeto_FK":"050403",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050601",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050601",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050601",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050601",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050601",
+        "ID_Atributo_FK":"VOA"
+    },
+    {
+        "ID_Objeto_FK":"050601",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2416,6 +3812,26 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"050703",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050703",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050703",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050703",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"050703",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"050704",
         "ID_Atributo_FK":"FNA"
     },
@@ -2433,6 +3849,46 @@
     },
     {
         "ID_Objeto_FK":"050704",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050705",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"050705",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"050705",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"050705",
+        "ID_Atributo_FK":"MSL"
+    },
+    {
+        "ID_Objeto_FK":"050705",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050706",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"050706",
+        "ID_Atributo_FK":"EGL"
+    },
+    {
+        "ID_Objeto_FK":"050706",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"050707",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"050707",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2572,107 +4028,19 @@
         "ID_Atributo_FK":"SAG"
     },
     {
-        "ID_Objeto_FK":"051301",
+        "ID_Objeto_FK":"051203",
         "ID_Atributo_FK":"FNA"
     },
     {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"GNA"
+        "ID_Objeto_FK":"051203",
+        "ID_Atributo_FK":"FDD"
     },
     {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"NAM"
+        "ID_Objeto_FK":"051203",
+        "ID_Atributo_FK":"TDR"
     },
     {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"TAP"
-    },
-    {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"ARA"
-    },
-    {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"DCT"
-    },
-    {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"CAA"
-    },
-    {
-        "ID_Objeto_FK":"051301",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"ARA"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"DCT"
-    },
-    {
-        "ID_Objeto_FK":"051302",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"ARA"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"DCT"
-    },
-    {
-        "ID_Objeto_FK":"051303",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"051304",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"051304",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"051304",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"051304",
-        "ID_Atributo_FK":"CAM"
-    },
-    {
-        "ID_Objeto_FK":"051304",
-        "ID_Atributo_FK":"DCT"
-    },
-    {
-        "ID_Objeto_FK":"051304",
+        "ID_Objeto_FK":"051203",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2756,6 +4124,34 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"060304",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"060304",
+        "ID_Atributo_FK":"ORG"
+    },
+    {
+        "ID_Objeto_FK":"060304",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"060304",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"060305",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"060305",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"060305",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"060901",
         "ID_Atributo_FK":"TVA"
     },
@@ -2785,22 +4181,6 @@
     },
     {
         "ID_Objeto_FK":"060903",
-        "ID_Atributo_FK":"SAG"
-    },
-    {
-        "ID_Objeto_FK":"060904",
-        "ID_Atributo_FK":"FNA"
-    },
-    {
-        "ID_Objeto_FK":"060904",
-        "ID_Atributo_FK":"GNA"
-    },
-    {
-        "ID_Objeto_FK":"060904",
-        "ID_Atributo_FK":"NAM"
-    },
-    {
-        "ID_Objeto_FK":"060904",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2917,6 +4297,14 @@
     },
     {
         "ID_Objeto_FK":"070120",
+        "ID_Atributo_FK":"CA3"
+    },
+    {
+        "ID_Objeto_FK":"070120",
+        "ID_Atributo_FK":"TGL"
+    },
+    {
+        "ID_Objeto_FK":"070120",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2945,11 +4333,7 @@
     },
     {
         "ID_Objeto_FK":"070121",
-        "ID_Atributo_FK":"ARL"
-    },
-    {
-        "ID_Objeto_FK":"070121",
-        "ID_Atributo_FK":"SDP"
+        "ID_Atributo_FK":"CA3"
     },
     {
         "ID_Objeto_FK":"070121",
@@ -2973,6 +4357,10 @@
     },
     {
         "ID_Objeto_FK":"070122",
+        "ID_Atributo_FK":"CA3"
+    },
+    {
+        "ID_Objeto_FK":"070122",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -2986,6 +4374,10 @@
     {
         "ID_Objeto_FK":"070123",
         "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070123",
+        "ID_Atributo_FK":"CA3"
     },
     {
         "ID_Objeto_FK":"070123",
@@ -3260,6 +4652,202 @@
         "ID_Atributo_FK":"SAG"
     },
     {
+        "ID_Objeto_FK":"070501",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070501",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070501",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070501",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070502",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070502",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070502",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070502",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070503",
+        "ID_Atributo_FK":"COZ"
+    },
+    {
+        "ID_Objeto_FK":"070503",
+        "ID_Atributo_FK":"DSP"
+    },
+    {
+        "ID_Objeto_FK":"070503",
+        "ID_Atributo_FK":"SDP"
+    },
+    {
+        "ID_Objeto_FK":"070503",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070503",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070504",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070504",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070504",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070504",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"SDP"
+    },
+    {
+        "ID_Objeto_FK":"070601",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"SDP"
+    },
+    {
+        "ID_Objeto_FK":"070602",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"SDP"
+    },
+    {
+        "ID_Objeto_FK":"070603",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"SDP"
+    },
+    {
+        "ID_Objeto_FK":"070604",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"TAP"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"CAA"
+    },
+    {
+        "ID_Objeto_FK":"070701",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"070702",
         "ID_Atributo_FK":"FNA"
     },
@@ -3273,19 +4861,27 @@
     },
     {
         "ID_Objeto_FK":"070702",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070702",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"070702",
         "ID_Atributo_FK":"SAG"
     },
     {
         "ID_Objeto_FK":"070703",
-        "ID_Atributo_FK":"COZ"
+        "ID_Atributo_FK":"FNA"
     },
     {
         "ID_Objeto_FK":"070703",
-        "ID_Atributo_FK":"DSP"
+        "ID_Atributo_FK":"GNA"
     },
     {
         "ID_Objeto_FK":"070703",
-        "ID_Atributo_FK":"SDP"
+        "ID_Atributo_FK":"NAM"
     },
     {
         "ID_Objeto_FK":"070703",
@@ -3293,6 +4889,10 @@
     },
     {
         "ID_Objeto_FK":"070703",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"070703",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -3309,6 +4909,46 @@
     },
     {
         "ID_Objeto_FK":"070704",
+        "ID_Atributo_FK":"CAM"
+    },
+    {
+        "ID_Objeto_FK":"070704",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"070704",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070704",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"CAM"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"DCT"
+    },
+    {
+        "ID_Objeto_FK":"070705",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"070705",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -3381,6 +5021,22 @@
     },
     {
         "ID_Objeto_FK":"090104",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"090105",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"090105",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"090105",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"090105",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -3589,6 +5245,10 @@
     },
     {
         "ID_Objeto_FK":"110105",
+        "ID_Atributo_FK":"PDA"
+    },
+    {
+        "ID_Objeto_FK":"110105",
         "ID_Atributo_FK":"ARA"
     },
     {
@@ -3664,6 +5324,90 @@
         "ID_Atributo_FK":"EGL"
     },
     {
+        "ID_Objeto_FK":"110108",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"CCA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"PDA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"TPA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"NMP"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"NUP"
+    },
+    {
+        "ID_Objeto_FK":"110109",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"FNA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"GNA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"NAM"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"CCA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"PDA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"TPA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"ARA"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"NMP"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"NUP"
+    },
+    {
+        "ID_Objeto_FK":"110110",
+        "ID_Atributo_FK":"SAG"
+    },
+    {
         "ID_Objeto_FK":"110201",
         "ID_Atributo_FK":"NEX"
     },
@@ -3709,6 +5453,10 @@
     },
     {
         "ID_Objeto_FK":"120101",
+        "ID_Atributo_FK":"CA3"
+    },
+    {
+        "ID_Objeto_FK":"120101",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -3718,6 +5466,10 @@
     {
         "ID_Objeto_FK":"120102",
         "ID_Atributo_FK":"TRO"
+    },
+    {
+        "ID_Objeto_FK":"120102",
+        "ID_Atributo_FK":"CA3"
     },
     {
         "ID_Objeto_FK":"120102",
@@ -3745,6 +5497,10 @@
     },
     {
         "ID_Objeto_FK":"120201",
+        "ID_Atributo_FK":"CA3"
+    },
+    {
+        "ID_Objeto_FK":"120201",
         "ID_Atributo_FK":"SAG"
     },
     {
@@ -3761,11 +5517,11 @@
     },
     {
         "ID_Objeto_FK":"120202",
-        "ID_Atributo_FK":"CEU"
+        "ID_Atributo_FK":"CAG"
     },
     {
         "ID_Objeto_FK":"120202",
-        "ID_Atributo_FK":"TEU"
+        "ID_Atributo_FK":"CA3"
     },
     {
         "ID_Objeto_FK":"120202",
@@ -3814,5 +5570,25 @@
     {
         "ID_Objeto_FK":"120204",
         "ID_Atributo_FK":"TVC"
+    },
+    {
+        "ID_Objeto_FK":"230103",
+        "ID_Atributo_FK":"TDM"
+    },
+    {
+        "ID_Objeto_FK":"230103",
+        "ID_Atributo_FK":"FDD"
+    },
+    {
+        "ID_Objeto_FK":"230103",
+        "ID_Atributo_FK":"MOP"
+    },
+    {
+        "ID_Objeto_FK":"230103",
+        "ID_Atributo_FK":"VDM"
+    },
+    {
+        "ID_Objeto_FK":"230103",
+        "ID_Atributo_FK":"SAG"
     }
 ]

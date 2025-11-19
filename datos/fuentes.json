@@ -22,5 +22,9 @@
     {
         "Nombre":"Diccionario y Catálogo de Objetos Geográficos IGN Argentina Versión 2.0",
         "Web":"http:\/\/www.ign.gob.ar\/NuestrasActividades\/catalogo-de-objetos-geograficos"
+    },
+    {
+        "Nombre":"Catálogo de Objetos Geográficos de la Infraestructura de Datos Espaciales de la República Argentina",
+        "Web":"https:\/\/www.idera.gob.ar\/images\/stories\/downloads\/catalogo\/Cat%C3%A1logo_Objetos_Geogr%C3%A1ficos_IDERA_V2.2.xlsm"
     }
 ]

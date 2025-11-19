@@ -279,37 +279,36 @@ main {
     text-decoration: underline;
 }
 
-/* === BOTÓN INFO (Opción 2: Circular) === */
 .info-button-container {
     margin-left: auto;
     align-self: center;
 }
 
 #btn-info {
-    background-color: var(--c-bg-white); /* Fondo blanco */
+    background-color: var(--c-bg-white);
     color: var(--c-dark);
-    width: 40px;  /* Ancho fijo */
-    height: 40px; /* Alto fijo */
-    border-radius: 50%; /* Círculo perfecto */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el texto/icono */
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote */
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 #btn-info:hover {
     background-color: var(--c-orange);
     color: white;
-    transform: scale(1.1) rotate(10deg); /* Crece y gira un poco */
+    transform: scale(1.1) rotate(10deg);
 }
 
 #search-container {
-    position: relative; /* Clave para posicionar los resultados */
+    position: relative;
     margin-bottom: 1.5rem;
 }
 
@@ -320,7 +319,7 @@ main {
     border: 1px solid var(--c-border-light);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    box-sizing: border-box;
 }
 #buscador:focus {
     outline: none;
@@ -329,7 +328,7 @@ main {
 }
 
 #search-results {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: absolute;
     width: 100%;
     background: var(--c-bg-white);
@@ -341,7 +340,7 @@ main {
     margin: 0;
     max-height: 400px;
     overflow-y: auto;
-    z-index: 999; /* Por encima de todo */
+    z-index: 999;
 }
 
 #search-results li {
@@ -363,13 +362,170 @@ main {
     margin-left: 0.5rem;
 }
 
+.tabla-versiones-container {
+    overflow-x: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--c-border-light);
+    border-radius: 8px;
+}
+
+.tabla-versiones {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.tabla-versiones th {
+    background-color: var(--c-bg-light);
+    text-align: left;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--c-border-light);
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+.tabla-versiones td {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--c-border-light);
+    vertical-align: top;
+}
+
+.tabla-versiones tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-versiones td:first-child {
+    white-space: nowrap;
+    color: var(--c-orange);
+}
+
+/* =========================================
+   TABLA DE VERSIONES (RESPONSIVE CARDS)
+   ========================================= */
+
+.tabla-versiones-container {
+    margin-top: 0.5rem;
+    /* En desktop es una tabla normal */
+    border: 1px solid var(--c-border-light);
+    border-radius: 8px;
+    overflow: hidden; /* Para que los bordes redondeados funcionen */
+}
+
+.tabla-versiones {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+/* --- Estilos Escritorio (Tabla Normal) --- */
+.tabla-versiones th {
+    background-color: var(--c-bg-light);
+    text-align: left;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--c-border-light);
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+.tabla-versiones td {
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--c-border-light);
+    vertical-align: top;
+}
+
+.tabla-versiones tr:last-child td {
+    border-bottom: none;
+}
+
+/* Resaltar la versión en escritorio */
+.col-version {
+    font-weight: 700;
+    color: var(--c-orange);
+}
+
+
+/* --- Estilos MÓVIL (Transformación a Tarjetas) --- */
+@media screen and (max-width: 768px) {
+    
+    .tabla-versiones-container {
+        border: none; /* Quitamos el borde contenedor en móvil */
+    }
+
+    .tabla-versiones, 
+    .tabla-versiones tbody, 
+    .tabla-versiones tr, 
+    .tabla-versiones td {
+        display: block; /* Convertimos todo en bloques */
+        width: 100%;
+    }
+
+    /* Ocultamos los encabezados de la tabla */
+    .tabla-versiones thead {
+        display: none; 
+    }
+
+    /* Estilo de la TARJETA (cada fila es una tarjeta) */
+    .tabla-versiones tr {
+        background-color: var(--c-bg-white);
+        border: 1px solid var(--c-border-light);
+        border-radius: 12px; /* Bordes redondeados */
+        margin-bottom: 1.5rem; /* Separación entre tarjetas */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombrita elegante */
+        overflow: hidden; /* Para que el título no se salga */
+    }
+
+    /* --- EL TÍTULO (Versión) --- */
+    .tabla-versiones td.col-version {
+        background-color: var(--c-dark); /* Fondo oscuro */
+        color: white;
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+        border-bottom: 1px solid var(--c-orange); /* Detalle naranja */
+    }
+    /* Agregamos la palabra "Versión" antes del número */
+    .tabla-versiones td.col-version::before {
+        content: "Versión ";
+        font-weight: 400;
+        opacity: 0.8;
+    }
+
+    /* --- EL CUERPO DE LA TARJETA --- */
+    .tabla-versiones td {
+        padding: 0.6rem 1.2rem;
+        border-bottom: 1px dashed var(--c-border-light);
+        text-align: left;
+    }
+    
+    /* Quitamos borde al último elemento */
+    .tabla-versiones td:last-child {
+        border-bottom: none;
+        padding-bottom: 1rem;
+    }
+
+    /* Etiquetas (Labels) automáticas */
+    .tabla-versiones td:not(.col-version)::before {
+        content: attr(data-label); /* Leemos el atributo del HTML */
+        display: block;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #888;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+    }
+    
+    /* Estilos específicos para Autor y Colaboradores */
+    .col-autor, .col-colab {
+        font-size: 0.95rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
      #search-container {
         margin-top: 1rem;
     }
 
-    /* 1. HEADER: Apilar elementos verticalmente */
     header {
         flex-direction: column;
         text-align: center;
@@ -378,13 +534,13 @@ main {
     }
 
     .logo-container img {
-        height: 50px; /* Logo un poco más chico */
-        margin: 0 auto; /* Centrado */
+        height: 50px;
+        margin: 0 auto;
     }
 
     .info-button-container {
-        margin-left: 0; /* Quitar el empuje a la derecha */
-        width: 100%; /* Botón ancho completo para fácil toque */
+        margin-left: 0;
+        width: 100%; 
     }
 
     #btn-info {
@@ -392,10 +548,9 @@ main {
     }
 
     header h1 {
-        font-size: 1.4rem; /* Título más pequeño */
+        font-size: 1.4rem;
     }
 
-    /* 2. NAVEGACIÓN: Apilar columnas */
     #navegacion {
         flex-direction: column;
         gap: 1rem;
@@ -403,11 +558,10 @@ main {
 
     .columna-nav {
         width: 100%;
-        height: 300px; /* Altura fija más pequeña para ver que hay más abajo */
+        height: 300px;
         flex-basis: auto;
     }
 
-    /* Ajuste visual para entender el flujo */
     .columna-nav h2::after {
         content: " (Toca para seleccionar)";
         font-size: 0.8rem;
@@ -415,18 +569,17 @@ main {
         opacity: 0.6;
     }
 
-    /* 3. MODAL: Ajustes de espacio */
     .modal-contenido {
-        width: 95%; /* Casi todo el ancho */
-        margin: 10% auto; /* Más margen arriba */
-        max-height: 80vh; /* Evitar que sea más alto que la pantalla */
-        overflow-y: auto; /* Scroll interno si es necesario */
+        width: 95%;
+        margin: 10% auto;
+        max-height: 80vh; 
+        overflow-y: auto;
     }
 
     .modal-contenido h2 {
-        padding: 1rem 1.5rem; /* Menos padding en cabezal */
+        padding: 1rem 1.5rem;
         font-size: 1.2rem;
-        padding-right: 3rem; /* Espacio para la X de cerrar */
+        padding-right: 3rem;
     }
 
     .modal-cerrar {
@@ -434,7 +587,6 @@ main {
         top: 0.8rem;
     }
 
-    /* Ajuste de paddings internos del cuerpo */
     .modal-contenido p, 
     .modal-contenido h3, 
     #modal-info-cuerpo {
@@ -442,43 +594,37 @@ main {
         padding-right: 1.5rem;
     }
 
-    /* 4. TABLA: Permitir scroll horizontal si es muy ancha */
     #modal-tabla-atributos {
         display: block;
         width: 100%;
     }
 
-    /* Ocultamos los encabezados originales de la tabla en móvil */
     #modal-tabla-atributos thead {
         display: none;
     }
 
-    /* Cada fila (tr) es ahora una tarjeta */
     #modal-tabla-atributos tr {
         display: block;
         background-color: #fcfcfc;
         border: 1px solid var(--c-border-light);
         border-radius: 8px;
-        margin-bottom: 1.25rem; /* Espacio entre tarjetas */
+        margin-bottom: 1.25rem;
         padding: 0.5rem 1rem;
     }
 
-    /* Cada celda (td) es ahora un bloque vertical */
     #modal-tabla-atributos td {
         display: block;
-        padding: 0.75rem 0.25rem; /* Padding vertical */
-        text-align: left; /* Aseguramos alineación */
-        border-bottom: 1px dashed var(--c-border-light); /* Separador leve */
+        padding: 0.75rem 0.25rem;
+        text-align: left;
+        border-bottom: 1px dashed var(--c-border-light);
     }
     
-    /* La última celda de la tarjeta no necesita borde inferior */
     #modal-tabla-atributos tr td:last-child {
         border-bottom: none;
     }
 
-    /* EL TRUCO: Usar ::before para re-insertar los encabezados */
     #modal-tabla-atributos td::before {
-        content: attr(data-label); /* Leemos el label del data-label que pusimos en el JS */
+        content: attr(data-label);
         font-weight: 600;
         display: block;
         font-size: 0.8rem;
@@ -487,7 +633,6 @@ main {
         margin-bottom: 0.25rem;
     }
 
-    /* Ajuste para que los dominios (<ul>) se vean bien */
     #modal-tabla-atributos td ul {
         margin: 0.5rem 0 0 0;
         padding-left: 1.2rem;

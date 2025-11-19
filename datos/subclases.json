@@ -15,7 +15,7 @@
         "ID_Clase_FK":"01",
         "ID_Subclase":"0103",
         "Nombre_Subclase":"ACTIVIDAD AGROPECUARIA",
-        "Definicion":"Objetos geográficos que se asocian con la actividad agropecuaria (IGN, 2015)."
+        "Definicion":"Objetos geográficos asociados a actividades productivas y económicas del sector agrícola y ganadero y sus derivados. (UNTREF 2023 - MAGyP 2025)"
     },
     {
         "ID_Clase_FK":"01",
@@ -27,7 +27,7 @@
         "ID_Clase_FK":"01",
         "ID_Subclase":"0105",
         "Nombre_Subclase":"COMUNICACIONES",
-        "Definicion":"Objetos geográficos que se refieren a todo tipo de comunicación (adaptación DFDD)."
+        "Definicion":"Objetos geográficos que se refieren a todo tipo de infraestructura y servicios asociados a las comunicaciones tales como estructuras, redes y conexiones. (UNTREF 2023)"
     },
     {
         "ID_Clase_FK":"01",
@@ -48,6 +48,12 @@
         "Definicion":"Objetos geográficos asociados a la recolección, tratamiento, reciclado y disposición de residuos (adaptación DFDD)."
     },
     {
+        "ID_Clase_FK":"01",
+        "ID_Subclase":"0109",
+        "Nombre_Subclase":"ACTIVIDAD CINEGÉTICA",
+        "Definicion":"Objetos geográficos relacionados a la práctica de la caza de animales en estado salvaje o silvestre, con o sin fines de lucro.(IDELP  2022 - UNTREF 2023)"
+    },
+    {
         "ID_Clase_FK":"02",
         "ID_Subclase":"0201",
         "Nombre_Subclase":"ASENTAMIENTO ",
@@ -63,7 +69,7 @@
         "ID_Clase_FK":"02",
         "ID_Subclase":"0203",
         "Nombre_Subclase":"COMERCIO Y TURISMO",
-        "Definicion":"Objetos geográficos que se refieren a actividades comerciales, a complejos con fines comerciales, turísticos y\/o de negocios. En el caso del turismo, las actividades se realizan por un período determinado de tiempo, en un lugar distinto al del entorno habitual, y donde se desarrolla una actividad no remunerada (IDERA 2015 - INFUETUR 2024)."
+        "Definicion":"Objetos geográficos que se refieren a actividades comerciales, a complejos con fines comerciales, turísticos y\/o de negocios. En el caso del turismo, las actividades se realizan por un período determinado de tiempo, en un lugar distinto al del entorno habitual, y donde se desarrolla una actividad no remunerada (IDERA 2015 - INFUETUR 2024)"
     },
     {
         "ID_Clase_FK":"02",
@@ -108,6 +114,18 @@
         "Definicion":"Objetos geográficos relativos a la promoción y protección de los Derechos Humanos  (Secretaria de DDHH Bs As - 2019)"
     },
     {
+        "ID_Clase_FK":"02",
+        "ID_Subclase":"0211",
+        "Nombre_Subclase":"CONFLICTOS AMBIENTALES",
+        "Definicion":"Objetos geográgicos relativos a los conflictos ambientales (ICSE-UNTDF - 2025)"
+    },
+    {
+        "ID_Clase_FK":"03",
+        "ID_Subclase":"0301",
+        "Nombre_Subclase":"FERROVIARIO",
+        "Definicion":"Objetos geográficos que se refieren al transporte sobre rieles  (Transporte, 2018)."
+    },
+    {
         "ID_Clase_FK":"03",
         "ID_Subclase":"0302",
         "Nombre_Subclase":"VIAL",
@@ -115,9 +133,15 @@
     },
     {
         "ID_Clase_FK":"03",
+        "ID_Subclase":"0303",
+        "Nombre_Subclase":"TRANSPORTE POR GUÍA",
+        "Definicion":"Objetos geográficos relacionados a un transporte guiado por cable  (adaptación DFDD)."
+    },
+    {
+        "ID_Clase_FK":"03",
         "ID_Subclase":"0304",
         "Nombre_Subclase":"FLUVIAL, MARÍTIMO Y LACUSTRE",
-        "Definicion":"Objetos geográficos relacionados con el transporte fluvial, marítimo y lacustre (IDERA, 2015)."
+        "Definicion":"Objetos geográficos relacionados con el transporte a través de lagos, ríos, mares, océanos, canales o en otros cuerpos de agua continentales. (UNTREF 2023)"
     },
     {
         "ID_Clase_FK":"03",
@@ -134,14 +158,14 @@
     {
         "ID_Clase_FK":"03",
         "ID_Subclase":"0307",
-        "Nombre_Subclase":"CRUCES Y ENLACES",
+        "Nombre_Subclase":"CRUCES Y ENLACES ",
         "Definicion":"Objetos geográficos vinculados a obras de ingeniería relacionadas al transporte, cuya función es facilitar la circulación (IGN, 2015)."
     },
     {
         "ID_Clase_FK":"03",
         "ID_Subclase":"0308",
-        "Nombre_Subclase":"INFRAESTRUCTURA",
-        "Definicion":"Obras de Arte y todo Objeto Geografico de apoyo al transporte no incluido en otra subclase (Transporte, 2018)."
+        "Nombre_Subclase":"INFRAESTRUCTURA DE TRANSPORTE",
+        "Definicion":"Obras de la ingeniería que permitan el desarrollo del sistema de tránsito y transporte. (UNTREF 2023)"
     },
     {
         "ID_Clase_FK":"04",
@@ -205,12 +229,6 @@
     },
     {
         "ID_Clase_FK":"05",
-        "ID_Subclase":"0509",
-        "Nombre_Subclase":"COBERTURA TERRESTRE",
-        "Definicion":"Este Subgrupo consta de Conceptos que describen la cobertura de la superficie terrestre en una perspectiva global. (Adaptación DFDD)"
-    },
-    {
-        "ID_Clase_FK":"05",
         "ID_Subclase":"0510",
         "Nombre_Subclase":"GEOLOGÍA",
         "Definicion":"Objetos geográficos que hacen referencia a diferentes tipos de roca, según sus propiedades y edad; sus relaciones de contacto y estructuras geológicas (IDERA, 2015)."
@@ -226,12 +244,6 @@
         "ID_Subclase":"0512",
         "Nombre_Subclase":"DEGRADACIÓN DE TIERRAS Y DESERTIFICACIÓN",
         "Definicion":"Objetos geográficos que se refieren a la degradación de las tierras secas, fenómeno originado por las actividades humanas y las variaciones en el clima (CNULD). "
-    },
-    {
-        "ID_Clase_FK":"05",
-        "ID_Subclase":"0513",
-        "Nombre_Subclase":"ÁREAS DE CONSERVACIÓN",
-        "Definicion":"Objetos geográficos vinculados a áreas definidas geográficamente que han sido designadas, reguladas y administradas a fin de alcanzar objetivos específicos de conservación. Un área protegida es un área manejada con normas que garantizan la protección de los recursos naturales,  culturales y los servicios ecosistémicos (Vida Silvestre)."
     },
     {
         "ID_Clase_FK":"06",
@@ -288,6 +300,12 @@
         "Definicion":"Objetos geográficos que materializan el proceso de planificación territorial e implica la división de un área geográfica en zonas específicas, cada una con regulaciones y características particulares. Este objeto organiza el desarrollo y el uso del suelo y se relaciona con la identificación de tierras fiscales, áreas naturales, areas de sacrificio, productivos y económicos mediante una normativa. "
     },
     {
+        "ID_Clase_FK":"07",
+        "ID_Subclase":"0707",
+        "Nombre_Subclase":"AREAS DE CONSERVACIÓN Y MANEJO SUSTENTABLE",
+        "Definicion":"Son zonas de ecosistemas continentales (terrestres o acuáticos), costeros\/marinos o marinos, o una combinación de los mismos, con límites definidos y bajo un marco normativo acorde con sus objetivos de conservación, que constituyen una estrategia fundamental para la conservación a largo plazo de la diversidad biológica y cultural, proporcionando bienes y servicios ecosistémicos esenciales para la sociedad y la vida en general. (MAyDS 2023)"
+    },
+    {
         "ID_Clase_FK":"09",
         "ID_Subclase":"0901",
         "Nombre_Subclase":"INFRAESTRUCTURA DE DEFENSA",
@@ -334,5 +352,11 @@
         "ID_Subclase":"1202",
         "Nombre_Subclase":"ÁREAS URBANAS CENSALES",
         "Definicion":"Comprende aquellas porciones del territorio donde se asienta la población y que presenta características distintivas y particulares que permiten diferenciarlas de aquellas zonas no urbanas (INDEC, 2018)."
+    },
+    {
+        "ID_Clase_FK":"23",
+        "ID_Subclase":"2301",
+        "Nombre_Subclase":"ENTIDAD DE INFORMACIÓN",
+        "Definicion":"Entidades que se utilizan para modelar la información relativa a los tipos de fenómenos, pero que no representan fenómenos en sí mismos. Por ejemplo, las características del pavimento compartidas por muchos tipos de rutas de transporte terrestre, o las características de calidad de los datos compartidas por todas las masas de agua continentales. (Adaptación del DFDD) - IDESoB 2024"
     }
 ]
