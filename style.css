@@ -721,3 +721,99 @@ input:checked + .slider:before {
         justify-content: center;
     }
 }
+
+/* =========================================
+   ESTILOS CABECERA MODAL Y BOTÓN DESCARGA (CORREGIDO)
+   ========================================= */
+
+/* Contenedor del Título y el Botón */
+.modal-header-con-boton {
+    display: flex;
+    align-items: center; /* Centrado verticalmente */
+    justify-content: space-between; /* Título a la izq, Botón a la der */
+    background-color: var(--c-dark); /* Mismo fondo oscuro que el título */
+    padding: 1rem 2.5rem; /* Padding interno */
+    padding-right: 4rem; /* Espacio extra a la derecha para la X de cerrar */
+    margin: 0; /* Sin márgenes externos */
+    border-bottom: 4px solid var(--c-orange); /* El borde naranja */
+}
+
+/* El Título H2 */
+.modal-contenido h2 {
+    /* Reseteamos estilos anteriores para que no choquen */
+    background-color: transparent; 
+    color: var(--c-bg-white);
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 1.4rem;
+}
+
+/* El Botón de Descarga (Estilo Sólido y Visible) */
+.btn-descarga {
+    background-color: var(--c-blue); /* Azul fuerte */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 4px; /* Bordes levemente redondeados */
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700; /* Texto grueso */
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para que "flote" */
+    
+    /* Aseguramos que se vea */
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    
+    /* Evitar que se rompa */
+    white-space: nowrap;
+    margin-left: 15px;
+    z-index: 10; /* Asegura que esté por encima */
+}
+
+.btn-descarga:hover {
+    background-color: #159dce; /* Azul más oscuro al pasar el mouse */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-descarga .btn-icon-img {
+    width: 20px;  /* Ajusta este tamaño según tu icono */
+    height: 20px; /* Mantén el mismo alto y ancho */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    display: block; /* Ayuda a la alineación */
+}
+
+/* Ajuste del botón de cerrar (X) para que quede siempre arriba */
+#modal-objeto .modal-cerrar {
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    opacity: 0.8;
+    z-index: 20; /* Por encima de todo */
+}
+#modal-objeto .modal-cerrar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* --- RESPONSIVE (Móvil) --- */
+@media screen and (max-width: 768px) {
+    .modal-header-con-boton {
+        flex-direction: column; /* Apilar verticalmente */
+        align-items: flex-start; /* Alinear a la izquierda */
+        gap: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    .btn-descarga {
+        width: 100%; /* Botón ancho completo en celular */
+        justify-content: center;
+        margin-left: 0;
+        background-color: var(--c-green); /* Verde en móvil para diferenciar (opcional) */
+        padding: 0.8rem;
+    }
+}

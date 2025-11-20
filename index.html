@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css"> 
 
     <link rel="icon" href="static/logo.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </head> 
 <body>
 
@@ -65,8 +67,16 @@
     <div id="modal-objeto" class="modal-overlay">
         <div class="modal-contenido">
             <button id="modal-cerrar" class="modal-cerrar">&times;</button>
+
+            <div class="modal-header-con-boton">
+                <h2 id="modal-titulo">Nombre del Objeto</h2>
+                
+                <button id="btn-descargar-ficha" class="btn-descarga">
+                    <img src="static/descarga.png" alt="Descargar Ficha" class="btn-icon-img">
+                    Ficha
+                </button>
+            </div>
             
-            <h2 id="modal-titulo">Nombre del Objeto</h2>
             <p id="modal-definicion">Aquí va la definición...</p>
             <p><strong>Geometría:</strong> <span id="modal-geometria"></span></p>
 
