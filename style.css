@@ -400,16 +400,12 @@ main {
     color: var(--c-orange);
 }
 
-/* =========================================
-   TABLA DE VERSIONES (RESPONSIVE CARDS)
-   ========================================= */
 
 .tabla-versiones-container {
     margin-top: 0.5rem;
-    /* En desktop es una tabla normal */
     border: 1px solid var(--c-border-light);
     border-radius: 8px;
-    overflow: hidden; /* Para que los bordes redondeados funcionen */
+    overflow: hidden;
 }
 
 .tabla-versiones {
@@ -418,7 +414,6 @@ main {
     font-size: 0.9rem;
 }
 
-/* --- Estilos Escritorio (Tabla Normal) --- */
 .tabla-versiones th {
     background-color: var(--c-bg-light);
     text-align: left;
@@ -438,74 +433,70 @@ main {
     border-bottom: none;
 }
 
-/* Resaltar la versión en escritorio */
 .col-version {
     font-weight: 700;
     color: var(--c-orange);
 }
 
 
-/* --- Estilos MÓVIL (Transformación a Tarjetas) --- */
+
 @media screen and (max-width: 768px) {
     
     .tabla-versiones-container {
-        border: none; /* Quitamos el borde contenedor en móvil */
+        border: none;
     }
 
     .tabla-versiones, 
     .tabla-versiones tbody, 
     .tabla-versiones tr, 
     .tabla-versiones td {
-        display: block; /* Convertimos todo en bloques */
+        display: block;
         width: 100%;
     }
 
-    /* Ocultamos los encabezados de la tabla */
     .tabla-versiones thead {
         display: none; 
     }
 
-    /* Estilo de la TARJETA (cada fila es una tarjeta) */
     .tabla-versiones tr {
         background-color: var(--c-bg-white);
         border: 1px solid var(--c-border-light);
-        border-radius: 12px; /* Bordes redondeados */
-        margin-bottom: 1.5rem; /* Separación entre tarjetas */
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Sombrita elegante */
-        overflow: hidden; /* Para que el título no se salga */
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        overflow: hidden;
     }
 
-    /* --- EL TÍTULO (Versión) --- */
     .tabla-versiones td.col-version {
-        background-color: var(--c-dark); /* Fondo oscuro */
+        background-color: var(--c-dark);
         color: white;
         font-size: 1.1rem;
         padding: 0.8rem 1.2rem;
-        border-bottom: 1px solid var(--c-orange); /* Detalle naranja */
+        border-bottom: 1px solid var(--c-orange);
     }
-    /* Agregamos la palabra "Versión" antes del número */
+    
     .tabla-versiones td.col-version::before {
         content: "Versión ";
         font-weight: 400;
         opacity: 0.8;
     }
 
-    /* --- EL CUERPO DE LA TARJETA --- */
+    
     .tabla-versiones td {
         padding: 0.6rem 1.2rem;
         border-bottom: 1px dashed var(--c-border-light);
         text-align: left;
     }
     
-    /* Quitamos borde al último elemento */
+    
     .tabla-versiones td:last-child {
         border-bottom: none;
         padding-bottom: 1rem;
     }
 
-    /* Etiquetas (Labels) automáticas */
+    
     .tabla-versiones td:not(.col-version)::before {
-        content: attr(data-label); /* Leemos el atributo del HTML */
+        content: attr(data-label);
         display: block;
         font-size: 0.75rem;
         text-transform: uppercase;
@@ -514,7 +505,7 @@ main {
         margin-bottom: 0.2rem;
     }
     
-    /* Estilos específicos para Autor y Colaboradores */
+    
     .col-autor, .col-colab {
         font-size: 0.95rem;
     }
@@ -636,5 +627,97 @@ main {
     #modal-tabla-atributos td ul {
         margin: 0.5rem 0 0 0;
         padding-left: 1.2rem;
+    }
+}
+
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#buscador {
+    flex-grow: 1;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--c-bg-white);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--c-border-light);
+    border-radius: 8px;
+}
+
+.switch-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #999;
+}
+
+.active-label {
+    color: var(--c-orange);
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: var(--c-orange);
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+
+.slider.round {
+    border-radius: 22px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .search-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .switch-container {
+        justify-content: center;
     }
 }

@@ -26,9 +26,21 @@
 
     <main>
         <section id="search-container">
-            <input type="text" id="buscador" placeholder="Buscar por nombre de objeto o subclase...">
+            <div class="search-wrapper">
+                <input type="text" id="buscador" placeholder="Buscar por nombre de objeto o subclase...">
+                
+                <div class="switch-container">
+                    <span class="switch-label">TODOS</span>
+                    <label class="switch">
+                        <input type="checkbox" id="filtro-dbyf">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="switch-label active-label">DBYF</span>
+                </div>
+            </div>
+            
             <ul id="search-results">
-            </ul>
+                </ul>
         </section>
 
         <section id="navegacion">

@@ -1,25 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. Variables Globales ---
     let db = {
-        clases: [],
-        subclases: [],
-        objetos: [],
-        atributos: [],
-        link: [],
-        dominios: [],
-        portada: [],
-        fuentes: [],
-        productor: [],
-        versiones: []
+        clases: [], subclases: [], objetos: [], atributos: [],
+        link: [], dominios: [], portada: [], fuentes: [], productor: [], versiones: []
     };
+    let currentObjectId = null;
+    let currentSubclaseId = null;
+    let filtroDBYF = false;
 
-    // --- 2. Selectores del DOM ---
     const listaClases = document.getElementById('lista-clases');
     const listaSubclases = document.getElementById('lista-subclases');
     const listaObjetos = document.getElementById('lista-objetos');
     
-    // Selectores Modal Objeto
     const modal = document.getElementById('modal-objeto');
     const modalCerrar = document.getElementById('modal-cerrar');
     const modalTitulo = document.getElementById('modal-titulo');
@@ -27,42 +19,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalGeometria = document.getElementById('modal-geometria');
     const modalTbody = document.getElementById('modal-tbody-atributos');
 
-    // Selectores Modal Info
     const btnInfo = document.getElementById('btn-info');
     const modalInfo = document.getElementById('modal-info');
     const modalInfoCerrar = document.getElementById('modal-info-cerrar');
     const modalInfoCuerpo = document.getElementById('modal-info-cuerpo');
 
-    // === Selectores Buscador (NUEVO) ===
     const buscador = document.getElementById('buscador');
     const searchResults = document.getElementById('search-results');
+    // const btnDescargarFicha = document.getElementById('btn-descargar-ficha');
+    
+    const switchDBYF = document.getElementById('filtro-dbyf');
 
-    // --- 3. Función de Utilidad: Normalizar Texto (NUEVO) ---
     function normalizeText(text) {
         if (!text) return '';
-        return text
-            .toLowerCase()
-            .normalize("NFD") // Descompone acentos (ej. "ó" -> "o" + "´")
-            .replace(/[\u0300-\u036f]/g, ""); // Elimina los caracteres de acento
+        return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
 
-    // --- 4. Función Principal: Cargar datos y configurar eventos ---
     async function iniciarApp() {
         try {
             const [
                 clasesRes, subclasesRes, objetosRes, atributosRes, linkRes, dominiosRes, 
                 portadaRes, fuentesRes, productorRes, versionesRes
             ] = await Promise.all([
-                fetch('datos/clases.json'),
-                fetch('datos/subclases.json'),
-                fetch('datos/objetos.json'),
-                fetch('datos/atributos.json'),
-                fetch('datos/link_objeto_atributo.json'),
-                fetch('datos/dominios.json'),
-                fetch('datos/portada.json'),
-                fetch('datos/fuentes.json'),
-                fetch('datos/productor.json'),
-                fetch('datos/versiones.json')
+                fetch('datos/clases.json'), fetch('datos/subclases.json'),
+                fetch('datos/objetos.json'), fetch('datos/atributos.json'),
+                fetch('datos/link_objeto_atributo.json'), fetch('datos/dominios.json'),
+                fetch('datos/portada.json'), fetch('datos/fuentes.json'),
+                fetch('datos/productor.json'), fetch('datos/versiones.json')
             ]);
 
             db.clases = await clasesRes.json();
@@ -76,58 +59,61 @@ document.addEventListener('DOMContentLoaded', () => {
             db.productor = await productorRes.json();
             db.versiones = await versionesRes.json();
             
-            // === OPTIMIZACIÓN DE BÚSQUEDA (NUEVO) ===
-            // Pre-calculamos los nombres normalizados para una búsqueda instantánea
-            db.objetos.forEach(objeto => {
-                objeto.Nombre_Normalizado = normalizeText(objeto.Nombre_Objeto);
-            });
-            db.subclases.forEach(subclase => {
-                subclase.Nombre_Normalizado = normalizeText(subclase.Nombre_Subclase);
-            });
-            // ===========================================
+            db.objetos.forEach(o => { o.Nombre_Normalizado = normalizeText(o.Nombre_Objeto); });
+            db.subclases.forEach(s => { s.Nombre_Normalizado = normalizeText(s.Nombre_Subclase); });
             
             renderizarClases();
 
         } catch (error) {
-            console.error("Error fatal al cargar los datos:", error);
-            alert("No se pudieron cargar los datos del catálogo. Revisa la consola (F12) para más detalles.");
+            console.error("Error:", error);
         }
 
-        // --- 5. Configurar Event Listeners ---
-        
-        // Listeners de Navegación
         listaClases.addEventListener('click', manejarClicClase);
         listaSubclases.addEventListener('click', manejarClicSubclase);
         listaObjetos.addEventListener('click', manejarClicObjeto);
         
-        // Listeners Modales
-        modalCerrar.addEventListener('click', () => modal.style.display = "none");
+        modalCerrar.addEventListener('click', () => {
+            modal.style.display = "none";
+            // btnDescargarFicha.style.display = "none";
+        });
         btnInfo.addEventListener('click', mostrarModalInfo);
         modalInfoCerrar.addEventListener('click', () => modalInfo.style.display = "none");
 
-        // === Listeners Buscador (NUEVO) ===
-        buscador.addEventListener('keyup', handleSearch); // Busca en tiempo real
-        searchResults.addEventListener('click', handleResultClick); // Al hacer clic en un resultado
+        buscador.addEventListener('keyup', handleSearch);
+        searchResults.addEventListener('click', handleResultClick);
 
-        // Listeners de Cierre de Modales/Resultados
-        window.addEventListener('click', (e) => {
-            // Cierra modales si se hace clic fuera
-            if (e.target == modal) { modal.style.display = "none"; }
-            if (e.target == modalInfo) { modalInfo.style.display = "none"; }
+        // btnDescargarFicha.addEventListener('click', () => {
+        //     if (currentObjectId) descargarFicha(currentObjectId);
+        // });
+
+        switchDBYF.addEventListener('change', (e) => {
+            filtroDBYF = e.target.checked;
             
-            // Cierra resultados de búsqueda si se hace clic fuera
+            if (currentSubclaseId) {
+                renderizarObjetos(currentSubclaseId);
+            }
+            
+            if (buscador.value.trim() !== '') {
+                buscador.dispatchEvent(new Event('keyup')); 
+            }
+        });
+
+        window.addEventListener('click', (e) => {
+            // if (e.target == modal) { modal.style.display = "none"; btnDescargarFicha.style.display = "none"; }
+            if (e.target == modal) { modal.style.display = "none";}
+            if (e.target == modalInfo) { modalInfo.style.display = "none"; }
             if (e.target.id !== 'buscador' && e.target.closest('#search-results') === null) {
                 searchResults.style.display = 'none';
             }
         });
     }
 
-    // --- 6. Funciones de "Renderizado" (Navegación) ---
-
+    
     function renderizarClases() {
         listaClases.innerHTML = '';
         listaSubclases.innerHTML = '';
         listaObjetos.innerHTML = '';
+        currentSubclaseId = null; // Reset
         for (const clase of db.clases) {
             listaClases.innerHTML += `<li data-id="${clase.ID_Clase}">
                 <img src="static/${clase.Nombre_Clase}.svg" class="icono-lista">
@@ -139,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderizarSubclases(idClasePadre) {
         listaSubclases.innerHTML = '';
         listaObjetos.innerHTML = '';
+        currentSubclaseId = null; // Reset
         const subclasesFiltradas = db.subclases.filter(s => s.ID_Clase_FK === idClasePadre);
         for (const subclase of subclasesFiltradas) {
             listaSubclases.innerHTML += `<li data-id="${subclase.ID_Subclase}">${subclase.Nombre_Subclase} (${subclase.ID_Subclase})</li>`;
@@ -146,21 +133,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderizarObjetos(idSubclasePadre) {
+        currentSubclaseId = idSubclasePadre; 
         listaObjetos.innerHTML = '';
-        const objetosFiltrados = db.objetos.filter(o => o.ID_Subclase_FK === idSubclasePadre);
+        
+        let objetosFiltrados = db.objetos.filter(o => o.ID_Subclase_FK === idSubclasePadre);
+
+        if (filtroDBYF) {
+            objetosFiltrados = objetosFiltrados.filter(o => o.DBYF === 'SI');
+        }
+
+        if (objetosFiltrados.length === 0) {
+            listaObjetos.innerHTML = '<li class="vacio">No hay objetos DBYF en esta subclase</li>';
+            return;
+        }
+
         for (const objeto of objetosFiltrados) {
             listaObjetos.innerHTML += `<li data-id="${objeto.ID_Objeto}">${objeto.Nombre_Objeto} (${objeto.ID_Objeto})</li>`;
         }
     }
 
-    // --- 7. Funciones "Manejadoras" (Navegación) ---
-
     function manejarClicClase(e) {
-        if (e.target.tagName === 'LI') {
+        if (e.target.closest('li')) { 
+            const li = e.target.closest('li');
             quitarSeleccion(listaClases);
-            e.target.classList.add('seleccionado');
-            const idClase = e.target.dataset.id;
-            renderizarSubclases(idClase);
+            li.classList.add('seleccionado');
+            renderizarSubclases(li.dataset.id);
         }
     }
 
@@ -168,37 +165,37 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.tagName === 'LI') {
             quitarSeleccion(listaSubclases);
             e.target.classList.add('seleccionado');
-            const idSubclase = e.target.dataset.id;
-            renderizarObjetos(idSubclase);
+            renderizarObjetos(e.target.dataset.id);
         }
     }
 
     function manejarClicObjeto(e) {
-        if (e.target.tagName === 'LI') {
+        if (e.target.closest('li') && !e.target.classList.contains('vacio')) {
+            const li = e.target.closest('li');
             quitarSeleccion(listaObjetos);
-            e.target.classList.add('seleccionado');
-            const idObjeto = e.target.dataset.id;
-            mostrarModalObjeto(idObjeto);
+            li.classList.add('seleccionado');
+            mostrarModalObjeto(li.dataset.id);
         }
     }
 
-    // --- 8. Lógica del Buscador (NUEVO) ---
-
     function handleSearch(e) {
         const searchTerm = normalizeText(e.target.value);
-        searchResults.innerHTML = ''; // Limpiar resultados anteriores
-
-        if (searchTerm.length < 2) { // No buscar si es muy corto
+        searchResults.innerHTML = '';
+        if (searchTerm.length < 2) {
             searchResults.style.display = 'none';
             return;
         }
-
+        
         let html = '';
         let count = 0;
-        const maxResults = 15; // Límite de resultados
+        const maxResults = 15;
+        
+        let objetosMatch = db.objetos.filter(o => o.Nombre_Normalizado.includes(searchTerm));
+        
+        if (filtroDBYF) {
+            objetosMatch = objetosMatch.filter(o => o.DBYF === 'SI');
+        }
 
-        // 1. Buscar en Objetos (más importante)
-        const objetosMatch = db.objetos.filter(o => o.Nombre_Normalizado.includes(searchTerm));
         for (const objeto of objetosMatch) {
             if (count >= maxResults) break;
             html += `<li data-id="${objeto.ID_Objeto}" data-type="objeto">
@@ -207,61 +204,42 @@ document.addEventListener('DOMContentLoaded', () => {
             count++;
         }
 
-        // 2. Buscar en Subclases (si aún hay espacio)
-        const subclasesMatch = db.subclases.filter(s => s.Nombre_Normalizado.includes(searchTerm));
-        for (const subclase of subclasesMatch) {
-            if (count >= maxResults) break;
-            html += `<li data-id="${subclase.ID_Subclase}" data-type="subclase">
-                ${subclase.Nombre_Subclase} <span>(Subclase)</span>
-            </li>`;
-            count++;
+        if (!filtroDBYF) {
+            const subclasesMatch = db.subclases.filter(s => s.Nombre_Normalizado.includes(searchTerm));
+            for (const subclase of subclasesMatch) {
+                if (count >= maxResults) break;
+                html += `<li data-id="${subclase.ID_Subclase}" data-type="subclase">
+                    ${subclase.Nombre_Subclase} <span>(Subclase)</span>
+                </li>`;
+                count++;
+            }
         }
         
         if (html === '') {
             html = '<li class="no-results">No se encontraron resultados</li>';
         }
-
         searchResults.innerHTML = html;
         searchResults.style.display = 'block';
     }
 
+    
     function handleResultClick(e) {
-        const li = e.target.closest('li'); // Obtener el <li> aunque se haga clic en el <span>
-        if (!li || li.classList.contains('no-results')) return; // No hacer nada si no hay ID
-
+        const li = e.target.closest('li');
+        if (!li || li.classList.contains('no-results')) return;
         const id = li.dataset.id;
         const type = li.dataset.type;
-
-        if (type === 'objeto') {
-            // Si es un objeto, abrimos el modal directamente
-            mostrarModalObjeto(id);
-        }
-        
+        if (type === 'objeto') { mostrarModalObjeto(id); }
         if (type === 'subclase') {
-            // Si es una subclase, forzamos la navegación de 3 columnas
             const subclase = db.subclases.find(s => s.ID_Subclase === id);
             if (subclase) {
-                // 1. Renderizar clases y "cliquear" la correcta
                 renderizarClases();
-                quitarSeleccion(listaClases); // Limpiar por si acaso
-                document.querySelector(`#lista-clases li[data-id="${subclase.ID_Clase_FK}"]`).classList.add('seleccionado');
-                
-                // 2. Renderizar subclases y "cliquear" la correcta
                 renderizarSubclases(subclase.ID_Clase_FK);
-                quitarSeleccion(listaSubclases); // Limpiar por si acaso
-                document.querySelector(`#lista-subclases li[data-id="${id}"]`).classList.add('seleccionado');
-
-                // 3. Renderizar los objetos de esa subclase
                 renderizarObjetos(id);
             }
         }
-
-        // Limpiar y ocultar el buscador
         searchResults.style.display = 'none';
         buscador.value = '';
     }
-
-    // --- 9. Lógica del Modal de Objeto ---
 
     function mostrarModalObjeto(idObjeto) {
         const objeto = db.objetos.find(o => o.ID_Objeto === idObjeto);
@@ -304,12 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = "block";
     }
 
-    // --- 10. Lógica del Modal de Info ---
-    
     function mostrarModalInfo() {
-        modalInfoCuerpo.innerHTML = ''; // Limpiar el modal
+        modalInfoCuerpo.innerHTML = '';
         
-        // 1. Rellenar con datos simples de la portada
         for (const item of db.portada) {
             if (item.Clave && item.Valor) { 
                 modalInfoCuerpo.innerHTML += `
@@ -321,7 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // 2. Rellenar con datos del Productor
         if (db.productor && db.productor.length > 0) {
             modalInfoCuerpo.innerHTML += `<h3>Productor</h3>`;
             
@@ -355,7 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // 3. Rellenar con la lista de Fuentes
         if (db.fuentes && db.fuentes.length > 0) {
             modalInfoCuerpo.innerHTML += `<h3>Fuentes Principales</h3>`;
             let fuentesHtml = '<ul>';
@@ -383,7 +356,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             
             for (const v of db.versiones) {
-                // Lectura robusta de tus columnas
                 const version = v['Versión'] || v['Version'] || v['VERSION'] || '';
                 const autor = v['Autor'] || v['AUTOR'] || '';
                 const colabs = v['Colaboradores'] || v['COLABORADORES'] || '';
@@ -409,7 +381,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modalInfo.style.display = "block";
     }
 
-    // --- 11. Funciones de Utilidad (Navegación) ---
     function quitarSeleccion(lista) {
         const seleccionado = lista.querySelector('li.seleccionado');
         if (seleccionado) {
@@ -417,6 +388,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Iniciar la aplicación ---
     iniciarApp();
 });
