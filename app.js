@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnDescargarFicha = document.getElementById('btn-descargar-ficha');
     
     const switchDBYF = document.getElementById('filtro-dbyf');
+    const btnVerMapa = document.getElementById('btn-ver-mapa');
 
     function normalizeText(text) {
         if (!text) return '';
@@ -103,7 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         modalCerrar.addEventListener('click', () => {
             modal.style.display = "none";
+            btnDescargarFicha.style.display = "none";
+            btnVerMapa.style.display = "none"; // <--- NUEVO
         });
+
         btnInfo.addEventListener('click', mostrarModalInfo);
         modalInfoCerrar.addEventListener('click', () => modalInfo.style.display = "none");
 
@@ -127,7 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         window.addEventListener('click', (e) => {
-            if (e.target == modal) { modal.style.display = "none"; }
+            if (e.target == modal) { 
+                modal.style.display = "none"; 
+                btnDescargarFicha.style.display = "none";
+                btnVerMapa.style.display = "none"; // <--- NUEVO
+            }
             if (e.target == modalInfo) { modalInfo.style.display = "none"; }
             if (e.target.id !== 'buscador' && e.target.closest('#search-results') === null) {
                 searchResults.style.display = 'none';
@@ -269,9 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarModalObjeto(idObjeto) {
-        
-        currentObjectId = idObjeto;
-        
+        currentObjectId = idObjeto; 
         const objeto = db.objetos.find(o => o.ID_Objeto === idObjeto);
         if (!objeto) return;
 
@@ -280,36 +286,36 @@ document.addEventListener('DOMContentLoaded', () => {
         modalGeometria.textContent = objeto.Geometria;
         modalTbody.innerHTML = '';
 
-        const linksAtributos = db.link.filter(l => l.ID_Objeto_FK === idObjeto);
+        // --- LÓGICA DEL BOTÓN MAPA (NUEVO) ---
+        // Buscamos la propiedad 'link', 'Link' o 'LINK' (por seguridad)
+        const linkUrl = objeto.link || objeto.Link || objeto.LINK || '';
 
-        for (const link of linksAtributos) {
-            const atributo = db.atributos.find(a => a.ID_Atributo === link.ID_Atributo_FK);
-            if (!atributo) continue;
-            
-            let dominiosHtml = "N/A";
-            
-            if (atributo.Tiene_Dominio === 'SI') {
-                const valoresDominio = db.dominios.filter(d => d.ID_Atributo_FK === atributo.ID_Atributo);
-                dominiosHtml = "<ul>";
-                for (const valor of valoresDominio) {
-                    dominiosHtml += `<li><b>${valor.Codigo}</b>: ${valor.Etiqueta}</li>`;
-                }
-                dominiosHtml += "</ul>";
-            } else {
-                dominiosHtml = `<i>${atributo.Tipo_Atributo || 'N/A'}</i>`;
-            }
-
-            modalTbody.innerHTML += `
-                <tr>
-                    <td data-label="Atributo">${atributo.Nombre_Atributo} (${atributo.ID_Atributo})</td>
-                    <td data-label="Definición">${atributo.Definicion}</td>
-                    <td data-label="Tipo">${atributo.Tipo_Atributo}</td>
-                    <td data-label="Dominio (Valores)">${dominiosHtml}</td>
-                    <td data-label="Obs.">${atributo.Observaciones || ''}</td>
-                </tr>
-            `;
+        if (linkUrl && linkUrl.trim() !== '') {
+            // Si hay link, mostramos el botón y configuramos el click
+            btnVerMapa.style.display = "inline-flex";
+            btnVerMapa.onclick = () => {
+                window.open(linkUrl, '_blank'); // Abre en nueva pestaña
+            };
+        } else {
+            // Si no hay link, ocultamos el botón
+            btnVerMapa.style.display = "none";
         }
+        // --------------------------------------
+
+        // ... (resto del código de atributos: const linksAtributos...) ...
+        const linksAtributos = db.link.filter(l => l.ID_Objeto_FK === idObjeto);
+        
+        // ... (bucle for de atributos) ...
+        for (const link of linksAtributos) {
+             // ... (tu lógica de renderizado de tabla) ...
+             // (Copia tu código existente aquí)
+             const atributo = db.atributos.find(a => a.ID_Atributo === link.ID_Atributo_FK);
+             // ...
+             // modalTbody.innerHTML += ...
+        }
+
         modal.style.display = "block";
+        btnDescargarFicha.style.display = "inline-flex"; // Aseguramos que se vea el de descarga
     }
 
     function mostrarModalInfo() {
