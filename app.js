@@ -8,11 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const reader = new FileReader();
                 reader.onloadend = () => {
                     const base64Full = reader.result;
-                    // Creamos una imagen temporal para leer sus dimensiones
                     const img = new Image();
                     img.onload = () => {
                         resolve({
-                            // ExcelJS necesita el base64 sin la cabecera "data:image..."
                             base64: base64Full.split(',')[1], 
                             width: img.width,
                             height: img.height
@@ -105,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalCerrar.addEventListener('click', () => {
             modal.style.display = "none";
             btnDescargarFicha.style.display = "none";
-            btnVerMapa.style.display = "none"; // <--- NUEVO
+            btnVerMapa.style.display = "none";
         });
 
         btnInfo.addEventListener('click', mostrarModalInfo);
@@ -134,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.target == modal) { 
                 modal.style.display = "none"; 
                 btnDescargarFicha.style.display = "none";
-                btnVerMapa.style.display = "none"; // <--- NUEVO
+                btnVerMapa.style.display = "none";
             }
             if (e.target == modalInfo) { modalInfo.style.display = "none"; }
             if (e.target.id !== 'buscador' && e.target.closest('#search-results') === null) {
@@ -148,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listaClases.innerHTML = '';
         listaSubclases.innerHTML = '';
         listaObjetos.innerHTML = '';
-        currentSubclaseId = null; // Reset
+        currentSubclaseId = null;
         for (const clase of db.clases) {
             listaClases.innerHTML += `<li data-id="${clase.ID_Clase}">
                 <img src="static/${clase.Nombre_Clase}.svg" class="icono-lista">
@@ -160,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderizarSubclases(idClasePadre) {
         listaSubclases.innerHTML = '';
         listaObjetos.innerHTML = '';
-        currentSubclaseId = null; // Reset
+        currentSubclaseId = null;
         const subclasesFiltradas = db.subclases.filter(s => s.ID_Clase_FK === idClasePadre);
         for (const subclase of subclasesFiltradas) {
             listaSubclases.innerHTML += `<li data-id="${subclase.ID_Subclase}">${subclase.Nombre_Subclase} (${subclase.ID_Subclase})</li>`;
@@ -286,36 +284,49 @@ document.addEventListener('DOMContentLoaded', () => {
         modalGeometria.textContent = objeto.Geometria;
         modalTbody.innerHTML = '';
 
-        // --- LÓGICA DEL BOTÓN MAPA (NUEVO) ---
-        // Buscamos la propiedad 'link', 'Link' o 'LINK' (por seguridad)
         const linkUrl = objeto.link || objeto.Link || objeto.LINK || '';
 
         if (linkUrl && linkUrl.trim() !== '') {
-            // Si hay link, mostramos el botón y configuramos el click
             btnVerMapa.style.display = "inline-flex";
             btnVerMapa.onclick = () => {
-                window.open(linkUrl, '_blank'); // Abre en nueva pestaña
+                window.open(linkUrl, '_blank');
             };
         } else {
-            // Si no hay link, ocultamos el botón
             btnVerMapa.style.display = "none";
         }
-        // --------------------------------------
 
-        // ... (resto del código de atributos: const linksAtributos...) ...
         const linksAtributos = db.link.filter(l => l.ID_Objeto_FK === idObjeto);
         
-        // ... (bucle for de atributos) ...
         for (const link of linksAtributos) {
-             // ... (tu lógica de renderizado de tabla) ...
-             // (Copia tu código existente aquí)
-             const atributo = db.atributos.find(a => a.ID_Atributo === link.ID_Atributo_FK);
-             // ...
-             // modalTbody.innerHTML += ...
+            const atributo = db.atributos.find(a => a.ID_Atributo === link.ID_Atributo_FK);
+            if (!atributo) continue;
+            
+            let dominiosHtml = "N/A";
+            
+            if (atributo.Tiene_Dominio === 'SI') {
+                const valoresDominio = db.dominios.filter(d => d.ID_Atributo_FK === atributo.ID_Atributo);
+                dominiosHtml = "<ul>";
+                for (const valor of valoresDominio) {
+                    dominiosHtml += `<li><b>${valor.Codigo}</b>: ${valor.Etiqueta}</li>`;
+                }
+                dominiosHtml += "</ul>";
+            } else {
+                dominiosHtml = `<i>${atributo.Tipo_Atributo || 'N/A'}</i>`;
+            }
+
+            modalTbody.innerHTML += `
+                <tr>
+                    <td data-label="Atributo">${atributo.Nombre_Atributo} (${atributo.ID_Atributo})</td>
+                    <td data-label="Definición">${atributo.Definicion}</td>
+                    <td data-label="Tipo">${atributo.Tipo_Atributo}</td>
+                    <td data-label="Dominio (Valores)">${dominiosHtml}</td>
+                    <td data-label="Obs.">${atributo.Observaciones || ''}</td>
+                </tr>
+            `;
         }
 
         modal.style.display = "block";
-        btnDescargarFicha.style.display = "inline-flex"; // Aseguramos que se vea el de descarga
+        btnDescargarFicha.style.display = "inline-flex";
     }
 
     function mostrarModalInfo() {
@@ -424,9 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-   // --- 11. FUNCIÓN DE DESCARGA EXCEL (ARIAL 10 + ESTILOS CORREGIDOS) ---
     async function descargarFicha(idObjeto) {
-        // 1. Obtener datos
+
         const objeto = db.objetos.find(o => o.ID_Objeto === idObjeto);
         if (!objeto) return;
         const subclase = db.subclases.find(s => s.ID_Subclase === objeto.ID_Subclase_FK);
@@ -434,15 +444,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const linksAtributos = db.link.filter(l => l.ID_Objeto_FK === idObjeto);
         const idAtributos = linksAtributos.map(l => l.ID_Atributo_FK);
         
-        // Ordenamos atributos
+
         const atributos = db.atributos.filter(a => idAtributos.includes(a.ID_Atributo)).sort((a,b) => a.ID_Atributo.localeCompare(b.ID_Atributo));
         const dominios = db.dominios.filter(d => idAtributos.includes(d.ID_Atributo_FK));
 
-        // 2. Crear Libro y Hoja
         const workbook = new ExcelJS.Workbook();
         const ws = workbook.addWorksheet('Ficha Objeto', { views: [{ showGridLines: false }] });
 
-        // 3. Definir Columnas
         ws.columns = [
             { width: 25 }, // A
             { width: 15 }, // B
@@ -452,20 +460,17 @@ document.addEventListener('DOMContentLoaded', () => {
             { width: 30 }  // F
         ];
 
-        // --- 3.1 AJUSTE DE FILAS (LOGO 1573x244) ---
         const rowHeightPt = 24.8; 
         for(let i=1; i<=6; i++) { ws.getRow(i).height = rowHeightPt; }
 
-        // --- ESTILOS Y COLORES ---
         const colorGris = 'FF353535'; 
         const colorNaranja = 'FFFD8D00'; 
         const colorGrisClaro = 'FFEFEFEF';
         const colorNegro = 'FF000000'; 
         const borderStyle = { top: { style: 'thin' }, left: { style: 'thin' }, bottom: { style: 'thin' }, right: { style: 'thin' } };
         
-        // Helper para estilos (Forzamos Arial 10 por defecto)
         const styleCell = (cell, fontObj, fillHex, alignObj, borderObj) => {
-            // Base: Arial 10
+
             const fontBase = { name: 'Arial', size: 10, ...fontObj }; 
             cell.font = fontBase;
             
@@ -474,7 +479,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if(borderObj) cell.border = borderObj;
         };
 
-        // 4. --- LOGO (A1:F6) ---
         ws.mergeCells('A1:F6');
         const logoData = await getBase64ImageFromUrl('static/logoExcel.png');
         if (logoData) {
@@ -482,14 +486,12 @@ document.addEventListener('DOMContentLoaded', () => {
             ws.addImage(imageId, { tl: { col: 0, row: 0 }, br: { col: 6, row: 6 }, editAs: 'oneCell' });
         }
 
-        // 5. --- TÍTULO PRINCIPAL (ARIAL 12) ---
         ws.mergeCells('A7:F10');
         const celdaTitulo = ws.getCell('A7');
         celdaTitulo.value = `FICHA DE OG ${objeto.Nombre_Objeto.toUpperCase()}\nCATÁLOGO DE OBJETOS GEOGRÁFICOS\nINFRAESTRUCTURA DE DATOS ESPACIALES DE TIERRA DEL FUEGO AeIAS`;
-        // Único elemento con tamaño 12
+
         styleCell(celdaTitulo, { bold: true, size: 12, color: { argb: 'FFFFFFFF' } }, colorGris, { horizontal: 'center', vertical: 'middle', wrapText: true }, borderStyle);
 
-        // 6. --- DATOS DEL OBJETO (ARIAL 10) ---
         let currentRow = 11;
         
         const addDatoCodigo = (label, codigo, nombre) => {
@@ -511,7 +513,6 @@ document.addEventListener('DOMContentLoaded', () => {
         addDatoCodigo("Subclase", subclase.ID_Subclase, subclase.Nombre_Subclase);
         addDatoCodigo("Objeto Geográfico (OG)", objeto.ID_Objeto, objeto.Nombre_Objeto);
 
-        // Geometría
         const rowGeo = ws.getRow(currentRow);
         const cellGeoLbl = rowGeo.getCell(1); cellGeoLbl.value = "Geometría";
         styleCell(cellGeoLbl, { bold: true, color: { argb: colorGris } }, colorGrisClaro, { vertical: 'middle' }, borderStyle);
@@ -520,7 +521,6 @@ document.addEventListener('DOMContentLoaded', () => {
         styleCell(cellGeoVal, null, null, { vertical: 'middle', wrapText: true }, borderStyle);
         currentRow++;
 
-        // Definición
         const rowDef = ws.getRow(currentRow);
         rowDef.height = 56.25; 
         const cellDefLbl = rowDef.getCell(1); cellDefLbl.value = "Definición";
@@ -530,7 +530,6 @@ document.addEventListener('DOMContentLoaded', () => {
         styleCell(cellDefVal, null, null, { vertical: 'middle', wrapText: true }, borderStyle);
         currentRow++; 
 
-        // --- 7. SIMBOLOGÍA ---
         const rowSim = ws.getRow(currentRow);
         rowSim.height = 67.5;
         
@@ -547,11 +546,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ws.addRow([]); 
         currentRow++;
 
-        // --- 8. LISTA DE ATRIBUTOS ---
         ws.mergeCells(currentRow, 1, currentRow, 6);
         const cellTituloAtr = ws.getCell(`A${currentRow}`); 
         cellTituloAtr.value = "LISTA DE ATRIBUTOS";
-        // Título Sección: Gris Oscuro + Texto Blanco
         styleCell(cellTituloAtr, { bold: true, color: { argb: 'FFFFFFFF' } }, colorGris, { horizontal: 'center', vertical: 'middle' }, borderStyle);
         currentRow++;
 
@@ -559,7 +556,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const rowHeader = ws.getRow(currentRow);
         headers.forEach((text, idx) => {
             const cell = rowHeader.getCell(idx + 1); cell.value = text;
-            // Encabezados Tabla: Naranja + Texto Negro
             styleCell(cell, { bold: true, color: { argb: colorNegro } }, colorNaranja, { horizontal: 'center', vertical: 'middle' }, borderStyle);
         });
         currentRow++;
@@ -576,31 +572,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentRow++;
 
-        // --- 9. VALORES DE DOMINIOS (CORREGIDO) ---
         
         atributos.forEach(attr => {
             const domsDelAtributo = dominios.filter(d => d.ID_Atributo_FK === attr.ID_Atributo);
 
             if (domsDelAtributo.length > 0) {
                 
-                // A) Título Específico del Atributo
                 ws.mergeCells(currentRow, 1, currentRow, 6);
                 const cellTitDom = ws.getCell(`A${currentRow}`);
                 cellTitDom.value = `VALORES DE DOMINIO ${attr.Nombre_Atributo.toUpperCase()} (${attr.ID_Atributo})`;
                 
-                // CORRECCIÓN: Volvemos al estilo INSTITUCIONAL (Gris Oscuro + Blanco + Centrado)
                 styleCell(cellTitDom, 
-                    { bold: true, color: { argb: 'FFFFFFFF' } }, // Letra Blanca, Arial 10
-                    colorGris, // Fondo Gris Oscuro
-                    { horizontal: 'center', vertical: 'middle' }, // Centrado
+                    { bold: true, color: { argb: 'FFFFFFFF' } },
+                    colorGris,
+                    { horizontal: 'center', vertical: 'middle' },
                     borderStyle
                 );
                 currentRow++;
 
-                // B) Encabezados de la Sub-tabla
                 const rowHeadDom = ws.getRow(currentRow);
                 
-                // Encabezados: Naranja + Texto Negro
                 const cCod = rowHeadDom.getCell(1); cCod.value = "CÓDIGO";
                 styleCell(cCod, { bold: true, color: { argb: colorNegro } }, colorNaranja, { horizontal: 'center' }, borderStyle);
 
@@ -616,7 +607,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 currentRow++;
 
-                // C) Filas de Valores
                 domsDelAtributo.forEach(d => {
                     const rowVal = ws.getRow(currentRow);
 
@@ -641,7 +631,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // 10. Descargar
         const buffer = await workbook.xlsx.writeBuffer();
         const cleanName = normalizeText(objeto.Nombre_Objeto).replace(/ /g, '_');
         saveAs(new Blob([buffer]), `Ficha_${objeto.ID_Objeto}_${cleanName}.xlsx`);
