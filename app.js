@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentObjectId = null;
     let currentSubclaseId = null;
     let filtroDBYF = false;
+    let filtroDisponibles = true;
 
     const listaClases = document.getElementById('lista-clases');
     const listaSubclases = document.getElementById('lista-subclases');
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnDescargarFicha = document.getElementById('btn-descargar-ficha');
     
     const switchDBYF = document.getElementById('filtro-dbyf');
+    const switchDisponibles = document.getElementById('filtro-disponibles');
     const btnVerMapa = document.getElementById('btn-ver-mapa');
 
     function normalizeText(text) {
@@ -128,6 +130,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        switchDisponibles.addEventListener('change', (e) => {
+            filtroDisponibles = e.target.checked;
+            
+            if (currentSubclaseId) {
+                renderizarObjetos(currentSubclaseId);
+            }
+            
+            // Refrescar búsqueda si hay texto
+            if (buscador.value.trim() !== '') {
+                buscador.dispatchEvent(new Event('keyup')); 
+            }
+        });
+
         window.addEventListener('click', (e) => {
             if (e.target == modal) { 
                 modal.style.display = "none"; 
@@ -165,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderizarObjetos(idSubclasePadre) {
+   function renderizarObjetos(idSubclasePadre) {
         currentSubclaseId = idSubclasePadre; 
         listaObjetos.innerHTML = '';
         
@@ -175,8 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
             objetosFiltrados = objetosFiltrados.filter(o => o.DBYF === 'SI');
         }
 
+        if (filtroDisponibles) {
+            objetosFiltrados = objetosFiltrados.filter(o => o.Link && o.Link.trim() !== "");
+        }
+
         if (objetosFiltrados.length === 0) {
-            listaObjetos.innerHTML = '<li class="vacio">No hay objetos DBYF en esta subclase</li>';
+            listaObjetos.innerHTML = '<li class="vacio">No hay objetos con estos filtros</li>';
             return;
         }
 
@@ -225,8 +244,14 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let objetosMatch = db.objetos.filter(o => o.Nombre_Normalizado.includes(searchTerm));
         
+        // Filtro DBYF
         if (filtroDBYF) {
             objetosMatch = objetosMatch.filter(o => o.DBYF === 'SI');
+        }
+
+        // Filtro Disponibles (CORREGIDO: usa o.Link)
+        if (filtroDisponibles) {
+            objetosMatch = objetosMatch.filter(o => o.Link && o.Link.trim() !== "");
         }
 
         for (const objeto of objetosMatch) {
@@ -237,7 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
             count++;
         }
 
-        if (!filtroDBYF) {
+        // Solo buscar subclases si los filtros están apagados
+        if (!filtroDBYF && !filtroDisponibles) {
             const subclasesMatch = db.subclases.filter(s => s.Nombre_Normalizado.includes(searchTerm));
             for (const subclase of subclasesMatch) {
                 if (count >= maxResults) break;
@@ -284,16 +310,26 @@ document.addEventListener('DOMContentLoaded', () => {
         modalGeometria.textContent = objeto.Geometria;
         modalTbody.innerHTML = '';
 
-        const linkUrl = objeto.link || objeto.Link || objeto.LINK || '';
+        // --- LÓGICA DE BOTONES (CORREGIDA) ---
+        // Leemos la propiedad "Link" tal cual viene en el JSON
+        const urlLink = objeto.Link || ""; 
+        const tieneLink = (urlLink.trim() !== "");
 
-        if (linkUrl && linkUrl.trim() !== '') {
+        if (tieneLink) {
+            // SI TIENE LINK: Mostramos ambos botones
             btnVerMapa.style.display = "inline-flex";
+            btnDescargarFicha.style.display = "inline-flex";
+            
+            // Asignamos la acción al botón de mapa
             btnVerMapa.onclick = () => {
-                window.open(linkUrl, '_blank');
+                window.open(urlLink, '_blank');
             };
         } else {
+            // NO TIENE LINK: Ocultamos AMBOS botones
             btnVerMapa.style.display = "none";
+            btnDescargarFicha.style.display = "none";
         }
+        // -------------------------------------
 
         const linksAtributos = db.link.filter(l => l.ID_Objeto_FK === idObjeto);
         
@@ -326,7 +362,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         modal.style.display = "block";
-        btnDescargarFicha.style.display = "inline-flex";
     }
 
     function mostrarModalInfo() {
