@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  visor_catalogo:
+    build: .
+    container_name: visor_catalogo
+    restart: always
+    ports:
+      - "3002:80"
