@@ -854,3 +854,395 @@ input:checked + .slider:before {
         margin-left: 0;
     }
 }
+
+/* Header y botón catalogador */
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.btn-catalogar {
+    background-color: var(--c-orange);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn-catalogar:hover {
+    background-color: #e07d00;
+    transform: translateY(-1px);
+}
+.icon-mas {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Modal Formulario */
+.modal-form-ancho {
+    width: 95%;
+    max-width: 1250px;
+    max-height: 92vh;
+    overflow-y: auto;
+}
+
+.form-cat-cuerpo {
+    padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    min-width: 0;
+}
+
+.form-grupo label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--c-dark);
+    margin-bottom: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-grupo input, 
+.form-grupo select, 
+.form-grupo textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--c-border-light);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #fafafa;
+    min-width: 0;
+}
+
+.form-grupo select {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.form-grupo input:focus, 
+.form-grupo select:focus, 
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: var(--c-blue);
+    background-color: #fff;
+}
+
+.form-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-separador {
+    border: none;
+    border-top: 1px solid var(--c-border-light);
+    margin: 1.5rem 0;
+}
+
+.seccion-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.seccion-cabecera h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Tarjeta dinámica de Atributos */
+.card-item-atributo {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-left: 4px solid var(--c-blue);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-item-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.btn-eliminar-item {
+    background: transparent;
+    border: none;
+    color: #cc0000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+.btn-eliminar-item:hover {
+    text-decoration: underline;
+}
+
+.grid-atributo-campos {
+    display: grid;
+    grid-template-columns: 120px 1.2fr 2fr 130px 100px;
+    gap: 0.6rem;
+}
+
+.subseccion-dominios {
+    margin-top: 0.8rem;
+    background: #f5f8fa;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px dashed #bcd;
+}
+
+.grid-dominio-fila {
+    display: grid;
+    grid-template-columns: 80px 150px 1fr 1fr 30px;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.btn-secundario {
+    background-color: var(--c-dark);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-secundario:hover {
+    background-color: #555;
+}
+
+.btn-mini-add {
+    background-color: var(--c-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin-top: 0.4rem;
+}
+
+.btn-cancelar {
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-cancelar:hover {
+    background-color: #666;
+}
+
+.form-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--c-border-light);
+    padding-top: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-acciones {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .form-row-2, .form-row-3, .grid-atributo-campos, .grid-dominio-fila {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tooltip-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: #cbd5e1;
+    color: #1e293b;
+    border-radius: 50%;
+    font-size: 0.72rem;
+    font-weight: bold;
+    cursor: help;
+    position: relative;
+    user-select: none;
+    line-height: 1;
+}
+
+.tooltip-icon:hover {
+    background-color: var(--c-blue);
+    color: #ffffff;
+}
+
+.tooltip-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1f2937;
+    color: #f9fafb;
+    padding: 0.4rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.78rem;
+    font-weight: normal;
+    text-transform: none;
+    white-space: normal;
+    width: 210px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1050;
+    pointer-events: none;
+    line-height: 1.3;
+}
+
+.tooltip-icon:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1f2937 transparent transparent transparent;
+    z-index: 1050;
+}
+
+/* Botón Añadir Atributo al final */
+.contenedor-agregar-btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-item-atributo {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-left: 4px solid var(--c-blue);
+    border-radius: 6px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.grid-atributo-campos {
+    display: grid;
+    grid-template-columns: 140px 1.2fr 2fr 130px 110px;
+    gap: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+    .grid-atributo-campos {
+        grid-template-columns: 1fr;
+    }
+    .form-row-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contenedor-agregar-btn {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-destacado-azul {
+    background-color: var(--c-blue);
+    color: #fff;
+}
+.btn-destacado-azul:hover {
+    background-color: #179ecc;
+}
+
+/* Modal Selector de Atributos */
+.modal-selector-ancho {
+    max-width: 650px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.selector-atr-cuerpo {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#buscador-atr-catalogo {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--c-border-light);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    margin-bottom: 0.8rem;
+}
+
+.lista-seleccionable {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1;
+    border: 1px solid var(--c-border-light);
+    border-radius: 6px;
+}
+
+.lista-seleccionable li {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--c-border-light);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.15s ease;
+}
+
+.lista-seleccionable li:hover {
+    background-color: #f0f7ff;
+}
+
+.lista-seleccionable li strong {
+    color: var(--c-dark);
+    font-size: 0.92rem;
+}
+
+.lista-seleccionable li span {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2px;
+}

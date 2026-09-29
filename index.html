@@ -9,6 +9,8 @@
     <link rel="icon" href="static/logo.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
 </head> 
 <body>
 
@@ -21,8 +23,13 @@
         <p>INFRAESTRUCTURA DE DATOS ESPACIALES DE LA PROVINCIA DE TIERRA DEL FUEGO AeIAS</p>
     </div>
 
-    <div class="info-button-container">
-            <button id="btn-info">ℹ️</button>
+    <div class="header-acciones">
+        <button id="btn-abrir-catalogador" class="btn-catalogar" type="button">
+            <span class="icon-mas">+</span> Catalogar nuevo objeto
+        </button>
+        <div class="info-button-container">
+            <button id="btn-info" type="button">ℹ️</button>
+        </div>
     </div>
 </header>
 
@@ -124,7 +131,186 @@
                 </div>
         </div>
     </div>
+    <div id="modal-catalogador" class="modal-overlay">
+        <div class="modal-contenido modal-form-ancho">
+            <button id="modal-cat-cerrar" class="modal-cerrar">&times;</button>
+            <div class="modal-header-con-boton">
+                <h2>Catalogación de Objeto Geográfico</h2>
+            </div>
 
+            <form id="form-catalogador" class="form-cat-cuerpo">
+                <!-- Título de la Capa y Responsable -->
+                <div class="form-row-2">
+                    <div class="form-grupo">
+                        <label for="cat-capa-titulo">
+                            Título de la Capa / Ficha *
+                            <span class="tooltip-icon" data-tooltip="Nombre formal o identificador de la capa a catalogar.">?</span>
+                        </label>
+                        <input type="text" id="cat-capa-titulo" required placeholder="Ej: Red de Alumbrado Público">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-responsable">
+                            Responsable de Catalogación *
+                            <span class="tooltip-icon" data-tooltip="Nombre, apellido u organismo/nodo responsable de completar la ficha.">?</span>
+                        </label>
+                        <input type="text" id="cat-responsable" required placeholder="Ej: Dirección de Cartografía / Juan Pérez">
+                    </div>
+                </div>
+
+                <!-- Jerarquía: Clase, Subclase, Objeto -->
+                <div class="form-row-3">
+                    <div class="form-grupo">
+                        <label for="cat-clase">
+                            Clase
+                            <span class="tooltip-icon" data-tooltip="Gran grupo temático del catálogo (puede quedar vacío si es OTRO).">?</span>
+                        </label>
+                        <select id="cat-clase">
+                            <option value="">Seleccione una clase...</option>
+                        </select>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-subclase">
+                            Subclase
+                            <span class="tooltip-icon" data-tooltip="Subdivisión temática de la clase seleccionada.">?</span>
+                        </label>
+                        <select id="cat-subclase">
+                            <option value="">Seleccione una subclase...</option>
+                        </select>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-og">
+                            Objeto Geográfico (OG) *
+                            <span class="tooltip-icon" data-tooltip="Entidad geográfica puntual, lineal, poligonal o raster según el catálogo o nueva entidad.">?</span>
+                        </label>
+                        <select id="cat-og" required>
+                            <option value="">Seleccione un objeto...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Campos condicionales si Subclase es 'OTRO' -->
+                <div id="cat-subclase-otro-bloque" class="form-row-2" style="display: none;">
+                    <div class="form-grupo">
+                        <label for="cat-subclase-otro-cod">
+                            Código Nueva Subclase
+                            <span class="tooltip-icon" data-tooltip="Código identificador sugerido para la subclase personalizada.">?</span>
+                        </label>
+                        <input type="text" id="cat-subclase-otro-cod" placeholder="Ej: 0509">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-subclase-otro-nom">
+                            Nombre Nueva Subclase
+                            <span class="tooltip-icon" data-tooltip="Denominación formal de la subclase nueva.">?</span>
+                        </label>
+                        <input type="text" id="cat-subclase-otro-nom" placeholder="Nombre completo de la subclase">
+                    </div>
+                </div>
+
+                <!-- Campos condicionales si OG es 'OTRO' -->
+                <div id="cat-og-otro-bloque" class="form-row-2" style="display: none;">
+                    <div class="form-grupo">
+                        <label for="cat-og-otro-cod">
+                            Código Nuevo OG
+                            <span class="tooltip-icon" data-tooltip="Código numérico o alfanumérico para el objeto fuera del estándar actual.">?</span>
+                        </label>
+                        <input type="text" id="cat-og-otro-cod" placeholder="Ej: 050109">
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-og-otro-nom">
+                            Nombre Nuevo OG
+                            <span class="tooltip-icon" data-tooltip="Nombre representativo del objeto geográfico.">?</span>
+                        </label>
+                        <input type="text" id="cat-og-otro-nom" placeholder="Nombre completo del objeto">
+                    </div>
+                </div>
+
+                <!-- Geometría y Simbología Texto -->
+                <div class="form-row-2">
+                    <div class="form-grupo">
+                        <label for="cat-geometria">
+                            Geometría *
+                            <span class="tooltip-icon" data-tooltip="Tipo geométrico con el que se almacena y representa la capa.">?</span>
+                        </label>
+                        <select id="cat-geometria" required>
+                            <option value="Punto">Punto</option>
+                            <option value="Línea">Línea</option>
+                            <option value="Polígono">Polígono</option>
+                            <option value="Multipunto">Multipunto</option>
+                            <option value="Multilínea">Multilínea</option>
+                            <option value="Multipolígono">Multipolígono</option>
+                            <option value="Raster / TIFF">Raster / TIFF</option>
+                            <option value="Tabla alfanumérica">Tabla alfanumérica</option>
+                        </select>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-simbologia-txt">
+                            Simbología (Descripción / Reglas)
+                            <span class="tooltip-icon" data-tooltip="Descripción técnica del estilo visual (color, grosor, trazo o categorías).">?</span>
+                        </label>
+                        <input type="text" id="cat-simbologia-txt" placeholder="Ej: Trazo discontinuo rojo 1.5px / Categorizado por estado">
+                    </div>
+                </div>
+
+                <!-- Definición -->
+                <div class="form-grupo">
+                    <label for="cat-definicion">
+                        Definición *
+                        <span class="tooltip-icon" data-tooltip="Definición semántica precisa del fenómeno u objeto representado.">?</span>
+                    </label>
+                    <textarea id="cat-definicion" rows="3" required placeholder="Definición formal del objeto..."></textarea>
+                </div>
+
+                <!-- Simbología Imagen -->
+                <div class="form-grupo">
+                    <label for="cat-simbologia-img">
+                        Imagen de Simbología (Opcional)
+                        <span class="tooltip-icon" data-tooltip="Captura del icono, muestra de leyenda o paleta gráfica asociada.">?</span>
+                    </label>
+                    <input type="file" id="cat-simbologia-img" accept="image/*">
+                </div>
+
+                <hr class="form-separador">
+
+                <!-- Sección de Atributos -->
+                <div class="seccion-cabecera">
+                    <h3>
+                        Atributos del Objeto
+                        <span class="tooltip-icon" data-tooltip="Variables alfanuméricas asociadas a cada registro del objeto geográfico.">?</span>
+                    </h3>
+                </div>
+
+                <div id="contenedor-atributos" class="contenedor-dinamico"></div>
+
+                <div class="contenedor-agregar-btn">
+                    <button type="button" id="btn-buscar-atributo-catalogo" class="btn-secundario btn-destacado-azul">
+                        🔍 Seleccionar Atributo del Catálogo
+                    </button>
+                    <button type="button" id="btn-agregar-atributo" class="btn-secundario">
+                        <span class="icon-mas">+</span> Añadir Atributo en Blanco
+                    </button>
+                </div>
+
+                <div class="form-acciones">
+                    <button type="button" id="btn-cancelar-cat" class="btn-cancelar">Cancelar</button>
+                    <button type="submit" class="btn-descarga">📄 Generar PDF Ficha</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Selector Rápido de Atributos -->
+    <div id="modal-selector-atributos" class="modal-overlay" style="z-index: 1100;">
+        <div class="modal-contenido modal-selector-ancho">
+            <button id="modal-sel-atr-cerrar" class="modal-cerrar" type="button">&times;</button>
+            <div class="modal-header-con-boton">
+                <h2>Seleccionar Atributo Existente</h2>
+            </div>
+            <div class="selector-atr-cuerpo">
+                <input type="text" id="buscador-atr-catalogo" placeholder="Filtrar por código o nombre de atributo..." autofocus>
+                <ul id="lista-atributos-catalogo" class="lista-seleccionable"></ul>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script> 
 </body>
 </html>
