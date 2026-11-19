@@ -847,7 +847,7 @@
     },
     {
         "ID_Subclase_FK":"0303",
-        "ID_Objeto":"30302",
+        "ID_Objeto":"030302",
         "Nombre_Objeto":"Transporte guiado terrestre",
         "Geometria":"Línea",
         "Definicion":"Sistema de transporte que consiste en cables conductores de la electricidad necesaria para el movimiento las unidades terrestres. Incluye trolebús, entre otros.",
@@ -856,7 +856,7 @@
     },
     {
         "ID_Subclase_FK":"0303",
-        "ID_Objeto":"30303",
+        "ID_Objeto":"030303",
         "Nombre_Objeto":"Estación de transporte guiado",
         "Geometria":"Punto\/Polígono",
         "Definicion":"Instalación edilicia y demás dependencias donde regularmente se detiene el transporte guiado por cable y suben y bajan pasajeros.",

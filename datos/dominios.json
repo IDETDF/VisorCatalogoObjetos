@@ -4328,14 +4328,14 @@
     {
         "ID_Atributo_FK":"SNL",
         "Codigo":"0",
-        "Etiqueta":"False",
+        "Etiqueta":"No",
         "Definicion":"",
         "Observaciones":""
     },
     {
         "ID_Atributo_FK":"SNL",
         "Codigo":"1",
-        "Etiqueta":"True",
+        "Etiqueta":"Sí",
         "Definicion":"",
         "Observaciones":""
     },

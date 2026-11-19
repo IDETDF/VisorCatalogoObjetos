@@ -840,6 +840,50 @@ input:checked + .slider:before {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+.btn-sigce {
+    background-color: var(--c-orange);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.btn-sigce:hover {
+    background-color: #e07d00;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.info-definicion-jerarquia {
+    margin-top: 0.45rem;
+    padding: 0.55rem 0.75rem;
+    background-color: #f0f9ff;
+    border-left: 3px solid var(--c-blue);
+    border-radius: 4px;
+    font-size: 0.82rem;
+    color: #334155;
+    line-height: 1.4;
+}
+
+.info-definicion-jerarquia strong {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #0369a1;
+    margin-bottom: 0.15rem;
+}
+
 
 @media screen and (max-width: 768px) {
     .acciones-modal {
@@ -848,7 +892,7 @@ input:checked + .slider:before {
         gap: 0.8rem;
     }
     
-    .btn-mapa, .btn-descarga {
+    .btn-mapa, .btn-sigce, .btn-descarga {
         width: 100%;
         justify-content: center;
         margin-left: 0;
@@ -1245,4 +1289,174 @@ input:checked + .slider:before {
     font-size: 0.8rem;
     color: #666;
     margin-top: 2px;
+}
+
+/* =========================================================
+   FEAT-207: Selector de Modo (Existente vs Propuestas COG)
+   ========================================================= */
+.btn-propuesta {
+    background-color: #1F4E78;
+}
+.btn-propuesta:hover {
+    background-color: #163a59;
+}
+
+.selector-modo-catalogador {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #e2e8f0;
+    padding: 0.5rem 2.5rem;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.btn-modo-tab {
+    flex: 1;
+    padding: 0.65rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn-modo-tab:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #1e293b;
+}
+
+.btn-modo-tab.activo[data-modo="existente"] {
+    background-color: #ffffff;
+    color: var(--c-dark);
+    border-color: var(--c-orange);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-modo-tab.activo[data-modo="propuesta"] {
+    background-color: #1F4E78;
+    color: #ffffff;
+    border-color: #1F4E78;
+    box-shadow: 0 2px 6px rgba(31, 78, 120, 0.25);
+}
+
+.bloque-propuesta-seccion {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #1F4E78;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.bloque-propuesta-jerarquia {
+    background-color: #f0f7ff;
+    border: 1px dashed #1F4E78;
+    border-radius: 6px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+}
+
+/* =========================================================
+   FEAT-204: Badges de Estado (Oficial / Modificado / Nuevo)
+   ========================================================= */
+.badge-estado-cambio {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.badge-estado-oficial {
+    background-color: #e2e8f0;
+    color: #475569;
+}
+
+.badge-estado-nuevo {
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+}
+
+.badge-estado-modificado {
+    background-color: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fcd34d;
+}
+
+.card-item-atributo[data-estado-cambio="nuevo"] {
+    border-left-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+.card-item-atributo[data-estado-cambio="modificado"] {
+    border-left-color: #d97706;
+    background-color: #fffbeb;
+}
+
+.grid-dominio-fila {
+    display: grid;
+    grid-template-columns: 80px 150px 1fr 1fr auto 30px;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+    align-items: center;
+    padding: 0.25rem 0.35rem;
+    border-radius: 4px;
+}
+
+.grid-dominio-fila[data-estado-cambio="nuevo"] {
+    background-color: #dcfce7;
+    border-left: 3px solid #16a34a;
+}
+
+.grid-dominio-fila[data-estado-cambio="modificado"] {
+    background-color: #fef3c7;
+    border-left: 3px solid #d97706;
+}
+
+/* =========================================================
+   FEAT-203: Simbología Múltiple (1:N) vinculada a dominios
+   ========================================================= */
+.simbologia-item {
+    background: #fdfdfd;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #0284c7;
+    border-radius: 6px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.simbologia-item-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.45rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.grid-simbologia-campos {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr 1fr;
+    gap: 0.8rem;
+    align-items: end;
+}
+
+@media screen and (max-width: 900px) {
+    .selector-modo-catalogador {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+    .grid-simbologia-campos {
+        grid-template-columns: 1fr;
+    }
 }

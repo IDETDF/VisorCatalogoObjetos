@@ -25,7 +25,10 @@
 
     <div class="header-acciones">
         <button id="btn-abrir-catalogador" class="btn-catalogar" type="button">
-            <span class="icon-mas">+</span> Catalogar nuevo objeto
+            <span class="icon-mas">📋</span> Catalogar Objeto Existente
+        </button>
+        <button id="btn-abrir-propuesta" class="btn-catalogar btn-propuesta" type="button">
+            <span class="icon-mas">+</span> Propuestas al Catálogo de OG
         </button>
         <div class="info-button-container">
             <button id="btn-info" type="button">ℹ️</button>
@@ -89,11 +92,15 @@
                 
                 <div class="acciones-modal">
                     
-                    <button id="btn-ver-mapa" class="btn-mapa">
+                    <button id="btn-ver-mapa" class="btn-mapa" type="button">
                         <span class="icon">🌍</span> Ver en el Mapa
                     </button>
 
-                    <button id="btn-descargar-ficha" class="btn-descarga">
+                    <button id="btn-validar-sigce" class="btn-sigce" type="button">
+                        <span class="icon">🛡️</span> Validar este objeto en SIGCE
+                    </button>
+
+                    <button id="btn-descargar-ficha" class="btn-descarga" type="button">
                     <img src="static/descarga.png" alt="Descargar Ficha" class="btn-icon-img">
                     Ficha
                     </button>
@@ -135,106 +142,243 @@
         <div class="modal-contenido modal-form-ancho">
             <button id="modal-cat-cerrar" class="modal-cerrar">&times;</button>
             <div class="modal-header-con-boton">
-                <h2>Catalogación de Objeto Geográfico</h2>
+                <h2 id="modal-cat-titulo">Catalogar Objeto Existente</h2>
+            </div>
+
+            <!-- Selector de Modo (Segmented Control / Pestañas) -->
+            <div class="selector-modo-catalogador" role="tablist" aria-label="Modo de operación del catalogador">
+                <button type="button" id="btn-modo-existente" class="btn-modo-tab activo" data-modo="existente" role="tab" aria-selected="true">
+                    📋 Catalogar Objeto Existente
+                </button>
+                <button type="button" id="btn-modo-propuesta" class="btn-modo-tab" data-modo="propuesta" role="tab" aria-selected="false">
+                    ✨ Propuestas al Catálogo de OG
+                </button>
             </div>
 
             <form id="form-catalogador" class="form-cat-cuerpo">
-                <!-- Título de la Capa y Responsable -->
-                <div class="form-row-2">
+                <input type="hidden" id="cat-modo-operacion" name="cat_modo_operacion" value="existente">
+
+                <!-- Cabecera Modo 1: Título de la Capa y Responsable -->
+                <div id="bloque-existente-cabecera" class="form-row-2">
                     <div class="form-grupo">
                         <label for="cat-capa-titulo">
                             Título de la Capa / Ficha *
                             <span class="tooltip-icon" data-tooltip="Nombre formal o identificador de la capa a catalogar.">?</span>
                         </label>
-                        <input type="text" id="cat-capa-titulo" required placeholder="Ej: Red de Alumbrado Público">
+                        <input type="text" id="cat-capa-titulo" name="cat_capa_titulo" required placeholder="Ej: Red de Alumbrado Público">
                     </div>
                     <div class="form-grupo">
                         <label for="cat-responsable">
                             Responsable de Catalogación *
                             <span class="tooltip-icon" data-tooltip="Nombre, apellido u organismo/nodo responsable de completar la ficha.">?</span>
                         </label>
-                        <input type="text" id="cat-responsable" required placeholder="Ej: Dirección de Cartografía / Juan Pérez">
+                        <input type="text" id="cat-responsable" name="cat_responsable" required placeholder="Ej: Dirección de Cartografía / Juan Pérez">
                     </div>
+                </div>
+
+                <!-- Cabecera Modo 2: DATOS DEL PRODUCTOR y PORTADA (Plantilla Propuestas_al_COG_IDETDF) -->
+                <div id="bloque-propuesta-metadatos" class="bloque-propuesta-seccion" style="display: none;">
+                    <div class="seccion-cabecera">
+                        <h3>Datos del Productor</h3>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="prop-prod-nombre">Nombre del Productor *</label>
+                            <input type="text" id="prop-prod-nombre" name="prop_prod_nombre" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-direccion">Dirección *</label>
+                            <input type="text" id="prop-prod-direccion" name="prop_prod_direccion" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row-3">
+                        <div class="form-grupo">
+                            <label for="prop-prod-pais">País *</label>
+                            <input type="text" id="prop-prod-pais" name="prop_prod_pais" value="REPÚBLICA ARGENTINA" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-provincia">Provincia *</label>
+                            <input type="text" id="prop-prod-provincia" name="prop_prod_provincia" value="Tierra del Fuego, Antártida e Islas del Atlántico Sur" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-ciudad">Ciudad *</label>
+                            <input type="text" id="prop-prod-ciudad" name="prop_prod_ciudad" value="Ushuaia" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row-3">
+                        <div class="form-grupo">
+                            <label for="prop-prod-web">Sitio Web</label>
+                            <input type="text" id="prop-prod-web" name="prop_prod_web" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-contacto">Contacto *</label>
+                            <input type="text" id="prop-prod-contacto" name="prop_prod_contacto" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-cargo">Cargo</label>
+                            <input type="text" id="prop-prod-cargo" name="prop_prod_cargo" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="prop-prod-telefono">Teléfono</label>
+                            <input type="text" id="prop-prod-telefono" name="prop_prod_telefono" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-prod-email">E-Mail *</label>
+                            <input type="text" id="prop-prod-email" name="prop_prod_email" disabled>
+                        </div>
+                    </div>
+
+                    <div class="seccion-cabecera" style="margin-top: 0.8rem;">
+                        <h3>Portada de la Propuesta</h3>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="prop-portada-titulo">Título *</label>
+                        <input type="text" id="prop-portada-titulo" name="prop_portada_titulo" value="PROPUESTA AL CATÁLOGO DE OBJETOS GEOGRÁFICOS DE LA INFRAESTRUCTURA DE DATOS ESPACIALES DE LA PROVINCIA DE TIERRA DEL FUEGO AIAS" disabled>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="prop-portada-alcance">Alcance *</label>
+                            <textarea id="prop-portada-alcance" name="prop_portada_alcance" rows="2" disabled></textarea>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-portada-campo">Campo de aplicación *</label>
+                            <textarea id="prop-portada-campo" name="prop_portada_campo" rows="2" disabled></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="prop-portada-fecha">Fecha *</label>
+                            <input type="text" id="prop-portada-fecha" name="prop_portada_fecha" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="prop-portada-lenguaje">Lenguaje *</label>
+                            <input type="text" id="prop-portada-lenguaje" name="prop_portada_lenguaje" value="ESPAÑOL - ES" disabled>
+                        </div>
+                    </div>
+                    <hr class="form-separador">
                 </div>
 
                 <!-- Jerarquía: Clase, Subclase, Objeto -->
                 <div class="form-row-3">
                     <div class="form-grupo">
                         <label for="cat-clase">
-                            Clase
-                            <span class="tooltip-icon" data-tooltip="Gran grupo temático del catálogo (puede quedar vacío si es OTRO).">?</span>
+                            Clase *
+                            <span class="tooltip-icon" data-tooltip="Gran grupo temático del catálogo.">?</span>
                         </label>
-                        <select id="cat-clase">
+                        <select id="cat-clase" name="cat_clase" required>
                             <option value="">Seleccione una clase...</option>
                         </select>
+                        <div id="cat-clase-def-info" class="info-definicion-jerarquia" style="display: none;" aria-live="polite"></div>
                     </div>
                     <div class="form-grupo">
                         <label for="cat-subclase">
-                            Subclase
+                            Subclase *
                             <span class="tooltip-icon" data-tooltip="Subdivisión temática de la clase seleccionada.">?</span>
                         </label>
-                        <select id="cat-subclase">
+                        <select id="cat-subclase" name="cat_subclase" required>
                             <option value="">Seleccione una subclase...</option>
                         </select>
+                        <div id="cat-subclase-def-info" class="info-definicion-jerarquia" style="display: none;" aria-live="polite"></div>
                     </div>
-                    <div class="form-grupo">
+                    <div id="grupo-cat-og" class="form-grupo">
                         <label for="cat-og">
                             Objeto Geográfico (OG) *
-                            <span class="tooltip-icon" data-tooltip="Entidad geográfica puntual, lineal, poligonal o raster según el catálogo o nueva entidad.">?</span>
+                            <span class="tooltip-icon" data-tooltip="Entidad geográfica oficial del catálogo.">?</span>
                         </label>
-                        <select id="cat-og" required>
+                        <select id="cat-og" name="cat_og" required>
                             <option value="">Seleccione un objeto...</option>
                         </select>
                     </div>
                 </div>
 
-                <!-- Campos condicionales si Subclase es 'OTRO' -->
-                <div id="cat-subclase-otro-bloque" class="form-row-2" style="display: none;">
-                    <div class="form-grupo">
-                        <label for="cat-subclase-otro-cod">
-                            Código Nueva Subclase
-                            <span class="tooltip-icon" data-tooltip="Código identificador sugerido para la subclase personalizada.">?</span>
-                        </label>
-                        <input type="text" id="cat-subclase-otro-cod" placeholder="Ej: 0509">
+                <!-- Campos condicionales si en Modo 2 se elige '+ Proponer Nueva Clase' -->
+                <div id="cat-clase-otro-bloque" class="bloque-propuesta-jerarquia" style="display: none;">
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="cat-clase-otro-cod">
+                                Código sugerido de Clase *
+                                <span class="tooltip-icon" data-tooltip="Código identificador de 2 dígitos sugerido para la nueva clase.">?</span>
+                            </label>
+                            <input type="text" id="cat-clase-otro-cod" name="cat_clase_otro_cod" placeholder="Ej: 11" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="cat-clase-otro-nom">
+                                Nombre de Nueva Clase *
+                                <span class="tooltip-icon" data-tooltip="Denominación formal propuesta para la clase.">?</span>
+                            </label>
+                            <input type="text" id="cat-clase-otro-nom" name="cat_clase_otro_nom" placeholder="Nombre completo de la clase propuesta" disabled>
+                        </div>
                     </div>
                     <div class="form-grupo">
-                        <label for="cat-subclase-otro-nom">
-                            Nombre Nueva Subclase
-                            <span class="tooltip-icon" data-tooltip="Denominación formal de la subclase nueva.">?</span>
+                        <label for="cat-clase-otro-def">
+                            Definición de Nueva Clase *
+                            <span class="tooltip-icon" data-tooltip="Definición conceptual de la clase propuesta.">?</span>
                         </label>
-                        <input type="text" id="cat-subclase-otro-nom" placeholder="Nombre completo de la subclase">
+                        <textarea id="cat-clase-otro-def" name="cat_clase_otro_def" rows="2" placeholder="Definición conceptual de la nueva clase..." disabled></textarea>
                     </div>
                 </div>
 
-                <!-- Campos condicionales si OG es 'OTRO' -->
-                <div id="cat-og-otro-bloque" class="form-row-2" style="display: none;">
+                <!-- Campos condicionales si en Modo 2 se elige '+ Proponer Nueva Subclase' -->
+                <div id="cat-subclase-otro-bloque" class="bloque-propuesta-jerarquia" style="display: none;">
+                    <div class="form-row-2">
+                        <div class="form-grupo">
+                            <label for="cat-subclase-otro-cod">
+                                Código sugerido de Subclase *
+                                <span class="tooltip-icon" data-tooltip="Código identificador sugerido para la subclase propuesta.">?</span>
+                            </label>
+                            <input type="text" id="cat-subclase-otro-cod" name="cat_subclase_otro_cod" placeholder="Ej: 0509" disabled>
+                        </div>
+                        <div class="form-grupo">
+                            <label for="cat-subclase-otro-nom">
+                                Nombre de Nueva Subclase *
+                                <span class="tooltip-icon" data-tooltip="Denominación formal de la subclase propuesta.">?</span>
+                            </label>
+                            <input type="text" id="cat-subclase-otro-nom" name="cat_subclase_otro_nom" placeholder="Nombre completo de la subclase propuesta" disabled>
+                        </div>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="cat-subclase-otro-def">
+                            Definición de Nueva Subclase *
+                            <span class="tooltip-icon" data-tooltip="Definición conceptual de la subclase propuesta.">?</span>
+                        </label>
+                        <textarea id="cat-subclase-otro-def" name="cat_subclase_otro_def" rows="2" placeholder="Definición conceptual de la nueva subclase..." disabled></textarea>
+                    </div>
+                </div>
+
+                <!-- Bloque de Objeto Propuesto (Activo en Modo 2, oculto en Modo 1) -->
+                <div id="cat-og-otro-bloque" class="form-row-2 bloque-propuesta-jerarquia" style="display: none;">
                     <div class="form-grupo">
                         <label for="cat-og-otro-cod">
-                            Código Nuevo OG
-                            <span class="tooltip-icon" data-tooltip="Código numérico o alfanumérico para el objeto fuera del estándar actual.">?</span>
+                            Código sugerido de Objeto *
+                            <span class="tooltip-icon" data-tooltip="Código sugerido de 6 dígitos o identificador de propuesta.">?</span>
                         </label>
-                        <input type="text" id="cat-og-otro-cod" placeholder="Ej: 050109">
+                        <input type="text" id="cat-og-otro-cod" name="cat_og_otro_cod" placeholder="Ej: 050109" disabled>
                     </div>
                     <div class="form-grupo">
                         <label for="cat-og-otro-nom">
-                            Nombre Nuevo OG
-                            <span class="tooltip-icon" data-tooltip="Nombre representativo del objeto geográfico.">?</span>
+                            Nombre del Objeto Propuesto *
+                            <span class="tooltip-icon" data-tooltip="Nombre representativo del nuevo objeto geográfico propuesto.">?</span>
                         </label>
-                        <input type="text" id="cat-og-otro-nom" placeholder="Nombre completo del objeto">
+                        <input type="text" id="cat-og-otro-nom" name="cat_og_otro_nom" placeholder="Nombre completo del objeto propuesto" disabled>
                     </div>
                 </div>
 
-                <!-- Geometría y Simbología Texto -->
+                <!-- Geometría y Dato Básico y Fundamental -->
                 <div class="form-row-2">
                     <div class="form-grupo">
                         <label for="cat-geometria">
                             Geometría *
-                            <span class="tooltip-icon" data-tooltip="Tipo geométrico con el que se almacena y representa la capa.">?</span>
+                            <span class="tooltip-icon" data-tooltip="Tipo geométrico con el que se almacena y representa el objeto.">?</span>
                         </label>
-                        <select id="cat-geometria" required>
+                        <select id="cat-geometria" name="cat_geometria" required>
                             <option value="Punto">Punto</option>
                             <option value="Línea">Línea</option>
                             <option value="Polígono">Polígono</option>
+                            <option value="Punto/Polígono">Punto/Polígono</option>
+                            <option value="Punto/Línea">Punto/Línea</option>
+                            <option value="Línea/Polígono">Línea/Polígono</option>
                             <option value="Multipunto">Multipunto</option>
                             <option value="Multilínea">Multilínea</option>
                             <option value="Multipolígono">Multipolígono</option>
@@ -243,11 +387,14 @@
                         </select>
                     </div>
                     <div class="form-grupo">
-                        <label for="cat-simbologia-txt">
-                            Simbología (Descripción / Reglas)
-                            <span class="tooltip-icon" data-tooltip="Descripción técnica del estilo visual (color, grosor, trazo o categorías).">?</span>
+                        <label for="cat-og-dbyf">
+                            Dato Básico y Fundamental (DBYF) *
+                            <span class="tooltip-icon" data-tooltip="Indica si el objeto constituye un Dato Básico y Fundamental de la IDETDF.">?</span>
                         </label>
-                        <input type="text" id="cat-simbologia-txt" placeholder="Ej: Trazo discontinuo rojo 1.5px / Categorizado por estado">
+                        <select id="cat-og-dbyf" name="cat_og_dbyf" required>
+                            <option value="NO">NO</option>
+                            <option value="SI">SI</option>
+                        </select>
                     </div>
                 </div>
 
@@ -257,16 +404,41 @@
                         Definición *
                         <span class="tooltip-icon" data-tooltip="Definición semántica precisa del fenómeno u objeto representado.">?</span>
                     </label>
-                    <textarea id="cat-definicion" rows="3" required placeholder="Definición formal del objeto..."></textarea>
+                    <textarea id="cat-definicion" name="cat_definicion" rows="3" required placeholder="Definición formal del objeto..."></textarea>
                 </div>
 
-                <!-- Simbología Imagen -->
-                <div class="form-grupo">
-                    <label for="cat-simbologia-img">
-                        Imagen de Simbología (Opcional)
-                        <span class="tooltip-icon" data-tooltip="Captura del icono, muestra de leyenda o paleta gráfica asociada.">?</span>
-                    </label>
-                    <input type="file" id="cat-simbologia-img" accept="image/*">
+                <hr class="form-separador">
+
+                <!-- Sección de Simbología Múltiple (1:N) -->
+                <div class="seccion-cabecera">
+                    <h3>
+                        Simbología (Muestras y Reglas Visuales)
+                        <span class="tooltip-icon" data-tooltip="Permite adjuntar una o múltiples muestras gráficas y vincularlas opcionalmente a atributos o valores de dominio.">?</span>
+                    </h3>
+                    <button type="button" id="btn-agregar-simbologia" class="btn-secundario btn-destacado-azul">
+                        + Agregar muestra de simbología
+                    </button>
+                </div>
+
+                <div id="contenedor-simbologias" class="contenedor-dinamico">
+                    <div class="simbologia-item" data-simb-idx="1">
+                        <div class="grid-simbologia-campos">
+                            <div class="form-grupo">
+                                <label for="cat-simbologia-txt">Descripción / Regla de Simbología</label>
+                                <input type="text" id="cat-simbologia-txt" class="simb-descripcion" name="cat_simbologia_txt" placeholder="Ej: Trazo continuo rojo 1.5px / Icono puntual">
+                            </div>
+                            <div class="form-grupo">
+                                <label for="cat-simbologia-vinculo-1">Vínculo con Atributo / Valor de Dominio</label>
+                                <select id="cat-simbologia-vinculo-1" class="simb-vinculo-dominio" name="simb_vinculo_1">
+                                    <option value="">General (Todo el objeto)</option>
+                                </select>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="cat-simbologia-img">Imagen (PNG/JPG)</label>
+                                <input type="file" id="cat-simbologia-img" class="simb-img-input" name="cat_simbologia_img" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <hr class="form-separador">
@@ -292,7 +464,7 @@
 
                 <div class="form-acciones">
                     <button type="button" id="btn-cancelar-cat" class="btn-cancelar">Cancelar</button>
-                    <button type="submit" class="btn-descarga">📄 Generar PDF Ficha</button>
+                    <button type="submit" id="btn-submit-catalogador" class="btn-descarga">📄 Generar PDF Ficha</button>
                 </div>
             </form>
         </div>
